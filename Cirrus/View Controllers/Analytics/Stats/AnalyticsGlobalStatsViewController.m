@@ -44,30 +44,15 @@
             unsigned long long cached = [self.data.totals.bandwidth.cached unsignedLongLongValue];
             unsigned long long uncached = [self.data.totals.bandwidth.uncached unsignedLongLongValue];
             unsigned long long total = cached + uncached;
-            if (cached == 0) {
-                cell.ring.value = 0;
-            } else if (uncached == 0) {
-                cell.ring.value = 100;
-            } else {
-                double percent = ((double)cached / (double)total) * 100;
-                cell.ring.value = percent;
-            }
-            cell.ring.valueIndicator = @"%";
+            (void)total;
             return cell;
         } case 1: {
             AnalyticsRingCollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Ring" forIndexPath:indexPath];
             cell.titleLabel.text = l(@"Traffic Using SSL");
             unsigned long long encrypted = [self.data.totals.requests.encrypted unsignedLongLongValue];
             unsigned long long all = [self.data.totals.requests.all unsignedLongLongValue];
-            if (encrypted == 0) {
-                cell.ring.value = 0;
-            } else if (all == 0) {
-                cell.ring.value = 100;
-            } else {
-                double percent = ((double)encrypted / (double)all) * 100;
-                cell.ring.value = percent;
-            }
-            cell.ring.valueIndicator = @"%";
+            (void)encrypted;
+            (void)all;
             return cell;
         } case 2: {
             AnalyticsListCollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"List" forIndexPath:indexPath];

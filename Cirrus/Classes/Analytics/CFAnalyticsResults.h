@@ -5,7 +5,9 @@
 @interface CFAnalyticsResults : NSObject
 
 typedef NS_ENUM(NSUInteger, CFAnalyticsTimeframe) {
-    CFAnalyticsTimeframe24Hours = 0,
+    CFAnalyticsTimeframe6Hours = 0,
+    CFAnalyticsTimeframe12Hours,
+    CFAnalyticsTimeframe24Hours,
     CFAnalyticsTimeframeLastWeek,
     CFAnalyticsTimeframeLastMonth
 };

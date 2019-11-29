@@ -13,10 +13,7 @@
 		3C0A69871C080C4D00C20F2C /* OCAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0A69861C080C4D00C20F2C /* OCAPI.m */; };
 		3C0A69901C08209000C20F2C /* CFZone.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0A698F1C08209000C20F2C /* CFZone.m */; };
 		3C11046120A7D69700D8EDF0 /* ManageAccountsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C11046020A7D69700D8EDF0 /* ManageAccountsTableViewController.m */; };
-		3C1385091DF678F2005102E0 /* FAImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1385031DF678F2005102E0 /* FAImageView.m */; };
-		3C13850A1DF678F2005102E0 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C1385041DF678F2005102E0 /* FontAwesome.ttf */; };
-		3C13850B1DF678F2005102E0 /* NSString+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1385061DF678F2005102E0 /* NSString+FontAwesome.m */; };
-		3C13850C1DF678F2005102E0 /* UIFont+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1385081DF678F2005102E0 /* UIFont+FontAwesome.m */; };
+		3C13850B1DF678F2005102E0 /* FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1385061DF678F2005102E0 /* FontAwesome.m */; };
 		3C1385121DF67ABC005102E0 /* OCStringFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1385111DF67ABC005102E0 /* OCStringFormatter.m */; };
 		3C1385151DF6868D005102E0 /* CFAnalyticObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1385141DF6868D005102E0 /* CFAnalyticObject.m */; };
 		3C1385191DF686BA005102E0 /* CFAnalyticRequestsObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1385181DF686BA005102E0 /* CFAnalyticRequestsObject.m */; };
@@ -56,13 +53,13 @@
 		3C4F8F671D728EAE00373EA6 /* ActionTipTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C4F8F661D728EAE00373EA6 /* ActionTipTarget.m */; };
 		3C4F8F741D728F0700373EA6 /* lang.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C4F8F6B1D728F0700373EA6 /* lang.m */; };
 		3C4F8F7F1D728F2700373EA6 /* en.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3C4F8F7E1D728F2700373EA6 /* en.plist */; };
-		3C5048E41E469E75007A43DB /* AnalyticsPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C5048E31E469E75007A43DB /* AnalyticsPageViewController.m */; };
 		3C5048E71E46B573007A43DB /* AnalyticsGraphViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C5048E61E46B573007A43DB /* AnalyticsGraphViewController.m */; };
 		3C5048EA1E46C0B4007A43DB /* AnalyticsGlobalStatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C5048E91E46C0B4007A43DB /* AnalyticsGlobalStatsViewController.m */; };
 		3C5048ED1E46C459007A43DB /* AnalyticsRingCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C5048EC1E46C459007A43DB /* AnalyticsRingCollectionViewCell.m */; };
 		3C5048F11E46C474007A43DB /* AnalyticsListCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C5048F01E46C474007A43DB /* AnalyticsListCollectionViewCell.m */; };
 		3C5BC0B81EB829A200724759 /* FirewallAccessRuleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C5BC0B71EB829A200724759 /* FirewallAccessRuleTableViewController.m */; };
 		3C6662951E104D3C00AD7F7C /* OCZoneFaviconManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C6662941E104D3C00AD7F7C /* OCZoneFaviconManager.m */; };
+		3C6A3A0123415C2600BD1AD1 /* ZoneTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C6A39FF23415C2600BD1AD1 /* ZoneTableViewCell.m */; };
 		3C6F05A120014A0A00F8AD13 /* OCGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C6F05A020014A0A00F8AD13 /* OCGradientView.m */; };
 		3C70F82B1E08E86B00BB31D4 /* OCNumberFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C70F82A1E08E86B00BB31D4 /* OCNumberFormatter.m */; };
 		3C70F82E1E08F37D00BB31D4 /* CFHSTSSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C70F82D1E08F37D00BB31D4 /* CFHSTSSettings.m */; };
@@ -75,25 +72,43 @@
 		3C71460D1C07903D007D5F7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C71460C1C07903D007D5F7B /* Assets.xcassets */; };
 		3C72BED1210E8E8600186111 /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C72BED0210E8E8600186111 /* WelcomeViewController.m */; };
 		3C7358461DAC177B00B8B63D /* ZoneFeatureSettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7358451DAC177B00B8B63D /* ZoneFeatureSettingTableViewController.m */; };
+		3C75D9FD2283C9E700876F3C /* NavigationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C75D9FC2283C9E700876F3C /* NavigationTableViewController.m */; };
 		3C7866242024DE230066817D /* RulesRootTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7866232024DE230066817D /* RulesRootTableViewController.m */; };
 		3C7866282024E3EF0066817D /* WAFRulesListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7866272024E3EF0066817D /* WAFRulesListTableViewController.m */; };
 		3C7C50441F05DA3700A08BDB /* CFDNSCAARecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7C50431F05DA3700A08BDB /* CFDNSCAARecord.m */; };
 		3C80FB8D1C2E07E400BDA4B6 /* ZoneSettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C80FB8C1C2E07E400BDA4B6 /* ZoneSettingsTableViewController.m */; };
 		3C86AE351DEA938E00363A4D /* UIControl+OCSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C86AE341DEA938E00363A4D /* UIControl+OCSelector.m */; };
-		3C9B15F51DC51BD2003AE94E /* UIViewController+ZoneButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9B15F41DC51BD2003AE94E /* UIViewController+ZoneButton.m */; };
 		3C9EAC381E5BFD8900E7B94A /* SegmentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9EAC371E5BFD8900E7B94A /* SegmentTableViewCell.m */; };
 		3CA000BF1DEE6BD700BF95F2 /* DNS.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CA000BE1DEE6BD700BF95F2 /* DNS.storyboard */; };
 		3CA000C11DEE6C0A00BF95F2 /* More.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CA000C01DEE6C0A00BF95F2 /* More.storyboard */; };
 		3CA000C31DEE6C5300BF95F2 /* Features.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CA000C21DEE6C5300BF95F2 /* Features.storyboard */; };
 		3CA000C51DEE6C8300BF95F2 /* Analytics.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CA000C41DEE6C8300BF95F2 /* Analytics.storyboard */; };
 		3CA000C71DEE6CA000BF95F2 /* Rules.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CA000C61DEE6CA000BF95F2 /* Rules.storyboard */; };
+		3CA2CFC323692620005F959C /* DomainRegistrationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CA2CFC223692620005F959C /* DomainRegistrationTableViewController.m */; };
+		3CA2CFC62369275A005F959C /* RefreshTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CA2CFC52369275A005F959C /* RefreshTableViewController.m */; };
+		3CA2CFCA23692CED005F959C /* OCTableViewSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CA2CFC923692CED005F959C /* OCTableViewSection.m */; };
+		3CA2CFD323693A64005F959C /* OCTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CA2CFD223693A64005F959C /* OCTableViewCell.m */; };
+		3CA2CFD623693DC1005F959C /* WHOISViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CA2CFD523693DC1005F959C /* WHOISViewController.m */; };
+		3CA2CFD923693DD9005F959C /* DomainContactTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CA2CFD823693DD9005F959C /* DomainContactTableViewController.m */; };
 		3CA364E41EC544410071A7B2 /* DNSAnalyticsGraphViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CA364E31EC544410071A7B2 /* DNSAnalyticsGraphViewController.m */; };
 		3CA364E81EC5480D0071A7B2 /* CFDNSAnalyticsResults.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CA364E71EC5480D0071A7B2 /* CFDNSAnalyticsResults.m */; };
 		3CA364EB1EC548250071A7B2 /* CFDNSAnalyticsTimeseries.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CA364EA1EC548250071A7B2 /* CFDNSAnalyticsTimeseries.m */; };
 		3CA364EF1EC54D220071A7B2 /* NSDateFormatter+Locale.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CA364EE1EC54D220071A7B2 /* NSDateFormatter+Locale.m */; };
 		3CA4D2A51DC1BBF100EBF832 /* AppState.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CA4D2A41DC1BBF100EBF832 /* AppState.m */; };
 		3CA7FA971E2B56F700297AB5 /* OCAuthenticationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CA7FA961E2B56F700297AB5 /* OCAuthenticationManager.m */; };
+		3CAC76BE230CBD5F00BD8F2F /* RulesRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CAC76BD230CBD5F00BD8F2F /* RulesRootViewController.m */; };
+		3CAC76C1230CBFF500BD8F2F /* FeaturesRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CAC76C0230CBFF500BD8F2F /* FeaturesRootViewController.m */; };
+		3CAC76C4230CC49E00BD8F2F /* NavigationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CAC76C3230CC49E00BD8F2F /* NavigationTableViewCell.m */; };
+		3CAC76C7230CC4B200BD8F2F /* NavigationTableViewSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CAC76C6230CC4B200BD8F2F /* NavigationTableViewSection.m */; };
+		3CAC76CD230CD8B400BD8F2F /* fa-light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3CAC76C9230CD8B300BD8F2F /* fa-light.ttf */; };
+		3CAC76CE230CD8B400BD8F2F /* fa-solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3CAC76CA230CD8B300BD8F2F /* fa-solid.ttf */; };
+		3CAC76CF230CD8B400BD8F2F /* fa-brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3CAC76CB230CD8B300BD8F2F /* fa-brands.ttf */; };
+		3CAC76D0230CD8B400BD8F2F /* fa-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3CAC76CC230CD8B300BD8F2F /* fa-regular.ttf */; };
+		3CAC76D3230CEA7B00BD8F2F /* UINavigationBar+AddButtons.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CAC76D2230CEA7B00BD8F2F /* UINavigationBar+AddButtons.m */; };
 		3CAF96791E1B1C7C00185DD7 /* OCTipManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CAF96781E1B1C7C00185DD7 /* OCTipManager.m */; };
+		3CAFD3F92361306800ADC089 /* TrafficAnalyticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CAFD3F82361306800ADC089 /* TrafficAnalyticsViewController.m */; };
+		3CB12E7D2367FC3B000EB6E1 /* CFDomainRegistrationProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB12E7C2367FC3B000EB6E1 /* CFDomainRegistrationProperties.m */; };
+		3CB12E7F236802DF000EB6E1 /* Domain Registration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CB12E7E236802DF000EB6E1 /* Domain Registration.storyboard */; };
 		3CB1681A1EB6B2C7007C2246 /* CFPageRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB168171EB6B2C7007C2246 /* CFPageRule.m */; };
 		3CB1681B1EB6B2C7007C2246 /* CFPageRuleAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB168191EB6B2C7007C2246 /* CFPageRuleAction.m */; };
 		3CB1681F1EB6B301007C2246 /* CFFirewallAccessRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB1681E1EB6B301007C2246 /* CFFirewallAccessRule.m */; };
@@ -104,6 +119,9 @@
 		3CB6E6E21DB30AD400B6277A /* NSData+AES.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB6E6E11DB30AD400B6277A /* NSData+AES.m */; };
 		3CB6E6E51DB30EDD00B6277A /* CFCredentialManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB6E6E41DB30EDD00B6277A /* CFCredentialManager.m */; };
 		3CB6E6E81DB30F0200B6277A /* CFCredentials.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB6E6E71DB30F0200B6277A /* CFCredentials.m */; };
+		3CB8F0A62370FF8300A45F89 /* WorkersAnalyticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB8F0A52370FF8300A45F89 /* WorkersAnalyticsViewController.m */; };
+		3CB8F0A92371011000A45F89 /* CFAnalyticsStatusCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB8F0A82371011000A45F89 /* CFAnalyticsStatusCodeView.m */; };
+		3CB8F0AC2371019200A45F89 /* CFAnalyticsWorkersObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB8F0AB2371019200A45F89 /* CFAnalyticsWorkersObject.m */; };
 		3CBBBA8F211A71C00044469B /* CFDNSDNSKEYRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CBBBA8E211A71C00044469B /* CFDNSDNSKEYRecord.m */; };
 		3CBBBA92211A77350044469B /* CFDNSDSRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CBBBA91211A77350044469B /* CFDNSDSRecord.m */; };
 		3CBEC41521799141001414ED /* CFDNSNAPTRRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CBEC41421799141001414ED /* CFDNSNAPTRRecord.m */; };
@@ -117,7 +135,6 @@
 		3CC6833C1DC6F3790044427B /* AnalyticsStatView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC6833B1DC6F3790044427B /* AnalyticsStatView.m */; };
 		3CC683401DC6F4FE0044427B /* AnalyticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC6833F1DC6F4FE0044427B /* AnalyticsViewController.m */; };
 		3CC74B321EEF7449006DEE75 /* OCIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC74B311EEF7449006DEE75 /* OCIcon.m */; };
-		3CC74B351EEF773F006DEE75 /* ZoneTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC74B341EEF773F006DEE75 /* ZoneTableViewCell.m */; };
 		3CC8AE8D1F74A4F50003A385 /* AppLockTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC8AE8C1F74A4F50003A385 /* AppLockTableViewController.m */; };
 		3CCFAF8A1D765DA6002CB104 /* CFZoneSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCFAF891D765DA6002CB104 /* CFZoneSettings.m */; };
 		3CD6F7811F07FA7900F111E9 /* CFDNSARecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6F7801F07FA7900F111E9 /* CFDNSARecord.m */; };
@@ -137,9 +154,14 @@
 		3CD8C0D91DE0DDA1001AA8D0 /* ZoneTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CD8C0D81DE0DDA1001AA8D0 /* ZoneTabBarController.m */; };
 		3CE214641C0AC9EE007CA7E3 /* CFDNSRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE214631C0AC9EE007CA7E3 /* CFDNSRecord.m */; };
 		3CE214671C0AD3F7007CA7E3 /* DNSRecordsListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE214661C0AD3F7007CA7E3 /* DNSRecordsListTableViewController.m */; };
+		3CE850C5231459AC00068FB8 /* OCReadOnlyZoneManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE850C4231459AC00068FB8 /* OCReadOnlyZoneManager.m */; };
 		3CE992DD1ED2A2CA00E2FB24 /* NSArray+SafeIndex.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE992DC1ED2A2CA00E2FB24 /* NSArray+SafeIndex.m */; };
 		3CE992E01ED2A6B400E2FB24 /* CFDNSAnalyticView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE992DF1ED2A6B400E2FB24 /* CFDNSAnalyticView.m */; };
+		3CEA20D823614A1300EFA4C5 /* SecurityAnalyticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CEA20D723614A1300EFA4C5 /* SecurityAnalyticsViewController.m */; };
+		3CEA20DB2362A36200EFA4C5 /* DNSAnalyticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CEA20DA2362A36200EFA4C5 /* DNSAnalyticsViewController.m */; };
 		3CEC76731C0D143C0031785D /* EditDNSRecordTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CEC76721C0D143C0031785D /* EditDNSRecordTableViewController.m */; };
+		3CF0C1FC230DBF6E00BAF2C3 /* AppLinks.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF0C1FB230DBF6E00BAF2C3 /* AppLinks.m */; };
+		3CF0C1FF230DBF9B00BAF2C3 /* UIDevice+PlatformString.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF0C1FE230DBF9B00BAF2C3 /* UIDevice+PlatformString.m */; };
 		3CFAE4B01DF4A89C002553E7 /* NSDictionary+ObjectForKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFAE4AF1DF4A89C002553E7 /* NSDictionary+ObjectForKey.m */; };
 		3CFAE4B31DF4A9A8002553E7 /* NSArray+ObjectAtIndex.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFAE4B21DF4A9A8002553E7 /* NSArray+ObjectAtIndex.m */; };
 		3CFAE4B61DF4AF47002553E7 /* CFAnalyticTimeseries.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFAE4B51DF4AF47002553E7 /* CFAnalyticTimeseries.m */; };
@@ -175,13 +197,8 @@
 		3C0A698F1C08209000C20F2C /* CFZone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFZone.m; sourceTree = "<group>"; };
 		3C11045F20A7D69700D8EDF0 /* ManageAccountsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManageAccountsTableViewController.h; sourceTree = "<group>"; };
 		3C11046020A7D69700D8EDF0 /* ManageAccountsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ManageAccountsTableViewController.m; sourceTree = "<group>"; };
-		3C1385021DF678F2005102E0 /* FAImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAImageView.h; sourceTree = "<group>"; };
-		3C1385031DF678F2005102E0 /* FAImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAImageView.m; sourceTree = "<group>"; };
-		3C1385041DF678F2005102E0 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
-		3C1385051DF678F2005102E0 /* NSString+FontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FontAwesome.h"; sourceTree = "<group>"; };
-		3C1385061DF678F2005102E0 /* NSString+FontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FontAwesome.m"; sourceTree = "<group>"; };
-		3C1385071DF678F2005102E0 /* UIFont+FontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+FontAwesome.h"; sourceTree = "<group>"; };
-		3C1385081DF678F2005102E0 /* UIFont+FontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+FontAwesome.m"; sourceTree = "<group>"; };
+		3C1385051DF678F2005102E0 /* FontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontAwesome.h; sourceTree = "<group>"; };
+		3C1385061DF678F2005102E0 /* FontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FontAwesome.m; sourceTree = "<group>"; };
 		3C1385101DF67ABC005102E0 /* OCStringFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCStringFormatter.h; sourceTree = "<group>"; };
 		3C1385111DF67ABC005102E0 /* OCStringFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCStringFormatter.m; sourceTree = "<group>"; };
 		3C1385131DF6868D005102E0 /* CFAnalyticObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFAnalyticObject.h; sourceTree = "<group>"; };
@@ -255,8 +272,6 @@
 		3C4F8F6B1D728F0700373EA6 /* lang.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lang.m; sourceTree = "<group>"; };
 		3C4F8F7E1D728F2700373EA6 /* en.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = en.plist; sourceTree = "<group>"; };
 		3C4F8F801D728F8100373EA6 /* Prefix-Header.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Prefix-Header.pch"; sourceTree = "<group>"; };
-		3C5048E21E469E75007A43DB /* AnalyticsPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnalyticsPageViewController.h; sourceTree = "<group>"; };
-		3C5048E31E469E75007A43DB /* AnalyticsPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnalyticsPageViewController.m; sourceTree = "<group>"; };
 		3C5048E51E46B573007A43DB /* AnalyticsGraphViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnalyticsGraphViewController.h; sourceTree = "<group>"; };
 		3C5048E61E46B573007A43DB /* AnalyticsGraphViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnalyticsGraphViewController.m; sourceTree = "<group>"; };
 		3C5048E81E46C0B4007A43DB /* AnalyticsGlobalStatsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnalyticsGlobalStatsViewController.h; sourceTree = "<group>"; };
@@ -269,6 +284,8 @@
 		3C5BC0B71EB829A200724759 /* FirewallAccessRuleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirewallAccessRuleTableViewController.m; sourceTree = "<group>"; };
 		3C6662931E104D3C00AD7F7C /* OCZoneFaviconManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCZoneFaviconManager.h; sourceTree = "<group>"; };
 		3C6662941E104D3C00AD7F7C /* OCZoneFaviconManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCZoneFaviconManager.m; sourceTree = "<group>"; };
+		3C6A39FF23415C2600BD1AD1 /* ZoneTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZoneTableViewCell.m; sourceTree = "<group>"; };
+		3C6A3A0023415C2600BD1AD1 /* ZoneTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZoneTableViewCell.h; sourceTree = "<group>"; };
 		3C6F059F20014A0A00F8AD13 /* OCGradientView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCGradientView.h; sourceTree = "<group>"; };
 		3C6F05A020014A0A00F8AD13 /* OCGradientView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCGradientView.m; sourceTree = "<group>"; };
 		3C70F8291E08E86B00BB31D4 /* OCNumberFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCNumberFormatter.h; sourceTree = "<group>"; };
@@ -293,6 +310,8 @@
 		3C72BED0210E8E8600186111 /* WelcomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
 		3C7358441DAC177B00B8B63D /* ZoneFeatureSettingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZoneFeatureSettingTableViewController.h; sourceTree = "<group>"; };
 		3C7358451DAC177B00B8B63D /* ZoneFeatureSettingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ZoneFeatureSettingTableViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		3C75D9FB2283C9E700876F3C /* NavigationTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationTableViewController.h; sourceTree = "<group>"; };
+		3C75D9FC2283C9E700876F3C /* NavigationTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationTableViewController.m; sourceTree = "<group>"; };
 		3C7866222024DE230066817D /* RulesRootTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RulesRootTableViewController.h; sourceTree = "<group>"; };
 		3C7866232024DE230066817D /* RulesRootTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RulesRootTableViewController.m; sourceTree = "<group>"; };
 		3C7866262024E3EF0066817D /* WAFRulesListTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WAFRulesListTableViewController.h; sourceTree = "<group>"; };
@@ -305,8 +324,6 @@
 		3C80FB8C1C2E07E400BDA4B6 /* ZoneSettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ZoneSettingsTableViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		3C86AE331DEA938E00363A4D /* UIControl+OCSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+OCSelector.h"; sourceTree = "<group>"; };
 		3C86AE341DEA938E00363A4D /* UIControl+OCSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+OCSelector.m"; sourceTree = "<group>"; };
-		3C9B15F31DC51BD2003AE94E /* UIViewController+ZoneButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ZoneButton.h"; sourceTree = "<group>"; };
-		3C9B15F41DC51BD2003AE94E /* UIViewController+ZoneButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ZoneButton.m"; sourceTree = "<group>"; };
 		3C9EAC361E5BFD8900E7B94A /* SegmentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegmentTableViewCell.h; sourceTree = "<group>"; };
 		3C9EAC371E5BFD8900E7B94A /* SegmentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegmentTableViewCell.m; sourceTree = "<group>"; };
 		3CA000BE1DEE6BD700BF95F2 /* DNS.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DNS.storyboard; sourceTree = "<group>"; };
@@ -314,6 +331,18 @@
 		3CA000C21DEE6C5300BF95F2 /* Features.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Features.storyboard; sourceTree = "<group>"; };
 		3CA000C41DEE6C8300BF95F2 /* Analytics.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Analytics.storyboard; sourceTree = "<group>"; };
 		3CA000C61DEE6CA000BF95F2 /* Rules.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Rules.storyboard; sourceTree = "<group>"; };
+		3CA2CFC123692620005F959C /* DomainRegistrationTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DomainRegistrationTableViewController.h; sourceTree = "<group>"; };
+		3CA2CFC223692620005F959C /* DomainRegistrationTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DomainRegistrationTableViewController.m; sourceTree = "<group>"; };
+		3CA2CFC42369275A005F959C /* RefreshTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RefreshTableViewController.h; sourceTree = "<group>"; };
+		3CA2CFC52369275A005F959C /* RefreshTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RefreshTableViewController.m; sourceTree = "<group>"; };
+		3CA2CFC823692CED005F959C /* OCTableViewSection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCTableViewSection.h; sourceTree = "<group>"; };
+		3CA2CFC923692CED005F959C /* OCTableViewSection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCTableViewSection.m; sourceTree = "<group>"; };
+		3CA2CFD123693A64005F959C /* OCTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCTableViewCell.h; sourceTree = "<group>"; };
+		3CA2CFD223693A64005F959C /* OCTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCTableViewCell.m; sourceTree = "<group>"; };
+		3CA2CFD423693DC1005F959C /* WHOISViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WHOISViewController.h; sourceTree = "<group>"; };
+		3CA2CFD523693DC1005F959C /* WHOISViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WHOISViewController.m; sourceTree = "<group>"; };
+		3CA2CFD723693DD9005F959C /* DomainContactTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DomainContactTableViewController.h; sourceTree = "<group>"; };
+		3CA2CFD823693DD9005F959C /* DomainContactTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DomainContactTableViewController.m; sourceTree = "<group>"; };
 		3CA364E21EC544410071A7B2 /* DNSAnalyticsGraphViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNSAnalyticsGraphViewController.h; sourceTree = "<group>"; };
 		3CA364E31EC544410071A7B2 /* DNSAnalyticsGraphViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNSAnalyticsGraphViewController.m; sourceTree = "<group>"; };
 		3CA364E61EC5480D0071A7B2 /* CFDNSAnalyticsResults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFDNSAnalyticsResults.h; sourceTree = "<group>"; };
@@ -326,8 +355,27 @@
 		3CA4D2A41DC1BBF100EBF832 /* AppState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppState.m; sourceTree = "<group>"; };
 		3CA7FA951E2B56F700297AB5 /* OCAuthenticationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCAuthenticationManager.h; sourceTree = "<group>"; };
 		3CA7FA961E2B56F700297AB5 /* OCAuthenticationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCAuthenticationManager.m; sourceTree = "<group>"; };
+		3CAC76BC230CBD5F00BD8F2F /* RulesRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RulesRootViewController.h; sourceTree = "<group>"; };
+		3CAC76BD230CBD5F00BD8F2F /* RulesRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RulesRootViewController.m; sourceTree = "<group>"; };
+		3CAC76BF230CBFF500BD8F2F /* FeaturesRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeaturesRootViewController.h; sourceTree = "<group>"; };
+		3CAC76C0230CBFF500BD8F2F /* FeaturesRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeaturesRootViewController.m; sourceTree = "<group>"; };
+		3CAC76C2230CC49E00BD8F2F /* NavigationTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationTableViewCell.h; sourceTree = "<group>"; };
+		3CAC76C3230CC49E00BD8F2F /* NavigationTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationTableViewCell.m; sourceTree = "<group>"; };
+		3CAC76C5230CC4B200BD8F2F /* NavigationTableViewSection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationTableViewSection.h; sourceTree = "<group>"; };
+		3CAC76C6230CC4B200BD8F2F /* NavigationTableViewSection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationTableViewSection.m; sourceTree = "<group>"; };
+		3CAC76C9230CD8B300BD8F2F /* fa-light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fa-light.ttf"; sourceTree = "<group>"; };
+		3CAC76CA230CD8B300BD8F2F /* fa-solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fa-solid.ttf"; sourceTree = "<group>"; };
+		3CAC76CB230CD8B300BD8F2F /* fa-brands.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fa-brands.ttf"; sourceTree = "<group>"; };
+		3CAC76CC230CD8B300BD8F2F /* fa-regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fa-regular.ttf"; sourceTree = "<group>"; };
+		3CAC76D1230CEA7B00BD8F2F /* UINavigationBar+AddButtons.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+AddButtons.h"; sourceTree = "<group>"; };
+		3CAC76D2230CEA7B00BD8F2F /* UINavigationBar+AddButtons.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+AddButtons.m"; sourceTree = "<group>"; };
 		3CAF96771E1B1C7C00185DD7 /* OCTipManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCTipManager.h; sourceTree = "<group>"; };
 		3CAF96781E1B1C7C00185DD7 /* OCTipManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCTipManager.m; sourceTree = "<group>"; };
+		3CAFD3F72361306800ADC089 /* TrafficAnalyticsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrafficAnalyticsViewController.h; sourceTree = "<group>"; };
+		3CAFD3F82361306800ADC089 /* TrafficAnalyticsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrafficAnalyticsViewController.m; sourceTree = "<group>"; };
+		3CB12E7B2367FC3B000EB6E1 /* CFDomainRegistrationProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CFDomainRegistrationProperties.h; sourceTree = "<group>"; };
+		3CB12E7C2367FC3B000EB6E1 /* CFDomainRegistrationProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CFDomainRegistrationProperties.m; sourceTree = "<group>"; };
+		3CB12E7E236802DF000EB6E1 /* Domain Registration.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Domain Registration.storyboard"; sourceTree = "<group>"; };
 		3CB168161EB6B2C7007C2246 /* CFPageRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFPageRule.h; sourceTree = "<group>"; };
 		3CB168171EB6B2C7007C2246 /* CFPageRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFPageRule.m; sourceTree = "<group>"; };
 		3CB168181EB6B2C7007C2246 /* CFPageRuleAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFPageRuleAction.h; sourceTree = "<group>"; };
@@ -348,6 +396,12 @@
 		3CB6E6E41DB30EDD00B6277A /* CFCredentialManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFCredentialManager.m; sourceTree = "<group>"; };
 		3CB6E6E61DB30F0200B6277A /* CFCredentials.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFCredentials.h; sourceTree = "<group>"; };
 		3CB6E6E71DB30F0200B6277A /* CFCredentials.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFCredentials.m; sourceTree = "<group>"; };
+		3CB8F0A42370FF8300A45F89 /* WorkersAnalyticsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WorkersAnalyticsViewController.h; sourceTree = "<group>"; };
+		3CB8F0A52370FF8300A45F89 /* WorkersAnalyticsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WorkersAnalyticsViewController.m; sourceTree = "<group>"; };
+		3CB8F0A72371011000A45F89 /* CFAnalyticsStatusCodeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CFAnalyticsStatusCodeView.h; sourceTree = "<group>"; };
+		3CB8F0A82371011000A45F89 /* CFAnalyticsStatusCodeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CFAnalyticsStatusCodeView.m; sourceTree = "<group>"; };
+		3CB8F0AA2371019200A45F89 /* CFAnalyticsWorkersObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CFAnalyticsWorkersObject.h; sourceTree = "<group>"; };
+		3CB8F0AB2371019200A45F89 /* CFAnalyticsWorkersObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CFAnalyticsWorkersObject.m; sourceTree = "<group>"; };
 		3CBBBA8D211A71C00044469B /* CFDNSDNSKEYRecord.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CFDNSDNSKEYRecord.h; sourceTree = "<group>"; };
 		3CBBBA8E211A71C00044469B /* CFDNSDNSKEYRecord.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CFDNSDNSKEYRecord.m; sourceTree = "<group>"; };
 		3CBBBA90211A77350044469B /* CFDNSDSRecord.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CFDNSDSRecord.h; sourceTree = "<group>"; };
@@ -373,8 +427,6 @@
 		3CC6833F1DC6F4FE0044427B /* AnalyticsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnalyticsViewController.m; sourceTree = "<group>"; };
 		3CC74B301EEF7449006DEE75 /* OCIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCIcon.h; sourceTree = "<group>"; };
 		3CC74B311EEF7449006DEE75 /* OCIcon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCIcon.m; sourceTree = "<group>"; };
-		3CC74B331EEF773F006DEE75 /* ZoneTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZoneTableViewCell.h; sourceTree = "<group>"; };
-		3CC74B341EEF773F006DEE75 /* ZoneTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZoneTableViewCell.m; sourceTree = "<group>"; };
 		3CC8AE8B1F74A4F50003A385 /* AppLockTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppLockTableViewController.h; sourceTree = "<group>"; };
 		3CC8AE8C1F74A4F50003A385 /* AppLockTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppLockTableViewController.m; sourceTree = "<group>"; };
 		3CCFAF881D765DA6002CB104 /* CFZoneSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFZoneSettings.h; sourceTree = "<group>"; };
@@ -413,12 +465,22 @@
 		3CE214631C0AC9EE007CA7E3 /* CFDNSRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFDNSRecord.m; sourceTree = "<group>"; };
 		3CE214651C0AD3F7007CA7E3 /* DNSRecordsListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNSRecordsListTableViewController.h; sourceTree = "<group>"; };
 		3CE214661C0AD3F7007CA7E3 /* DNSRecordsListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DNSRecordsListTableViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		3CE850C3231459AC00068FB8 /* OCReadOnlyZoneManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCReadOnlyZoneManager.h; sourceTree = "<group>"; };
+		3CE850C4231459AC00068FB8 /* OCReadOnlyZoneManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCReadOnlyZoneManager.m; sourceTree = "<group>"; };
 		3CE992DB1ED2A2CA00E2FB24 /* NSArray+SafeIndex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+SafeIndex.h"; sourceTree = "<group>"; };
 		3CE992DC1ED2A2CA00E2FB24 /* NSArray+SafeIndex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+SafeIndex.m"; sourceTree = "<group>"; };
 		3CE992DE1ED2A6B400E2FB24 /* CFDNSAnalyticView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFDNSAnalyticView.h; sourceTree = "<group>"; };
 		3CE992DF1ED2A6B400E2FB24 /* CFDNSAnalyticView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFDNSAnalyticView.m; sourceTree = "<group>"; };
+		3CEA20D623614A1200EFA4C5 /* SecurityAnalyticsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecurityAnalyticsViewController.h; sourceTree = "<group>"; };
+		3CEA20D723614A1300EFA4C5 /* SecurityAnalyticsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecurityAnalyticsViewController.m; sourceTree = "<group>"; };
+		3CEA20D92362A36200EFA4C5 /* DNSAnalyticsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNSAnalyticsViewController.h; sourceTree = "<group>"; };
+		3CEA20DA2362A36200EFA4C5 /* DNSAnalyticsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNSAnalyticsViewController.m; sourceTree = "<group>"; };
 		3CEC76711C0D143C0031785D /* EditDNSRecordTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditDNSRecordTableViewController.h; sourceTree = "<group>"; };
 		3CEC76721C0D143C0031785D /* EditDNSRecordTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = EditDNSRecordTableViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		3CF0C1FA230DBF6E00BAF2C3 /* AppLinks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppLinks.h; sourceTree = "<group>"; };
+		3CF0C1FB230DBF6E00BAF2C3 /* AppLinks.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppLinks.m; sourceTree = "<group>"; };
+		3CF0C1FD230DBF9B00BAF2C3 /* UIDevice+PlatformString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIDevice+PlatformString.h"; sourceTree = "<group>"; };
+		3CF0C1FE230DBF9B00BAF2C3 /* UIDevice+PlatformString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+PlatformString.m"; sourceTree = "<group>"; };
 		3CFAE4AE1DF4A89C002553E7 /* NSDictionary+ObjectForKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+ObjectForKey.h"; sourceTree = "<group>"; };
 		3CFAE4AF1DF4A89C002553E7 /* NSDictionary+ObjectForKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ObjectForKey.m"; sourceTree = "<group>"; };
 		3CFAE4B11DF4A9A8002553E7 /* NSArray+ObjectAtIndex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+ObjectAtIndex.h"; sourceTree = "<group>"; };
@@ -498,6 +560,7 @@
 				3C06E2251D72887A009D0A5A /* Main.storyboard */,
 				3CA000C01DEE6C0A00BF95F2 /* More.storyboard */,
 				3CA000C61DEE6CA000BF95F2 /* Rules.storyboard */,
+				3CB12E7E236802DF000EB6E1 /* Domain Registration.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -505,6 +568,7 @@
 		3C0A69911C08209400C20F2C /* Response Types */ = {
 			isa = PBXGroup;
 			children = (
+				3CB12E7A2367FC26000EB6E1 /* Domain Registration */,
 				3C7C50411F05DA1A00A08BDB /* DNS Records */,
 				3CB1681C1EB6B2E0007C2246 /* Firewall Access Rules */,
 				3C1385161DF68695005102E0 /* Analytics */,
@@ -535,6 +599,8 @@
 				3C1385211DF68702005102E0 /* CFAnalyticThreatsObject.m */,
 				3C13851A1DF686D3005102E0 /* CFAnalyticVisitorsObject.h */,
 				3C13851B1DF686D3005102E0 /* CFAnalyticVisitorsObject.m */,
+				3CB8F0AA2371019200A45F89 /* CFAnalyticsWorkersObject.h */,
+				3CB8F0AB2371019200A45F89 /* CFAnalyticsWorkersObject.m */,
 			);
 			path = Analytics;
 			sourceTree = "<group>";
@@ -554,6 +620,8 @@
 				3C1385241DF68ABE005102E0 /* CFAnalyticView.m */,
 				3C13852D1DF68BB7005102E0 /* CFAnalyticVisitorsView.h */,
 				3C13852E1DF68BB7005102E0 /* CFAnalyticVisitorsView.m */,
+				3CB8F0A72371011000A45F89 /* CFAnalyticsStatusCodeView.h */,
+				3CB8F0A82371011000A45F89 /* CFAnalyticsStatusCodeView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -652,8 +720,6 @@
 		3C5048EE1E46C45D007A43DB /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				3CC74B331EEF773F006DEE75 /* ZoneTableViewCell.h */,
-				3CC74B341EEF773F006DEE75 /* ZoneTableViewCell.m */,
 				3C5048EF1E46C474007A43DB /* AnalyticsListCollectionViewCell.h */,
 				3C5048F01E46C474007A43DB /* AnalyticsListCollectionViewCell.m */,
 				3C5048EB1E46C459007A43DB /* AnalyticsRingCollectionViewCell.h */,
@@ -686,6 +752,8 @@
 		3C70F8311E08F6C700BB31D4 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				3C6A3A0023415C2600BD1AD1 /* ZoneTableViewCell.h */,
+				3C6A39FF23415C2600BD1AD1 /* ZoneTableViewCell.m */,
 				3CD6F79D1F087E3A00F111E9 /* DNSRecordTableViewCell.h */,
 				3CD6F79E1F087E3A00F111E9 /* DNSRecordTableViewCell.m */,
 				3C9EAC361E5BFD8900E7B94A /* SegmentTableViewCell.h */,
@@ -840,12 +908,15 @@
 		3C80FB8A1C2E07CC00BDA4B6 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				3CA2CFC023692610005F959C /* Domain Registration */,
 				3CB168271EB6BA4C007C2246 /* Rules */,
 				3CC6833D1DC6F3830044427B /* Analytics */,
 				3C80FB891C2E07C400BDA4B6 /* DNS Records */,
 				3CB68E2D1DAB5459009B978B /* Features */,
 				3CC683341DC6B23D0044427B /* More */,
 				3C7866212024DA4D0066817D /* Login */,
+				3C75D9FB2283C9E700876F3C /* NavigationTableViewController.h */,
+				3C75D9FC2283C9E700876F3C /* NavigationTableViewController.m */,
 				3CD88FAD1E33173C00193D9B /* OCSplitViewController.h */,
 				3CD88FAE1E33173C00193D9B /* OCSplitViewController.m */,
 				3C7146031C07903D007D5F7B /* ZoneListTableViewController.h */,
@@ -879,10 +950,34 @@
 				3CD8C0D21DE0DBF9001AA8D0 /* UITableViewController+RefreshControl.m */,
 				3CD8C0CE1DE0DAD1001AA8D0 /* UIViewController+ProgressControl.h */,
 				3CD8C0CF1DE0DB12001AA8D0 /* UIViewController+ProgressControl.m */,
-				3C9B15F31DC51BD2003AE94E /* UIViewController+ZoneButton.h */,
-				3C9B15F41DC51BD2003AE94E /* UIViewController+ZoneButton.m */,
+				3CAC76D1230CEA7B00BD8F2F /* UINavigationBar+AddButtons.h */,
+				3CAC76D2230CEA7B00BD8F2F /* UINavigationBar+AddButtons.m */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3CA2CFC023692610005F959C /* Domain Registration */ = {
+			isa = PBXGroup;
+			children = (
+				3CA2CFC123692620005F959C /* DomainRegistrationTableViewController.h */,
+				3CA2CFC223692620005F959C /* DomainRegistrationTableViewController.m */,
+				3CA2CFD423693DC1005F959C /* WHOISViewController.h */,
+				3CA2CFD523693DC1005F959C /* WHOISViewController.m */,
+				3CA2CFD723693DD9005F959C /* DomainContactTableViewController.h */,
+				3CA2CFD823693DD9005F959C /* DomainContactTableViewController.m */,
+			);
+			path = "Domain Registration";
+			sourceTree = "<group>";
+		};
+		3CA2CFC723692CDB005F959C /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				3CA2CFC823692CED005F959C /* OCTableViewSection.h */,
+				3CA2CFC923692CED005F959C /* OCTableViewSection.m */,
+				3CA2CFD123693A64005F959C /* OCTableViewCell.h */,
+				3CA2CFD223693A64005F959C /* OCTableViewCell.m */,
+			);
+			path = TableView;
 			sourceTree = "<group>";
 		};
 		3CA364E51EC547E40071A7B2 /* DNS */ = {
@@ -894,6 +989,28 @@
 				3CA364EA1EC548250071A7B2 /* CFDNSAnalyticsTimeseries.m */,
 			);
 			path = DNS;
+			sourceTree = "<group>";
+		};
+		3CAC76C8230CD87000BD8F2F /* FontAwesome */ = {
+			isa = PBXGroup;
+			children = (
+				3CAC76CB230CD8B300BD8F2F /* fa-brands.ttf */,
+				3CAC76C9230CD8B300BD8F2F /* fa-light.ttf */,
+				3CAC76CC230CD8B300BD8F2F /* fa-regular.ttf */,
+				3CAC76CA230CD8B300BD8F2F /* fa-solid.ttf */,
+				3C1385051DF678F2005102E0 /* FontAwesome.h */,
+				3C1385061DF678F2005102E0 /* FontAwesome.m */,
+			);
+			path = FontAwesome;
+			sourceTree = "<group>";
+		};
+		3CB12E7A2367FC26000EB6E1 /* Domain Registration */ = {
+			isa = PBXGroup;
+			children = (
+				3CB12E7B2367FC3B000EB6E1 /* CFDomainRegistrationProperties.h */,
+				3CB12E7C2367FC3B000EB6E1 /* CFDomainRegistrationProperties.m */,
+			);
+			path = "Domain Registration";
 			sourceTree = "<group>";
 		};
 		3CB168151EB6B28E007C2246 /* Page Rules */ = {
@@ -942,6 +1059,8 @@
 				A13C15391EF33BB400BAE8F4 /* Rate Limit Rules */,
 				3CB168281EB6BA91007C2246 /* RuleListViewController.h */,
 				3CB168291EB6BA91007C2246 /* RuleListViewController.m */,
+				3CAC76BC230CBD5F00BD8F2F /* RulesRootViewController.h */,
+				3CAC76BD230CBD5F00BD8F2F /* RulesRootViewController.m */,
 			);
 			path = Rules;
 			sourceTree = "<group>";
@@ -949,6 +1068,8 @@
 		3CB68E2D1DAB5459009B978B /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				3CAC76BF230CBFF500BD8F2F /* FeaturesRootViewController.h */,
+				3CAC76C0230CBFF500BD8F2F /* FeaturesRootViewController.m */,
 				675390411FA92DF800C4CB0C /* PurgeCacheTableViewController.h */,
 				675390421FA92DF800C4CB0C /* PurgeCacheTableViewController.m */,
 				3C70F8321E08F73400BB31D4 /* HSTSSettingsTableViewController.h */,
@@ -986,12 +1107,18 @@
 			children = (
 				3C5048F21E46C4F5007A43DB /* Graph */,
 				3C5048F31E46C4FD007A43DB /* Stats */,
-				3C5048E21E469E75007A43DB /* AnalyticsPageViewController.h */,
-				3C5048E31E469E75007A43DB /* AnalyticsPageViewController.m */,
 				3CC6833A1DC6F3790044427B /* AnalyticsStatView.h */,
 				3CC6833B1DC6F3790044427B /* AnalyticsStatView.m */,
 				3CC6833E1DC6F4FE0044427B /* AnalyticsViewController.h */,
 				3CC6833F1DC6F4FE0044427B /* AnalyticsViewController.m */,
+				3CAFD3F72361306800ADC089 /* TrafficAnalyticsViewController.h */,
+				3CAFD3F82361306800ADC089 /* TrafficAnalyticsViewController.m */,
+				3CEA20D623614A1200EFA4C5 /* SecurityAnalyticsViewController.h */,
+				3CEA20D723614A1300EFA4C5 /* SecurityAnalyticsViewController.m */,
+				3CEA20D92362A36200EFA4C5 /* DNSAnalyticsViewController.h */,
+				3CEA20DA2362A36200EFA4C5 /* DNSAnalyticsViewController.m */,
+				3CB8F0A42370FF8300A45F89 /* WorkersAnalyticsViewController.h */,
+				3CB8F0A52370FF8300A45F89 /* WorkersAnalyticsViewController.m */,
 			);
 			path = Analytics;
 			sourceTree = "<group>";
@@ -1032,6 +1159,8 @@
 				3C4AAB1A20A7E9AC003564ED /* OCZoneLoader.m */,
 				3C4AAB1F20A7F0FD003564ED /* NSAtomicNumber.h */,
 				3C4AAB2020A7F0FD003564ED /* NSAtomicNumber.m */,
+				3CE850C3231459AC00068FB8 /* OCReadOnlyZoneManager.h */,
+				3CE850C4231459AC00068FB8 /* OCReadOnlyZoneManager.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -1049,15 +1178,33 @@
 			path = Analytics;
 			sourceTree = "<group>";
 		};
+		3CF0C1F9230DBF5E00BAF2C3 /* AppLinks */ = {
+			isa = PBXGroup;
+			children = (
+				3CF0C1FA230DBF6E00BAF2C3 /* AppLinks.h */,
+				3CF0C1FB230DBF6E00BAF2C3 /* AppLinks.m */,
+				3CF0C1FD230DBF9B00BAF2C3 /* UIDevice+PlatformString.h */,
+				3CF0C1FE230DBF9B00BAF2C3 /* UIDevice+PlatformString.m */,
+			);
+			path = AppLinks;
+			sourceTree = "<group>";
+		};
 		3CFD9F261F109E75003DB840 /* UI Elements */ = {
 			isa = PBXGroup;
 			children = (
+				3CA2CFC723692CDB005F959C /* TableView */,
 				3C6F059F20014A0A00F8AD13 /* OCGradientView.h */,
 				3C6F05A020014A0A00F8AD13 /* OCGradientView.m */,
 				67DAC50B1F857332004CF205 /* RefreshSearchTableViewController.h */,
 				67DAC50C1F857332004CF205 /* RefreshSearchTableViewController.m */,
 				3CFD9F231F109E71003DB840 /* OCIntegerTextField.h */,
 				3CFD9F241F109E71003DB840 /* OCIntegerTextField.m */,
+				3CAC76C2230CC49E00BD8F2F /* NavigationTableViewCell.h */,
+				3CAC76C3230CC49E00BD8F2F /* NavigationTableViewCell.m */,
+				3CAC76C5230CC4B200BD8F2F /* NavigationTableViewSection.h */,
+				3CAC76C6230CC4B200BD8F2F /* NavigationTableViewSection.m */,
+				3CA2CFC42369275A005F959C /* RefreshTableViewController.h */,
+				3CA2CFC52369275A005F959C /* RefreshTableViewController.m */,
 			);
 			path = "UI Elements";
 			sourceTree = "<group>";
@@ -1103,13 +1250,8 @@
 		A1A7688A1DF5F2DF006B1354 /* External */ = {
 			isa = PBXGroup;
 			children = (
-				3C1385021DF678F2005102E0 /* FAImageView.h */,
-				3C1385031DF678F2005102E0 /* FAImageView.m */,
-				3C1385041DF678F2005102E0 /* FontAwesome.ttf */,
-				3C1385051DF678F2005102E0 /* NSString+FontAwesome.h */,
-				3C1385061DF678F2005102E0 /* NSString+FontAwesome.m */,
-				3C1385071DF678F2005102E0 /* UIFont+FontAwesome.h */,
-				3C1385081DF678F2005102E0 /* UIFont+FontAwesome.m */,
+				3CF0C1F9230DBF5E00BAF2C3 /* AppLinks */,
+				3CAC76C8230CD87000BD8F2F /* FontAwesome */,
 			);
 			path = External;
 			sourceTree = "<group>";
@@ -1178,7 +1320,6 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				English,
-				en,
 				Base,
 			);
 			mainGroup = 3C7145F11C07903D007D5F7B;
@@ -1197,16 +1338,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C3A07141E6FACBF0046783C /* app.js in Resources */,
+				3CAC76D0230CD8B400BD8F2F /* fa-regular.ttf in Resources */,
 				3C2354061DD95DE300A762C5 /* Page Rules.plist in Resources */,
-				3C13850A1DF678F2005102E0 /* FontAwesome.ttf in Resources */,
 				3CA000C11DEE6C0A00BF95F2 /* More.storyboard in Resources */,
 				3C4F8F7F1D728F2700373EA6 /* en.plist in Resources */,
 				3CA000BF1DEE6BD700BF95F2 /* DNS.storyboard in Resources */,
 				3C06E2261D72887A009D0A5A /* Main.storyboard in Resources */,
+				3CAC76CE230CD8B400BD8F2F /* fa-solid.ttf in Resources */,
 				3CA000C31DEE6C5300BF95F2 /* Features.storyboard in Resources */,
 				3C19B7591DAE032000CAA00A /* inputMap.plist in Resources */,
+				3CB12E7F236802DF000EB6E1 /* Domain Registration.storyboard in Resources */,
+				3CAC76CD230CD8B400BD8F2F /* fa-light.ttf in Resources */,
 				3C425E111D72961F0077C210 /* Launch Screen.storyboard in Resources */,
 				3CA000C51DEE6C8300BF95F2 /* Analytics.storyboard in Resources */,
+				3CAC76CF230CD8B400BD8F2F /* fa-brands.ttf in Resources */,
 				3C19B7581DAE032000CAA00A /* recordTypeMap.plist in Resources */,
 				3C71460D1C07903D007D5F7B /* Assets.xcassets in Resources */,
 				3CA000C71DEE6CA000BF95F2 /* Rules.storyboard in Resources */,
@@ -1246,7 +1391,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#!/bin/sh\nset -x\nGIT_BRANCH=$(git symbolic-ref --short HEAD | sed 's/\"/\\\\\"/g')\nGIT_REVISION=$(git --no-pager show --oneline --quiet --format=%h | sed 's/\"/\\\\\"/g')\nGIT_AUTHOR=$(git --no-pager show -s --format='%an <%ae>' HEAD | sed 's/\"/\\\\\"/g')\nGIT_MESSAGE=$(git --no-pager show -s --format='%B' HEAD | head -n 1 | sed 's/\"/\\\\\"/g')\nGIT_VERSION=$(git --version | sed 's/\"/\\\\\"/g')\nGIT_PATH=$(which git | sed 's/\"/\\\\\"/g')\nOS_HOSTNAME=$(hostname | sed 's/\"/\\\\\"/g')\nOS_KERNEL_VERSION=$(uname -v | sed 's/\"/\\\\\"/g')\nCOMPILE_TIME=$(date | sed 's/\"/\\\\\"/g')\n\nDEFINES_HEADER=\"Cirrus/Supporting Files/defines.pch\"\necho \"// THIS FILE IS AUTOMATICALLY GENERATED DURING COMPILE\" > $DEFINES_HEADER\necho \"// Any changes to this file will be lost!\" >> $DEFINES_HEADER\necho \"// Edit the \\\"Export\\\" Build Phase to update this file\" >> $DEFINES_HEADER\necho \"#define GIT_BRANCH @\\\"$GIT_BRANCH\\\"\" >> $DEFINES_HEADER\necho \"#define GIT_REVISION @\\\"$GIT_REVISION\\\"\" >> $DEFINES_HEADER\necho \"#define GIT_AUTHOR @\\\"$GIT_AUTHOR\\\"\" >> $DEFINES_HEADER\necho \"#define GIT_MESSAGE @\\\"$GIT_MESSAGE\\\"\" >> $DEFINES_HEADER\necho \"#define GIT_VERSION @\\\"$GIT_VERSION\\\"\" >> $DEFINES_HEADER\necho \"#define GIT_PATH @\\\"$GIT_PATH\\\"\" >> $DEFINES_HEADER\necho \"#define OS_HOSTNAME @\\\"$OS_HOSTNAME\\\"\" >> $DEFINES_HEADER\necho \"#define OS_KERNEL_VERSION @\\\"$OS_KERNEL_VERSION\\\"\" >> $DEFINES_HEADER\necho \"#define COMPILE_TIME @\\\"$COMPILE_TIME\\\"\" >> $DEFINES_HEADER";
+			shellScript = "#!/bin/sh\nset -x\nGIT_BRANCH=$(git symbolic-ref --short HEAD | sed 's/\"/\\\\\"/g')\nGIT_REVISION=$(git --no-pager show --oneline --quiet --format=%h | sed 's/\"/\\\\\"/g')\nGIT_AUTHOR=$(git --no-pager show -s --format='%an <%ae>' HEAD | sed 's/\"/\\\\\"/g')\nGIT_MESSAGE=$(git --no-pager show -s --format='%B' HEAD | head -n 1 | sed 's/\"/\\\\\"/g')\nGIT_VERSION=$(git --version | sed 's/\"/\\\\\"/g')\nGIT_PATH=$(which git | sed 's/\"/\\\\\"/g')\nOS_HOSTNAME=$(hostname | sed 's/\"/\\\\\"/g')\nOS_KERNEL_VERSION=$(uname -v | sed 's/\"/\\\\\"/g')\nCOMPILE_TIME=$(date | sed 's/\"/\\\\\"/g')\n\nDEFINES_HEADER=\"Cirrus/Supporting Files/defines.pch\"\necho \"// THIS FILE IS AUTOMATICALLY GENERATED DURING COMPILE\" > $DEFINES_HEADER\necho \"// Any changes to this file will be lost!\" >> $DEFINES_HEADER\necho \"// Edit the \\\"Export\\\" Build Phase to update this file\" >> $DEFINES_HEADER\necho \"#define GIT_BRANCH @\\\"$GIT_BRANCH\\\"\" >> $DEFINES_HEADER\necho \"#define GIT_REVISION @\\\"$GIT_REVISION\\\"\" >> $DEFINES_HEADER\necho \"#define GIT_AUTHOR @\\\"$GIT_AUTHOR\\\"\" >> $DEFINES_HEADER\necho \"#define GIT_MESSAGE @\\\"$GIT_MESSAGE\\\"\" >> $DEFINES_HEADER\necho \"#define GIT_VERSION @\\\"$GIT_VERSION\\\"\" >> $DEFINES_HEADER\necho \"#define GIT_PATH @\\\"$GIT_PATH\\\"\" >> $DEFINES_HEADER\necho \"#define OS_HOSTNAME @\\\"$OS_HOSTNAME\\\"\" >> $DEFINES_HEADER\necho \"#define OS_KERNEL_VERSION @\\\"$OS_KERNEL_VERSION\\\"\" >> $DEFINES_HEADER\necho \"#define COMPILE_TIME @\\\"$COMPILE_TIME\\\"\" >> $DEFINES_HEADER\n";
 		};
 		F52FAB97671E423B5BB27199 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1257,23 +1402,19 @@
 				"${PODS_ROOT}/Target Support Files/Pods-Cirrus/Pods-Cirrus-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/1PasswordExtension/OnePasswordExtension.framework",
 				"${BUILT_PRODUCTS_DIR}/CMPopTipView/CMPopTipView.framework",
-				"${BUILT_PRODUCTS_DIR}/CorePlot/CorePlot.framework",
-				"${BUILT_PRODUCTS_DIR}/GTAppLinks/GTAppLinks.framework",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/MaterialDesignColors/MaterialDesignColors.framework",
 				"${BUILT_PRODUCTS_DIR}/SAMKeychain/SAMKeychain.framework",
-				"${BUILT_PRODUCTS_DIR}/UICircularProgressRing/UICircularProgressRing.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OnePasswordExtension.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CMPopTipView.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CorePlot.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTAppLinks.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MaterialDesignColors.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SAMKeychain.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UICircularProgressRing.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1294,10 +1435,13 @@
 				3CAF96791E1B1C7C00185DD7 /* OCTipManager.m in Sources */,
 				3C7146021C07903D007D5F7B /* AppDelegate.m in Sources */,
 				3CA364E81EC5480D0071A7B2 /* CFDNSAnalyticsResults.m in Sources */,
+				3CF0C1FC230DBF6E00BAF2C3 /* AppLinks.m in Sources */,
 				3C5BC0B81EB829A200724759 /* FirewallAccessRuleTableViewController.m in Sources */,
+				3CF0C1FF230DBF9B00BAF2C3 /* UIDevice+PlatformString.m in Sources */,
 				3C7146051C07903D007D5F7B /* ZoneListTableViewController.m in Sources */,
 				3CBEC41821799781001414ED /* CFDNSSMIMEARecord.m in Sources */,
 				3C4AAB2420A7FB37003564ED /* ZoneMenuTableViewController.m in Sources */,
+				3CA2CFD623693DC1005F959C /* WHOISViewController.m in Sources */,
 				3C70F83A1E08FE4900BB31D4 /* ToggleTableViewCell.m in Sources */,
 				3C70F82E1E08F37D00BB31D4 /* CFHSTSSettings.m in Sources */,
 				3CE214671C0AD3F7007CA7E3 /* DNSRecordsListTableViewController.m in Sources */,
@@ -1307,12 +1451,17 @@
 				3C23540B1DD961EE00A762C5 /* PageRulesListTableViewController.m in Sources */,
 				3CD6F79C1F0817DE00F111E9 /* CFDNSSRVRecord.m in Sources */,
 				3C1385311DF68BB7005102E0 /* CFAnalyticThreatsView.m in Sources */,
+				3C75D9FD2283C9E700876F3C /* NavigationTableViewController.m in Sources */,
 				3C3C3DDF21190F580022EBB4 /* CFDNSCERTRecord.m in Sources */,
 				3C48F57E1F7202A700DD358A /* UnlockViewController.m in Sources */,
 				3CB6E6E21DB30AD400B6277A /* NSData+AES.m in Sources */,
 				3C7145FF1C07903D007D5F7B /* main.m in Sources */,
 				3C70F8341E08F73400BB31D4 /* HSTSSettingsTableViewController.m in Sources */,
+				3CA2CFD923693DD9005F959C /* DomainContactTableViewController.m in Sources */,
 				3C7866242024DE230066817D /* RulesRootTableViewController.m in Sources */,
+				3CAC76C4230CC49E00BD8F2F /* NavigationTableViewCell.m in Sources */,
+				3CA2CFD323693A64005F959C /* OCTableViewCell.m in Sources */,
+				3CA2CFC323692620005F959C /* DomainRegistrationTableViewController.m in Sources */,
 				3C4AAB1B20A7E9AC003564ED /* OCZoneLoader.m in Sources */,
 				3C13851C1DF686D3005102E0 /* CFAnalyticVisitorsObject.m in Sources */,
 				3CA364E41EC544410071A7B2 /* DNSAnalyticsGraphViewController.m in Sources */,
@@ -1327,9 +1476,11 @@
 				3C425E141D72AA1F0077C210 /* EditValueTableViewController.m in Sources */,
 				A17B2E591E2EF51200063725 /* UIViewController+ObjectSave.m in Sources */,
 				3C86AE351DEA938E00363A4D /* UIControl+OCSelector.m in Sources */,
-				3C13850B1DF678F2005102E0 /* NSString+FontAwesome.m in Sources */,
+				3CA2CFCA23692CED005F959C /* OCTableViewSection.m in Sources */,
+				3C13850B1DF678F2005102E0 /* FontAwesome.m in Sources */,
 				3CD6F7991F08170200F111E9 /* CFDNSLOCRecord.m in Sources */,
 				3C01C62A1DF289FE00AC2A59 /* PageRuleForwardURLTableViewController.m in Sources */,
+				3C6A3A0123415C2600BD1AD1 /* ZoneTableViewCell.m in Sources */,
 				3CD6F7841F07FD1800F111E9 /* CFDNSAAAARecord.m in Sources */,
 				3CD8C0CD1DE0C818001AA8D0 /* PageRuleValueTableViewController.m in Sources */,
 				3CFFBFD8207483A600B429D3 /* OCUserOptions.m in Sources */,
@@ -1339,11 +1490,11 @@
 				3CD6F7871F07FD6200F111E9 /* CFDNSCNAMERecord.m in Sources */,
 				3C0A69901C08209000C20F2C /* CFZone.m in Sources */,
 				A1B34E741E0D90F800C94565 /* CFRateLimitAction.m in Sources */,
+				3CEA20D823614A1300EFA4C5 /* SecurityAnalyticsViewController.m in Sources */,
 				3C9EAC381E5BFD8900E7B94A /* SegmentTableViewCell.m in Sources */,
 				3CC74B321EEF7449006DEE75 /* OCIcon.m in Sources */,
 				3CA364EB1EC548250071A7B2 /* CFDNSAnalyticsTimeseries.m in Sources */,
 				3CB6E6E51DB30EDD00B6277A /* CFCredentialManager.m in Sources */,
-				3C5048E41E469E75007A43DB /* AnalyticsPageViewController.m in Sources */,
 				3C1385321DF68BB7005102E0 /* CFAnalyticVisitorsView.m in Sources */,
 				3C70F82B1E08E86B00BB31D4 /* OCNumberFormatter.m in Sources */,
 				A13C153C1EF33BEA00BAE8F4 /* RateLimitRuleTableViewController.m in Sources */,
@@ -1355,25 +1506,28 @@
 				3C80FB8D1C2E07E400BDA4B6 /* ZoneSettingsTableViewController.m in Sources */,
 				3CA364EF1EC54D220071A7B2 /* NSDateFormatter+Locale.m in Sources */,
 				3CBBBA92211A77350044469B /* CFDNSDSRecord.m in Sources */,
+				3CB8F0AC2371019200A45F89 /* CFAnalyticsWorkersObject.m in Sources */,
 				3C5048EA1E46C0B4007A43DB /* AnalyticsGlobalStatsViewController.m in Sources */,
+				3CE850C5231459AC00068FB8 /* OCReadOnlyZoneManager.m in Sources */,
 				3C13852F1DF68BB7005102E0 /* CFAnalyticBandwidthView.m in Sources */,
 				3CD6F78A1F07FDB800F111E9 /* CFDNSNSRecord.m in Sources */,
 				3C6662951E104D3C00AD7F7C /* OCZoneFaviconManager.m in Sources */,
-				3CC74B351EEF773F006DEE75 /* ZoneTableViewCell.m in Sources */,
 				3CFAE4B91DF4B302002553E7 /* CFAnalyticsResults.m in Sources */,
 				3C4F8F671D728EAE00373EA6 /* ActionTipTarget.m in Sources */,
 				67274FB220ABA40C000041A3 /* OCObject.m in Sources */,
+				3CB8F0A62370FF8300A45F89 /* WorkersAnalyticsViewController.m in Sources */,
 				3CFAE4B61DF4AF47002553E7 /* CFAnalyticTimeseries.m in Sources */,
 				67DAC50D1F857332004CF205 /* RefreshSearchTableViewController.m in Sources */,
 				3CBEC41B21799D12001414ED /* CFDNSSSHFPRecord.m in Sources */,
 				3CFAE4B31DF4A9A8002553E7 /* NSArray+ObjectAtIndex.m in Sources */,
 				3CBEC4212179A1B6001414ED /* CFDNSURIRecord.m in Sources */,
 				3C1385191DF686BA005102E0 /* CFAnalyticRequestsObject.m in Sources */,
-				3C1385091DF678F2005102E0 /* FAImageView.m in Sources */,
+				3CB8F0A92371011000A45F89 /* CFAnalyticsStatusCodeView.m in Sources */,
 				675390431FA92DF800C4CB0C /* PurgeCacheTableViewController.m in Sources */,
 				3CB168251EB6B405007C2246 /* CFFirewallAccessRuleConfiguration.m in Sources */,
 				3CB1681B1EB6B2C7007C2246 /* CFPageRuleAction.m in Sources */,
 				3CD6F7901F08167A00F111E9 /* CFDNSMXRecord.m in Sources */,
+				3CAC76C1230CBFF500BD8F2F /* FeaturesRootViewController.m in Sources */,
 				3CA4D2A51DC1BBF100EBF832 /* AppState.m in Sources */,
 				3C2971AB1DAB0BD300F8CF69 /* LoginTableViewController.m in Sources */,
 				3C21CEAA20A5382600F7967A /* ZoneSSLFeatureView.m in Sources */,
@@ -1382,6 +1536,7 @@
 				3C1385151DF6868D005102E0 /* CFAnalyticObject.m in Sources */,
 				3C3A07101E6FA6E20046783C /* LoginWebViewController.m in Sources */,
 				3C5048ED1E46C459007A43DB /* AnalyticsRingCollectionViewCell.m in Sources */,
+				3CAC76D3230CEA7B00BD8F2F /* UINavigationBar+AddButtons.m in Sources */,
 				3C3E1BF71DC2F690009D3AA7 /* OCSelector.m in Sources */,
 				3C1E760B1C4C261600A9B0E3 /* NSString+Validator.m in Sources */,
 				3C21CEAB20A5382600F7967A /* OCZoneFeatureView.m in Sources */,
@@ -1394,30 +1549,34 @@
 				3C21CEA920A5382600F7967A /* ZoneNetworkFeatureView.m in Sources */,
 				3C21CEAC20A5382600F7967A /* ZoneCachingFeatureView.m in Sources */,
 				3CBEC41E21799FFB001414ED /* CFDNSTLSARecord.m in Sources */,
+				3CAFD3F92361306800ADC089 /* TrafficAnalyticsViewController.m in Sources */,
 				A1A768881DF5DBE4006B1354 /* OptionsTableViewController.m in Sources */,
 				67274FB520ABA43E000041A3 /* CFRequest.m in Sources */,
 				3C0A69871C080C4D00C20F2C /* OCAPI.m in Sources */,
 				3CFD9F251F109E71003DB840 /* OCIntegerTextField.m in Sources */,
+				3CA2CFC62369275A005F959C /* RefreshTableViewController.m in Sources */,
 				3CD8C0D31DE0DBF9001AA8D0 /* UITableViewController+RefreshControl.m in Sources */,
 				67E3307E1F719100005CA905 /* HiddenZonesTableViewController.m in Sources */,
 				3CE214641C0AC9EE007CA7E3 /* CFDNSRecord.m in Sources */,
 				A1B34E711E0D90EA00C94565 /* CFRateLimitMatch.m in Sources */,
+				3CAC76BE230CBD5F00BD8F2F /* RulesRootViewController.m in Sources */,
 				3CD6F79F1F087E3A00F111E9 /* DNSRecordTableViewCell.m in Sources */,
 				3C1385251DF68ABE005102E0 /* CFAnalyticView.m in Sources */,
 				3C3C3DDC211909BD0022EBB4 /* CFDNSPTRRecord.m in Sources */,
 				3C2354141DD9737C00A762C5 /* PageRuleTableViewController.m in Sources */,
 				3C6F05A120014A0A00F8AD13 /* OCGradientView.m in Sources */,
-				3C9B15F51DC51BD2003AE94E /* UIViewController+ZoneButton.m in Sources */,
 				3CB1681F1EB6B301007C2246 /* CFFirewallAccessRule.m in Sources */,
 				3CD6F7931F0816B100F111E9 /* CFDNSSPFRecord.m in Sources */,
 				3CC683331DC6B2330044427B /* AboutTableViewController.m in Sources */,
+				3CEA20DB2362A36200EFA4C5 /* DNSAnalyticsViewController.m in Sources */,
+				3CB12E7D2367FC3B000EB6E1 /* CFDomainRegistrationProperties.m in Sources */,
 				3CB168221EB6B3A5007C2246 /* CFFirewallAccessRuleScope.m in Sources */,
 				3CB1681A1EB6B2C7007C2246 /* CFPageRule.m in Sources */,
 				3CE992E01ED2A6B400E2FB24 /* CFDNSAnalyticView.m in Sources */,
 				3CBEC41521799141001414ED /* CFDNSNAPTRRecord.m in Sources */,
-				3C13850C1DF678F2005102E0 /* UIFont+FontAwesome.m in Sources */,
 				3C5048E71E46B573007A43DB /* AnalyticsGraphViewController.m in Sources */,
 				3CB1682F1EB6BAD3007C2246 /* FirewallAccessRulesListTableViewController.m in Sources */,
+				3CAC76C7230CC4B200BD8F2F /* NavigationTableViewSection.m in Sources */,
 				3C21CEA820A5382600F7967A /* ZoneFirewallFeatureView.m in Sources */,
 				A13C153F1EF33C0E00BAE8F4 /* RateLimitRulesListTableViewController.m in Sources */,
 				3C7358461DAC177B00B8B63D /* ZoneFeatureSettingTableViewController.m in Sources */,
@@ -1480,7 +1639,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1534,7 +1693,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1552,7 +1711,7 @@
 				CLANG_WARN_STRICT_PROTOTYPES = NO;
 				CODE_SIGN_ENTITLEMENTS = Cirrus/Cirrus.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 52;
+				CURRENT_PROJECT_VERSION = 61;
 				DEVELOPMENT_TEAM = WCW84NC7Y8;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1563,8 +1722,9 @@
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
 				INFOPLIST_FILE = Cirrus/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.5.5;
+				MARKETING_VERSION = 2.0.0;
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\"";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ecn.Orange-Cloud";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1583,7 +1743,7 @@
 				CLANG_WARN_STRICT_PROTOTYPES = NO;
 				CODE_SIGN_ENTITLEMENTS = Cirrus/Cirrus.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 52;
+				CURRENT_PROJECT_VERSION = 61;
 				DEVELOPMENT_TEAM = WCW84NC7Y8;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1594,8 +1754,9 @@
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
 				INFOPLIST_FILE = Cirrus/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.5.5;
+				MARKETING_VERSION = 2.0.0;
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\"";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ecn.Orange-Cloud";
 				PRODUCT_NAME = "$(TARGET_NAME)";

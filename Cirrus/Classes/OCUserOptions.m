@@ -12,12 +12,13 @@ static OCUserOptions * _instance;
 #define STORAGE_KEY_PRESENTED_TIPS            @"presented_tips"
 #define STORAGE_KEY_FAVICON_AGE               @"favicon_age"
 #define STORAGE_KEY_HIDDEN_ZONES              @"hidden_zones"
-#define STORAGE_KEY_READ_ONLY_ZONES              @"read_only_zones"
+#define STORAGE_KEY_READ_ONLY_ZONES           @"read_only_zones"
 #define STORAGE_KEY_DEVICE_LOCK               @"device_lock"
 #define STORAGE_KEY_DEVICE_LOCK_CHANGES       @"device_lock_changes"
 #define STORAGE_KEY_DEVICE_LOCK_CHANGE_ALL    @"device_lock_all_changes"
 #define STORAGE_KEY_RECENTLY_PURGED_URLS      @"recently_purged_urls"
 #define STORAGE_KEY_LAST_USED_ACCOUNT_INDEX   @"last_used_account"
+#define STORAGE_KEY_WHOIS_NAG_SUPPRESSED      @"whois_nag_suppressed"
 #define AppDefaults [NSUserDefaults standardUserDefaults]
 
 + (OCUserOptions * _Nonnull) currentOptions {
@@ -128,6 +129,14 @@ static OCUserOptions * _instance;
 
 - (void) setLastUsedAccountIndex:(NSInteger)lastUsedAccountIndex {
     [AppDefaults setInteger:lastUsedAccountIndex forKey:STORAGE_KEY_LAST_USED_ACCOUNT_INDEX];
+}
+
+- (BOOL) whoisNagSuppressed {
+    return [AppDefaults boolForKey:STORAGE_KEY_WHOIS_NAG_SUPPRESSED];
+}
+
+- (void) setWhoisNagSuppressed:(BOOL)whoisNagSuppressed {
+    [AppDefaults setBool:whoisNagSuppressed forKey:STORAGE_KEY_WHOIS_NAG_SUPPRESSED];
 }
 
 @end

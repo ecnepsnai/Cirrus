@@ -2,6 +2,7 @@
 #import "LoginWebViewController.h"
 #import "OCZoneFaviconManager.h"
 #import "OCZoneLoader.h"
+#import "AppLinks.h"
 
 @import LocalAuthentication;
 
@@ -54,11 +55,9 @@
     [super didReceiveMemoryWarning];
 }
 
-
-
 - (void) triggerLoadOfSites {
 #if !defined(DEBUG) && !TESTFLIGHT_BUILD
-    [[GTAppLinks forApp:GTAppCirrus] appDidLaunch];
+    [[AppLinks new] appLaunchRate];
 #endif
     [self getZones];
 }
@@ -127,15 +126,11 @@
 
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     currentZone = self.isSearching ? self.filteredSites[indexPath.row] : self.sites[indexPath.row];
-    if ([appState.splitViewController detailViewControllerIsPlaceholder] && isRegular) {
-        UIViewController * zoneTabBar = [self.storyboard instantiateViewControllerWithIdentifier:@"ZoneTabBarController"];
-        [appState.splitViewController showDetailViewController:zoneTabBar sender:self];
-    }
-    notify(NOTIF_ZONE_CHANGED);
+    d(@"Current zone %@", currentZone.name);
 
-    if (isCompact) {
-        [self performSegueWithIdentifier:@"LoadZone" sender:nil];
-    }
+    OCSplitViewController * splitController = [self.storyboard instantiateViewControllerWithIdentifier:@"Split"];
+    splitController.modalPresentationStyle = UIModalPresentationFullScreen;
+    [self presentViewController:splitController animated:YES completion:nil];
 }
 
 - (void) disableTableView {

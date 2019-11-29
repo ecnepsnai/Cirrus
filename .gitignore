@@ -63,3 +63,6 @@ Pods/*
 !Pods/Manifest.lock
 *.xcworkspace/
 defines.pch
+
+# FontAwesome
+Cirrus/Supporting Files/External/FontAwesome/*.ttf

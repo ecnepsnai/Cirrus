@@ -26,15 +26,14 @@
 
     [super viewDidLoad];
 
-    [self addZoneMenuButtonWithTitle:l(@"DNS Records")];
+    self.title = l(@"DNS Records");
     if (zoneReadWrite) {
-        self.navigationItem.leftBarButtonItem = self.editButtonItem;
-        self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]
-                                                  initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
-                                                  target:self action:@selector(createNew:)];
+        self.navigationItem.rightBarButtonItems = @[
+            [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(createNew:)],
+            self.editButtonItem,
+        ];
     }
     [self loadData];
-    subscribe(@selector(zoneChanged:), NOTIF_ZONE_CHANGED);
 
     if (appState.splitViewController.displayMode != UISplitViewControllerDisplayModeAllVisible) {
         [[OCTipManager sharedInstance] showTipWithIdentifier:TIP_ZONE_DISMISS configuration:^(CMPopTipView *tip) {
@@ -102,14 +101,6 @@
         [self loadData];
     }];
     [self.navigationController pushViewController:edit animated:YES];
-}
-
-- (void) zoneChanged:(NSNotification *)n {
-    [self loadData];
-    dispatch_async(dispatch_get_main_queue(), ^{
-        [self.refreshControl beginRefreshing];
-    });
-    [[OCTipManager sharedInstance] hideTipWithIdentifier:l(@"No DNS records. Tap here to create new record.")];
 }
 
 - (void) loadData {

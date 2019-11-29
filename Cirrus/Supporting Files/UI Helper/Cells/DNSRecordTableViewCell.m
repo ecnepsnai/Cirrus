@@ -1,5 +1,5 @@
 #import "DNSRecordTableViewCell.h"
-#import "NSString+FontAwesome.h"
+#import "FontAwesome.h"
 
 @implementation DNSRecordTableViewCell
 

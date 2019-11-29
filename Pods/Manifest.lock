@@ -1,53 +1,38 @@
 PODS:
   - 1PasswordExtension (1.8.5)
+  - Charts (3.4.0):
+    - Charts/Core (= 3.4.0)
+  - Charts/Core (3.4.0)
   - CMPopTipView (2.3.2)
-  - CorePlot (2.2)
-  - GTAppLinks (1.1.2)
   - MaterialDesignColors (1.0.3)
   - MBProgressHUD (1.1.0)
   - SAMKeychain (1.5.3)
-  - UICircularProgressRing (4.1.0)
 
 DEPENDENCIES:
   - 1PasswordExtension (= 1.8.5)
+  - Charts (= 3.4.0)
   - CMPopTipView (= 2.3.2)
-  - CorePlot (= 2.2)
-  - GTAppLinks (from `https://github.com/ecnepsnai/GTAppLinks.git`, branch `master`)
   - MaterialDesignColors (= 1.0.3)
   - MBProgressHUD (= 1.1.0)
   - SAMKeychain (= 1.5.3)
-  - UICircularProgressRing (= 4.1.0)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - 1PasswordExtension
+    - Charts
     - CMPopTipView
-    - CorePlot
     - MaterialDesignColors
     - MBProgressHUD
     - SAMKeychain
-    - UICircularProgressRing
-
-EXTERNAL SOURCES:
-  GTAppLinks:
-    :branch: master
-    :git: https://github.com/ecnepsnai/GTAppLinks.git
-
-CHECKOUT OPTIONS:
-  GTAppLinks:
-    :commit: 0967e00a742b853023eb8672e3f6ee5edbfec339
-    :git: https://github.com/ecnepsnai/GTAppLinks.git
 
 SPEC CHECKSUMS:
   1PasswordExtension: 0e95bdea64ec8ff2f4f693be5467a09fac42a83d
+  Charts: 74c9f256eaf0460c0c416522d1cf8c634ea6b286
   CMPopTipView: 2d56ef53e8e739c4e63ad97a5a88b97712b46c7b
-  CorePlot: cbe0c6e14220705e32e06a89c7d6a5a908b7d7d8
-  GTAppLinks: 0141faf8c6aa7eb4f96f0844d3e4e90acc18ba0e
   MaterialDesignColors: 80f0a06ceb546dafdf25d7871bc798ec81c7e088
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   SAMKeychain: 483e1c9f32984d50ca961e26818a534283b4cd5c
-  UICircularProgressRing: 5a32c01f54474571b1e66e8fa050c0f83d6d981b
 
-PODFILE CHECKSUM: d77dd634eb955ca1314cb7192d60769465d7ef59
+PODFILE CHECKSUM: 967738dc6f5e5312fc201d47b43bb1a0d27d8c10
 
-COCOAPODS: 1.7.5
+COCOAPODS: 1.8.4

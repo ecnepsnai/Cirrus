@@ -23,12 +23,7 @@ typedef NS_ENUM(NSInteger, AnalyticsPage) {
     self.currentTimeframe = CFAnalyticsTimeframe24Hours;
     self.dnsTimeframe = CFDNSAnalyticsTimeframe6Hours;
 
-    [self addZoneMenuButtonWithTitle:l(@"Analytics")];
-    subscribe(@selector(zoneChanged:), NOTIF_ZONE_CHANGED);
-    [self loadData];
-}
-
-- (void) zoneChanged:(NSNotification *)n {
+    self.title = l(@"Analytics");
     [self loadData];
 }
 

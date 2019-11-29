@@ -11,7 +11,11 @@
 
         BOOL isOn = nstrcmp(ipv6.value, @"on");
 
-        cell.titleLabel.textColor = isOn ? [UIColor blackColor] : [UIColor materialRed];
+        if (@available(iOS 13, *)) {
+            cell.titleLabel.textColor = isOn ? [UIColor labelColor] : [UIColor materialRed];
+        } else {
+            cell.titleLabel.textColor = isOn ? [UIColor blackColor] : [UIColor materialRed];
+        }
         cell.toggle.on = isOn;
         [cell.toggle addSelector:[[OCSelector alloc] initWithBlock:^(UISwitch * sender) {
             if (!sender.on) {

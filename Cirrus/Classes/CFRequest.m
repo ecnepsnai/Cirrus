@@ -156,7 +156,7 @@ static const NSString * CFAPI_URL = @"https://api.cloudflare.com/client/v4";
         [requestString appendString:@"\n"];
         [requestString appendString:[[NSString alloc] initWithData:request.HTTPBody encoding:NSUTF8StringEncoding]];
     }
-    NSLog(@"%@", requestString);
+    d(@"%@", requestString);
 #endif
 
     NSURLSessionDataTask * task = [NSURLSession.sharedSession

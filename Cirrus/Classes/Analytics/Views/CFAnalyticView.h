@@ -2,15 +2,11 @@
 
 @interface CFAnalyticView : NSObject
 
-+ (id) viewWithTotal:(id)total timeSeries:(NSArray *)timeSeries;
-- (CFAnalyticObject *) getObject;
-- (NSNumber *) getMaxValue;
-- (NSNumber *) getMinValue;
++ (id _Nonnull) viewWithTotal:(id _Nonnull)total timeSeries:(NSArray * _Nonnull)timeSeries;
+- (CFAnalyticObject * _Nonnull) getObject;
 - (BOOL) showStatView;
-- (NSString *) statViewTitleForIndex:(NSUInteger)index;
-- (NSString *) statViewAmountForIndex:(NSUInteger)index;
-- (NSUInteger) numberOfPlotsForGraph;
-- (NSString *) plotTitleForIndex:(NSUInteger)index;
-- (UIColor *) colorForPlotIndex:(NSUInteger)index;
+- (NSString * _Nullable) statViewTitleForIndex:(NSUInteger)index;
+- (NSString * _Nullable) statViewAmountForIndex:(NSUInteger)index;
+- (void) buildGraphInView:(UIView * _Nonnull)view;
 
 @end

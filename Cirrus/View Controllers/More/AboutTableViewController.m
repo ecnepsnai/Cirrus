@@ -1,9 +1,13 @@
 #import "AboutTableViewController.h"
+#import "OCGradientView.h"
+#import "AppLinks.h"
 
 @interface AboutTableViewController () <UITableViewDelegate, UITableViewDataSource>
 
-@property (strong, nonatomic) GTAppLinks * appLinks;
+@property (strong, nonatomic) AppLinks * appLinks;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet OCGradientView *gradientView;
+@property (weak, nonatomic) IBOutlet UILabel *cloudIcon;
 
 @end
 
@@ -11,13 +15,31 @@
 
 - (void) viewDidLoad {
     [super viewDidLoad];
+    self.appLinks = [AppLinks new];
     [self setNeedsStatusBarAppearanceUpdate];
-    self.appLinks = [GTAppLinks forApp:GTAppCirrus];
+    
+    UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(didTapOnCloud)];
+    tapGestureRecognizer.numberOfTapsRequired = 1;
+    [self.cloudIcon addGestureRecognizer:tapGestureRecognizer];
+    self.cloudIcon.userInteractionEnabled = YES;
 }
 
 - (void) didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (UIColor *) randomColor {
+    CGFloat red = arc4random_uniform(256) / 255.0;
+    CGFloat green = arc4random_uniform(256) / 255.0;
+    CGFloat blue = arc4random_uniform(256) / 255.0;
+    return [UIColor colorWithRed:red green:green blue:blue alpha:1.0f];
+}
+
+- (void) didTapOnCloud {
+    self.gradientView.firstColor = [self randomColor];
+    self.gradientView.secondColor = [self randomColor];
+    [self.gradientView drawRect:self.gradientView.bounds];
 }
 
 # pragma mark - Table View Datasource
@@ -60,7 +82,7 @@
 #endif
             NSNumber * build = [infoDict objectForKey:@"CFBundleVersion"];
             NSString * appBuild = [NSString stringWithFormat:@"%i", [build intValue]];
-            return format(@"%@ (%@)", appVersion, appBuild);
+            return format(@"%@ (%@ - %@)", appVersion, appBuild, GIT_REVISION);
         } case 2: {
             return l(@"Cirrus was created by Ian Spence. Copyright © Ian Spence 2016. All rights reserved. Cirrus is in no way affiliated or endorsed by Cloudflare.");
         }
@@ -106,15 +128,15 @@
 
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 0 && indexPath.row == 0) {
-        [self.appLinks showEmailComposeSheetInViewController:self dismissed:nil];
+        [self.appLinks showEmailComposeSheetForAppInViewController:self withComments:nil dismissed:nil];
     } else if (indexPath.section == 0 && indexPath.row == 1) {
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://support.cloudflare.com/"]];
+        open_url(@"https://support.cloudflare.com/");
     } else if (indexPath.section == 1 && indexPath.row == 0) {
-        [self.appLinks showAppStorePageInViewController:self dismissed:nil];
+        [self.appLinks showAppInAppStorInViewController:self dismissed:nil];
     } else if (indexPath.section == 1 && indexPath.row == 1) {
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://cirrus-app.com/beta.html"]];
+        open_url(@"https://cirrus-app.com/beta.html");
     } else if (indexPath.section == 2 && indexPath.row == 0) {
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://cirrus-app.com/acknowledgements.html"]];
+        open_url(@"https://cirrus-app.com/acknowledgements.html");
     }
 }
 

@@ -1,11 +1,10 @@
 #import "OCIcon.h"
-#import "NSString+FontAwesome.h"
-#import "UIFont+FontAwesome.h"
+#import "FontAwesome.h"
 @import MaterialDesignColors;
 
 @interface OCIcon ()
 
-@property (strong, nonatomic) NSString * iconCode;
+@property (nonatomic) FAIcon iconCode;
 @property (strong, nonatomic) UIColor * iconColor;
 
 @end
@@ -17,19 +16,19 @@
 
     switch (code) {
         case OCIconCodeActive:
-            icon.iconCode = [NSString fontAwesomeIconStringForEnum:FAArrowCircleUp];
+            icon.iconCode = FAArrowCircleUpLight;
             break;
         case OCIconCodePaused:
-            icon.iconCode = [NSString fontAwesomeIconStringForEnum:FApauseCircle];
+            icon.iconCode = FAPauseCircleLight;
             break;
         case OCIconCodeDevMode:
-            icon.iconCode = [NSString fontAwesomeIconStringForEnum:FAPlusCircle];
+            icon.iconCode = FAPlusCircleLight;
             break;
         case OCIconCodeMoved:
-            icon.iconCode = [NSString fontAwesomeIconStringForEnum:FAQuestionCircle];
+            icon.iconCode = FAQuestionCircleLight;
             break;
         case OCIconCodeReadOnly:
-            icon.iconCode = [NSString fontAwesomeIconStringForEnum:FALock];
+            icon.iconCode = FALockLight;
             break;
     }
     icon.iconColor = [icon colorForIconCode:code];
@@ -38,9 +37,9 @@
 }
 
 - (void) configureLabel:(UILabel *)label {
-    label.font = [UIFont fontAwesomeFontOfSize:15.0f];
+    label.font = [UIFont fontAwesomeFontForIcon:self.iconCode size:15.0f];
     label.textColor = self.iconColor;
-    label.text = self.iconCode;
+    label.text = [NSString fontAwesomeIcon:self.iconCode];
 }
 
 - (UIColor *) colorForIconCode:(OCIconCode)code {

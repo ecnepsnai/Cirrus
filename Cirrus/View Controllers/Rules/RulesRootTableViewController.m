@@ -1,6 +1,6 @@
 #import "RulesRootTableViewController.h"
 #import "RuleListViewController.h"
-#import "NSString+FontAwesome.h"
+#import "FontAwesome.h"
 
 @interface RulesRootTableViewController () {
     BOOL showWAF;
@@ -15,7 +15,7 @@
 
     
     self.tableView.estimatedRowHeight = 60.0f;
-    [self addZoneMenuButtonWithTitle:l(@"Rules")];
+    self.title = l(@"Rules");
 
     showWAF = YES;
 }
@@ -42,16 +42,16 @@
 
     if (indexPath.row == 0) {
         titleLabel.text = @"Page";
-        iconLabel.text = [NSString fontAwesomeIconStringForEnum:FAFile];
+        iconLabel.text = [NSString fontAwesomeIcon:FAFileSolid];
     } else if (indexPath.row == 1) {
         titleLabel.text = @"IP Firewall";
-        iconLabel.text = [NSString fontAwesomeIconStringForEnum:FAGlobe];
+        iconLabel.text = [NSString fontAwesomeIcon:FAGlobeSolid];
     } else if (indexPath.row == 2) {
         titleLabel.text = @"Rate Limit";
-        iconLabel.text = [NSString fontAwesomeIconStringForEnum:FATachometer];
+        iconLabel.text = [NSString fontAwesomeIcon:FATachometerSolid];
     }  else if (indexPath.row == 3) {
         titleLabel.text = @"Web Application Firewall";
-        iconLabel.text = [NSString fontAwesomeIconStringForEnum:FACloud];
+        iconLabel.text = [NSString fontAwesomeIcon:FACloudSolid];
     }
     
     iconLabel.textColor = uihelper.cirrusColor;

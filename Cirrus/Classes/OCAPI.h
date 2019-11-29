@@ -9,6 +9,7 @@
 #import "CFRateLimit.h"
 #import "CFFirewallAccessRule.h"
 #import "CFCredentials.h"
+#import "CFDomainRegistrationProperties.h"
 
 @interface OCAPI : NSObject
 
@@ -128,6 +129,25 @@
  @param finished Called when finished regardless of success.
  */
 - (void) deleteDNSObject:(CFDNSRecord *)object forZone:(CFZone *)zone finished:(void (^)(BOOL success, NSError * error))finished;
+
+# pragma mark - Domain Registration Methods
+
+/**
+ Get the domain registration properties for the zone
+ 
+ @param zone     The zone
+ @param finished Called when finished regardless of success.
+ */
+- (void) getDomainRegistraionPropertiesForZone:(CFZone *)zone finished:(void (^)(CFDomainRegistrationProperties * properties, NSError * error))finished;
+
+/**
+ Update the domain registration properties for the zone
+ 
+ @param properties The properties for the zone
+ @param zone       The zone
+ @param finished   Called when finished regardless of success.
+ */
+- (void) updateDomainRegistrationProperties:(CFDomainRegistrationProperties *)properties forZone:(CFZone *)zone finished:(void (^)(BOOL success, NSError * error))finished;
 
 # pragma mark - Zone Option Methods
 

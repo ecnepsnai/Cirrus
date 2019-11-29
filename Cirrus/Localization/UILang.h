@@ -21,6 +21,7 @@ IB_DESIGNABLE
 IB_DESIGNABLE
 @interface UINavigationItem (langNavigationItem)
 @property (nonatomic) IBInspectable NSString * titleKey;
+@property (nonatomic) IBInspectable NSString * promptKey;
 @end
 
 IB_DESIGNABLE

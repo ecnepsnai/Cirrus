@@ -23,7 +23,7 @@ static id _langDict;
 + (NSString *) key:(NSString *)key dict:(NSDictionary *)dict {
     NSString * translatedString = dict[key];
     if (translatedString == nil) {
-        NSLog(@"Unrecognized language key: %@", key);
+        d(@"Unrecognized language key: %@", key);
         translatedString = key;
     }
 #if LANG_DEBUG > 1

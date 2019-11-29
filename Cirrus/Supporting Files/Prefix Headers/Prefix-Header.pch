@@ -10,6 +10,7 @@
 #import "OCNumberFormatter.h"
 #import "OCTipManager.h"
 #import "OCSearch.h"
+#import "OCReadOnlyZoneManager.h"
 
 // Authentication
 #import "OCAuthenticationManager.h"
@@ -50,7 +51,7 @@
 #import "CFDNSURIRecord.h"
 
 // Extensions
-#import "UIViewController+ZoneButton.h"
+#import "UINavigationBar+AddButtons.h"
 #import "UIViewController+ProgressControl.h"
 #import "UITableViewController+RefreshControl.h"
 #import "NSDictionary+ObjectForKey.h"
@@ -70,7 +71,6 @@
 #import <MBProgressHUD/MBProgressHUD.h>
 #import <MaterialDesignColors/MaterialDesignColors.h>
 #import <CMPopTipView/CMPopTipView.h>
-#import <GTAppLinks/GTAppLinks.h>
 
 #import "Constant-Keys.h"
 
@@ -81,8 +81,8 @@
 #define LOGIN_DEBUG   0
 
 #if DEBUG
-    #define d(s, ...) NSLog(@"%@", [NSString stringWithFormat:s, ##__VA_ARGS__ ?:@""])
-    #define cd(c, s, ...) if (c) { NSLog(@"%@", [NSString stringWithFormat:(s), ##__VA_ARGS__ ?:@""]); }
+    #define d(s, ...) NSLog(@"[CIOS] %@", [NSString stringWithFormat:s, ##__VA_ARGS__ ?:@""])
+    #define cd(c, s, ...) if (c) { NSLog(@"[CIOS] %@", [NSString stringWithFormat:(s), ##__VA_ARGS__ ?:@""]); }
 #else
     #define d(s, ...)
     #define cd(c, s, ...)
@@ -99,8 +99,9 @@
 // Shortcuts
 #define appState [AppState currentState]
 #define currentZone appState.currentZone
-#define zoneIsReadonly currentZone.readOnly
-#define zoneReadWrite !zoneIsReadonly
+#define zoneIsReadonly [[OCReadOnlyZoneManager sharedInstance] zoneIsReadOnly:currentZone]
+#define zoneReadWrite ![[OCReadOnlyZoneManager sharedInstance] zoneIsReadOnly:currentZone]
+#define isZoneReadonly(zz) [[OCReadOnlyZoneManager sharedInstance] zoneIsReadOnly:zz]
 #define idfv [[[UIDevice currentDevice] identifierForVendor] UUIDString]
 #define l(k) [lang key:k]
 #define documents_path(filename) [NSString stringWithFormat:@"%@/%@", [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0], filename]
@@ -108,6 +109,7 @@
 #define viewControllerFromStoryboard(STORYBOARD_NAME, VIEWCONTROLLER_STORYBOARD_ID) [[UIStoryboard storyboardWithName:STORYBOARD_NAME bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:VIEWCONTROLLER_STORYBOARD_ID]
 #define url(s) [NSURL URLWithString:s]
 #define nTimes(n) for (int i = 0; i < n; i++)
+#define open_url(url) [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url] options:@{} completionHandler:^(BOOL success) { return; }]
 
 // String Mutations
 #define format(s, ...) [NSString stringWithFormat:s, ##__VA_ARGS__]
@@ -119,8 +121,16 @@
 #define subscribe(sel, nname) [[NSNotificationCenter defaultCenter] addObserver:self selector:sel name:nname object:nil]
 
 // Device Related
+#define isSplitSideBySide appState.splitViewController.displayMode == UISplitViewControllerDisplayModeAllVisible
 #define isCompact appState.splitViewController.traitCollection.horizontalSizeClass == UIUserInterfaceSizeClassCompact
 #define isRegular appState.splitViewController.traitCollection.horizontalSizeClass == UIUserInterfaceSizeClassRegular
+
+// System Versions
+#define ATLEAST_IOS_9   [NSProcessInfo.processInfo isOperatingSystemAtLeastVersion:(NSOperatingSystemVersion){9,3,0}]
+#define ATLEAST_IOS_10  [NSProcessInfo.processInfo isOperatingSystemAtLeastVersion:(NSOperatingSystemVersion){10,0,0}]
+#define ATLEAST_IOS_11  [NSProcessInfo.processInfo isOperatingSystemAtLeastVersion:(NSOperatingSystemVersion){11,0,0}]
+#define ATLEAST_IOS_12  [NSProcessInfo.processInfo isOperatingSystemAtLeastVersion:(NSOperatingSystemVersion){12,0,0}]
+#define ATLEAST_IOS_13  [NSProcessInfo.processInfo isOperatingSystemAtLeastVersion:(NSOperatingSystemVersion){13,0,0}]
 
 #define NSMakeError(_code, _description) [NSError errorWithDomain:@"io.ecn.Orange-Cloud" code:_code userInfo:@{NSLocalizedDescriptionKey: _description}]
 

@@ -12,7 +12,6 @@
 // Notification keys
 #define NOTIF_KEYS_LOADED @"🔑"
 #define NOTIF_DISMISS_ZONE @"📕"
-#define NOTIF_ZONE_CHANGED @"💻"
 #define NOTIF_RELOAD_ZONES @"🐝"
 #define NOTIF_DNS_TIMEFRAME_CHANGED @"🦀"
 #define NOTIF_FAVICON_CHANGED @"💕"
@@ -49,5 +48,6 @@
 #define STORYBOARD_LAUNCH @"Launch Screen"
 #define STORYBOARD_MORE @"More"
 #define STORYBOARD_RULES @"Rules"
+#define STORYBOARD_DOMAIN_REGISTRATION @"Domain Registration"
 
 #endif

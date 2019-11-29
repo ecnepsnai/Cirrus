@@ -21,6 +21,9 @@
     _zone_add(plan, @"plan");
     zone.development_mode = [[dictionary objectForKey:@"development_mode"] intValue];
     zone.paused = [[dictionary objectForKey:@"paused"] boolValue];
+    
+    NSDictionary<NSString *, NSString *> * account = [dictionary dictionaryForKey:@"account"];
+    zone.account_id = [account stringForKey:@"id"];
 
     return zone;
 }
@@ -65,11 +68,6 @@
 - (BOOL) hidden {
     NSArray<NSString *> * hiddenZones = UserOptions.hiddenZones;
     return [hiddenZones containsObject:self.name];
-}
-
-- (BOOL) readOnly {
-    NSArray<NSString *> * readOnlyZones = UserOptions.readOnlyZones;
-    return [readOnlyZones containsObject:self.name];
 }
 
 - (void) setHidden:(BOOL)hidden {

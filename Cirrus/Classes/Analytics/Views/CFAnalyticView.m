@@ -18,28 +18,12 @@
     return nil;
 }
 
-- (NSUInteger) numberOfPlotsForGraph {
-    return 0;
-}
-
-- (NSString *) plotTitleForIndex:(NSUInteger)index {
-    return nil;
-}
-
 - (id) getObject {
     return nil;
 }
 
-- (NSNumber *) getMaxValue {
-    return nil;
-}
-
-- (NSNumber *) getMinValue {
-    return nil;
-}
-
-- (UIColor *) colorForPlotIndex:(NSUInteger)index {
-    return nil;
+- (void) buildGraphInView:(UIView *)view {
+    return;
 }
 
 @end

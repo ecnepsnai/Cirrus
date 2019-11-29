@@ -8,64 +8,63 @@
 
 @interface ZoneFeatureSettingTableViewController ()
 
-typedef NS_ENUM(NSInteger, ViewType) {
-    ViewTypeSSL,
-    ViewTypeNetwork,
-    ViewTypeFirewall,
-    ViewTypeCaching,
-};
-
-@property (strong, nonatomic) NSString * viewType;
-@property (nonatomic) ViewType viewID;
+@property (nonatomic) FeatureViewType viewType;
 @property (strong, nonatomic) NSDictionary<NSString *, CFZoneSettings *> * options;
 @property (weak, nonatomic) UISegmentedControl * toggle;
-@property (strong, nonatomic) GTAppLinks * appStoreHelper;
 @property (strong, nonatomic) OCZoneFeatureView * featureView;
+@property (nonatomic) BOOL showFeatureView;
 
 @end
 
 @implementation ZoneFeatureSettingTableViewController
 
 - (void) viewDidLoad {
-    switch (self.viewID) {
-        case ViewTypeSSL:
+    switch (self.viewType) {
+        case FeatureViewTypeSSL:
             self.featureView = [ZoneSSLFeatureView new];
             break;
-        case ViewTypeNetwork:
+        case FeatureViewTypeNetwork:
             self.featureView = [ZoneNetworkFeatureView new];
             break;
-        case ViewTypeFirewall:
+        case FeatureViewTypeSecurity:
             self.featureView = [ZoneFirewallFeatureView new];
             break;
-        case ViewTypeCaching:
+        case FeatureViewTypeCaching:
             self.featureView = [ZoneCachingFeatureView new];
             break;
     }
-    self.featureView.options = self.options;
     self.featureView.controller = self;
     self.title = [self.featureView viewTitle];
-    self.appStoreHelper = [GTAppLinks new];
     [super viewDidLoad];
+    [self loadData];
 }
 
 - (void) didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
 
-- (void) loadWithOptions:(NSDictionary<NSString *, CFZoneSettings *> *)options
-                  ofType:(NSString *)type {
-    _options = options;
-    _viewType = type;
-    
-    if (nstrcmp(@"SSL", type)) {
-        _viewID = ViewTypeSSL;
-    } else if (nstrcmp(@"Network", type)) {
-        _viewID = ViewTypeNetwork;
-    } else if (nstrcmp(@"Firewall", type)) {
-        _viewID = ViewTypeFirewall;
-    } else if (nstrcmp(@"Caching", type)) {
-        _viewID = ViewTypeCaching;
-    }
+- (void) setFeatureViewType:(FeatureViewType)type {
+    self.viewType = type;
+}
+
+- (void) loadData {
+    self.showFeatureView = NO;
+    [self showProgressControl];
+    [api getZoneOptions:currentZone finished:^(NSDictionary<NSString *, CFZoneSettings *> *objects, NSError *error) {
+        if (error) {
+            [uihelper presentErrorInViewController:self error:error dismissed:^(NSInteger buttonIndex) {
+                [self dismissViewControllerAnimated:YES completion:nil];
+            }];
+            return;
+        }
+        self.options = objects;
+        self.featureView.options = self.options;
+        self.showFeatureView = YES;
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self hideProgressControl];
+            [self.tableView reloadData];
+        });
+    }];
 }
 
 - (void) applySetting:(CFZoneSettings *)setting {
@@ -95,10 +94,18 @@ typedef NS_ENUM(NSInteger, ViewType) {
 }
 
 - (NSInteger) numberOfSectionsInTableView:(UITableView *)tableView {
+    if (!self.showFeatureView) {
+        return 0;
+    }
+
     return [self.featureView numberOfSectionsInTableView:tableView];
 }
 
 - (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    if (!self.showFeatureView) {
+        return 0;
+    }
+
     return [self.featureView tableView:tableView numberOfRowsInSection:section];
 }
 

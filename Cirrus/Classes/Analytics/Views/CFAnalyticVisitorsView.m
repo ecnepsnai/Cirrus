@@ -1,4 +1,5 @@
 #import "CFAnalyticVisitorsView.h"
+@import Charts;
 
 @implementation CFAnalyticVisitorsView
 
@@ -39,41 +40,31 @@
     }
 }
 
-- (NSUInteger) numberOfPlotsForGraph {
-    return 1;
-}
-
-- (NSString *) plotTitleForIndex:(NSUInteger)index {
-    switch (index) {
-        case 0:
-            return @"Visitors";
-        default:
-            return nil;
-    }
-}
-
-- (UIColor *) colorForPlotIndex:(NSUInteger)index {
-    return [UIColor materialBlue];
-}
-
 - (CFAnalyticObject *) getObject {
     return self.total;
 }
 
-- (NSNumber *) getMaxValue {
-    unsigned long long max = 0;
+- (void) buildGraphInView:(UIView *)view {
+    LineChartView * chart = [[LineChartView alloc] initWithFrame:CGRectMake(0, 0, view.frame.size.width, view.frame.size.height)];
+    
+    NSMutableArray<ChartDataEntry *> * visitorEntries = [NSMutableArray new];
+    double x = 0;
     for (CFAnalyticTimeseries * object in self.timeseries) {
-        unsigned long long tsMax = [object.visitors.all unsignedLongLongValue];
-        if (tsMax > max) {
-            max = tsMax;
-        }
+        [visitorEntries addObject:[[ChartDataEntry alloc] initWithX:x y:[object.visitors.all doubleValue]]];
+        x++;
     }
     
-    return [NSNumber numberWithUnsignedLongLong:max];
-}
-
-- (NSNumber *) getMinValue {
-    return self.total.min;
+    LineChartDataSet * visitorLine = [[LineChartDataSet alloc] initWithEntries:visitorEntries label:l(@"Visitors")];
+    visitorLine.colors = @[UIColor.materialBlue];
+    visitorLine.drawCirclesEnabled = NO;
+    visitorLine.drawValuesEnabled = NO;
+    
+    LineChartData * chartData = [LineChartData new];
+    [chartData addDataSet:visitorLine];
+    
+    chart.data = chartData;
+    
+    [view addSubview:chart];
 }
 
 @end

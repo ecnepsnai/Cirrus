@@ -386,6 +386,8 @@ Standard:Delivers a different resource each time the query string changes.</stri
 	<string>Configuration</string>
 	<key>Confirm Changes</key>
 	<string>Confirm Changes</string>
+	<key>Contact</key>
+	<string>Contact</string>
 	<key>Content</key>
 	<string>Content</string>
 	<key>Continue</key>
@@ -876,6 +878,8 @@ Standard:Delivers a different resource each time the query string changes.</stri
 	<string>Create New Rule</string>
 	<key>Create Rule</key>
 	<string>Create Rule</string>
+	<key>Current</key>
+	<string>Current</string>
 	<key>Current Password</key>
 	<string>Current Password</string>
 	<key>DNS</key>
@@ -920,6 +924,12 @@ Standard:Delivers a different resource each time the query string changes.</stri
 	<string>Dismiss</string>
 	<key>Do Nothing</key>
 	<string>Do Nothing</string>
+	<key>Domain Created</key>
+	<string>Domain Created</string>
+	<key>Domain Registration</key>
+	<string>Domain Registration</string>
+	<key>Don&apos;t Show Again</key>
+	<string>Don&apos;t Show Again</string>
 	<key>Don&apos;t show again</key>
 	<string>Don&apos;t show again</string>
 	<key>Done</key>
@@ -950,6 +960,8 @@ Standard:Delivers a different resource each time the query string changes.</stri
 	<string>Error saving DNS record</string>
 	<key>Errors</key>
 	<string>Errors</string>
+	<key>Expires</key>
+	<string>Expires</string>
 	<key>FQDN</key>
 	<string>FQDN</string>
 	<key>Fair API Usage</key>
@@ -1005,6 +1017,8 @@ High: Challenges all visitors that have exhibited threatening behavior within th
 	<string>I&apos;m under attack!</string>
 	<key>IP</key>
 	<string>IP</string>
+	<key>IP Firewall</key>
+	<string>IP Firewall</string>
 	<key>IP Geolocation</key>
 	<string>IP Geolocation</string>
 	<key>IPv4 or IPv6 Address APRA FQDN</key>
@@ -1065,6 +1079,8 @@ High: Challenges all visitors that have exhibited threatening behavior within th
 	<string>Legal</string>
 	<key>Location</key>
 	<string>Location</string>
+	<key>Locked</key>
+	<string>Locked</string>
 	<key>Log In</key>
 	<string>Log In</string>
 	<key>Log Out of All Accounts</key>
@@ -1103,6 +1119,8 @@ High: Challenges all visitors that have exhibited threatening behavior within th
 	<string>Minimum</string>
 	<key>Minimum TLS Version</key>
 	<string>Minimum TLS Version</string>
+	<key>Modes</key>
+	<string>Modes</string>
 	<key>More</key>
 	<string>More</string>
 	<key>Moved</key>
@@ -1133,8 +1151,12 @@ High: Challenges all visitors that have exhibited threatening behavior within th
 	<string>No rate limit rules. Tap here to create a new rule.</string>
 	<key>No-Sniff</key>
 	<string>No-Sniff</string>
+	<key>Not Registrered on Cloudflare</key>
+	<string>Not Registrered on Cloudflare</string>
 	<key>Note</key>
 	<string>Note</string>
+	<key>Notice</key>
+	<string>Notice</string>
 	<key>Now</key>
 	<string>Now</string>
 	<key>Off</key>
@@ -1181,6 +1203,8 @@ High: Challenges all visitors that have exhibited threatening behavior within th
 	<string>Press &amp; Hold on a zone for more options</string>
 	<key>Prevent browsers from MIME-sniffing away from the declared Content-Type.</key>
 	<string>Prevent browsers from MIME-sniffing away from the declared Content-Type.</string>
+	<key>Price Per Year</key>
+	<string>Price Per Year</string>
 	<key>Priority</key>
 	<string>Priority</string>
 	<key>Protocol</key>
@@ -1199,6 +1223,8 @@ High: Challenges all visitors that have exhibited threatening behavior within th
 	<string>Purge Individual Files</string>
 	<key>Rate Cirrus</key>
 	<string>Rate Cirrus</string>
+	<key>Rate Limit</key>
+	<string>Rate Limit</string>
 	<key>Rate Limits</key>
 	<string>Rate Limits</string>
 	<key>Record Properties</key>
@@ -1213,6 +1239,10 @@ High: Challenges all visitors that have exhibited threatening behavior within th
 	<string>Redirect all HTTP requests to HTTPS.</string>
 	<key>Regex</key>
 	<string>Regex</string>
+	<key>Registered</key>
+	<string>Registered</string>
+	<key>Registration</key>
+	<string>Registration</string>
 	<key>Replacement</key>
 	<string>Replacement</string>
 	<key>Requests</key>
@@ -1240,6 +1270,8 @@ Strict: Full, but with certificate verification.</string>
 	<string>Save</string>
 	<key>Seconds</key>
 	<string>Seconds</string>
+	<key>Security</key>
+	<string>Security</string>
 	<key>Security Level</key>
 	<string>Security Level</string>
 	<key>Select Maximum Age</key>
@@ -1274,6 +1306,8 @@ Strict: Full, but with certificate verification.</string>
 	<string>Specify how long your visitors web browser should keep and serve a local copy of resources.</string>
 	<key>Standard</key>
 	<string>Standard</string>
+	<key>State</key>
+	<string>State</string>
 	<key>Status</key>
 	<string>Status</string>
 	<key>Strict</key>
@@ -1334,6 +1368,10 @@ Strict: Full, but with certificate verification.</string>
 	<string>Traffic Origins</string>
 	<key>Traffic Using SSL</key>
 	<string>Traffic Using SSL</string>
+	<key>Transfer Lock</key>
+	<string>Transfer Lock</string>
+	<key>Transfer domains on the Cloudflare website</key>
+	<string>Transfer domains on the Cloudflare website</string>
 	<key>Type</key>
 	<string>Type</string>
 	<key>UDP</key>
@@ -1346,6 +1384,8 @@ Strict: Full, but with certificate verification.</string>
 	<string>Unable to delete zone</string>
 	<key>Uncached</key>
 	<string>Uncached</string>
+	<key>Unlocked</key>
+	<string>Unlocked</string>
 	<key>Unpause Website</key>
 	<string>Unpause Website</string>
 	<key>Unsaved Changes</key>
@@ -1368,8 +1408,16 @@ Strict: Full, but with certificate verification.</string>
 	<string>Value</string>
 	<key>Version</key>
 	<string>Version</string>
+	<key>View Contact Information</key>
+	<string>View Contact Information</string>
+	<key>View WHOIS</key>
+	<string>View WHOIS</string>
 	<key>Visitors</key>
 	<string>Visitors</string>
+	<key>WHOIS</key>
+	<string>WHOIS</string>
+	<key>Web Application</key>
+	<string>Web Application</string>
 	<key>Websockets</key>
 	<string>Websockets</string>
 	<key>Weight</key>
@@ -1398,6 +1446,34 @@ Strict: Full, but with certificate verification.</string>
 	<string>We collect very little information about how you use the app. None of this information can be used to personally identify you or your websites.</string>
 	<key>close_app_description</key>
 	<string>You need to completely close Cirrus by double-pressing the home buttong and swiping up.</string>
+	<key>domainContactKey::address</key>
+	<string>Address</string>
+	<key>domainContactKey::address2</key>
+	<string>Address 2</string>
+	<key>domainContactKey::city</key>
+	<string>City</string>
+	<key>domainContactKey::country</key>
+	<string>Country</string>
+	<key>domainContactKey::email</key>
+	<string>Email</string>
+	<key>domainContactKey::fax</key>
+	<string>Fax</string>
+	<key>domainContactKey::first_name</key>
+	<string>First Name</string>
+	<key>domainContactKey::id</key>
+	<string>ID</string>
+	<key>domainContactKey::label</key>
+	<string>Label</string>
+	<key>domainContactKey::last_name</key>
+	<string>Last Name</string>
+	<key>domainContactKey::organization</key>
+	<string>Organization</string>
+	<key>domainContactKey::phone</key>
+	<string>Phone</string>
+	<key>domainContactKey::state</key>
+	<string>State</string>
+	<key>domainContactKey::zip</key>
+	<string>ZIP</string>
 	<key>login_keychain_description</key>
 	<string>All information is stored safely in your devices keychain which is protected by your devices passcode.</string>
 	<key>pagerule::always_online</key>
@@ -1548,6 +1624,8 @@ Strict: Full, but with certificate verification.</string>
 	<string>Off</string>
 	<key>pagerulesetting::ssl::strict</key>
 	<string>Strict</string>
+	<key>whois_nag</key>
+	<string>WHOIS data is provided for reference only. Cirrus makes no gaurantee of the accuracy of this information.</string>
 	<key>why_u_do_dis</key>
 	<string>Disabling IPv6 can cause future compatibility issues. Perhaps fix the issue thats preventing you from using IPv6, rather than disabling it?</string>
 	<key>{count} action</key>

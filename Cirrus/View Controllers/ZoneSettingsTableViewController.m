@@ -27,16 +27,9 @@ typedef NS_ENUM(NSInteger, SwitchTag) {
 
     self.switchPauseSite.on = currentZone.paused;
     self.switchDevelopmentMode.on = currentZone.development_mode > 0;
-    [self addZoneMenuButtonWithTitle:l(@"Site Settings & Features")];
-
-    subscribe(@selector(zoneChanged:), NOTIF_ZONE_CHANGED);
+    self.title = l(@"Site Settings & Features");
     [self loadData];
-
     [super viewDidLoad];
-}
-
-- (void) zoneChanged:(NSNotification *)n {
-    [self loadData];
 }
 
 - (void) loadData {
@@ -143,24 +136,6 @@ typedef NS_ENUM(NSInteger, SwitchTag) {
             }
         }
     }];
-}
-
-- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([segue.identifier hasPrefix:@"Feature"]) {
-        NSString * type;
-        if (nstrcmp(@"FeatureSSL", segue.identifier)) {
-            type = @"SSL";
-        } else if (nstrcmp(@"FeatureNetwork", segue.identifier)) {
-            type = @"Network";
-        } else if (nstrcmp(@"FeatureFirewall", segue.identifier)) {
-            type = @"Firewall";
-        } else if (nstrcmp(@"FeatureCaching", segue.identifier)) {
-            type = @"Caching";
-        }
-
-        [(ZoneFeatureSettingTableViewController *)[segue destinationViewController]
-         loadWithOptions:self.settings ofType:type];
-    }
 }
 
 @end

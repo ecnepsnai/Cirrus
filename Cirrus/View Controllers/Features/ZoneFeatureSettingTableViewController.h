@@ -2,21 +2,14 @@
 
 @interface ZoneFeatureSettingTableViewController : UITableViewController
 
-/**
- Load the feature options into the view controller
+typedef NS_ENUM(NSUInteger, FeatureViewType) {
+    FeatureViewTypeSSL = 0,
+    FeatureViewTypeNetwork = 1,
+    FeatureViewTypeSecurity = 2,
+    FeatureViewTypeCaching = 3,
+};
 
- @param options The options
- @param type    The type of view to display
- @param zone    The zone
- */
-- (void) loadWithOptions:(NSDictionary<NSString *, CFZoneSettings *> *)options
-                  ofType:(NSString *)type;
-
-/**
- Apply the current setting to the zone
-
- @param setting The setting object to save
- */
+- (void) setFeatureViewType:(FeatureViewType)type;
 - (void) applySetting:(CFZoneSettings *)setting;
 
 @end

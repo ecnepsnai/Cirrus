@@ -116,10 +116,18 @@
     UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"PageRule" forIndexPath:indexPath];
     CFPageRule * rule = [self.rules objectAtIndex:indexPath.row];
     cell.textLabel.text = rule.target;
-    if (!rule.enabled) {
-        cell.textLabel.textColor = [UIColor lightGrayColor];
+    if (rule.enabled) {
+        if (@available(iOS 13, *)) {
+            cell.textLabel.textColor = [UIColor labelColor];
+        } else {
+            cell.textLabel.textColor = [UIColor blackColor];
+        }
     } else {
-        cell.textLabel.textColor = [UIColor blackColor];
+        if (@available(iOS 13, *)) {
+            cell.textLabel.textColor = [UIColor secondaryLabelColor];
+        } else {
+            cell.textLabel.textColor = [UIColor lightGrayColor];
+        }
     }
 
     if (rule.actions.count == 1) {

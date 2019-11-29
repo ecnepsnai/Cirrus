@@ -47,7 +47,10 @@
 	<string>Lock the App &amp; Authenticate Changes with FaceID</string>
 	<key>UIAppFonts</key>
 	<array>
-		<string>FontAwesome.ttf</string>
+		<string>fa-brands.ttf</string>
+		<string>fa-light.ttf</string>
+		<string>fa-regular.ttf</string>
+		<string>fa-solid.ttf</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>Launch Screen</string>
@@ -74,7 +77,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>UIUserInterfaceStyle</key>
-	<string>Light</string>
 </dict>
 </plist>

@@ -7,12 +7,14 @@
 @implementation OCSplitViewController
 
 - (void) viewDidLoad {
+    // Be your own boss!
+    self.delegate = self;
     [super viewDidLoad];
     appState.splitViewController = self;
-    self.preferredDisplayMode = UISplitViewControllerDisplayModeAllVisible;
-    if (isRegular) {
-        UIViewController * placeholder = [self.storyboard instantiateViewControllerWithIdentifier:@"Placeholder Navigation Controller"];
-        [self showDetailViewController:placeholder sender:self];
+
+    if (self.displayMode == UISplitViewControllerDisplayModeAllVisible) {
+        UIViewController * dnsController = viewControllerFromStoryboard(STORYBOARD_DNS, @"DNS");
+        [self showDetailViewController:dnsController sender:nil];
     }
 }
 
@@ -20,11 +22,9 @@
     [super didReceiveMemoryWarning];
 }
 
-- (BOOL) detailViewControllerIsPlaceholder {
-    if (self.viewControllers.count != 2) {
-        return YES; // Indicate that it needs to be replaced
-    }
-    return [[[self.viewControllers lastObject] title] isEqualToString:@"Placeholder"];
+- (BOOL) splitViewController:(UISplitViewController *)splitViewController collapseSecondaryViewController:(UIViewController *)secondaryViewController ontoPrimaryViewController:(UIViewController *)primaryViewController {
+    // This ensures that the master view is shown on compact screens
+    return YES;
 }
 
 @end

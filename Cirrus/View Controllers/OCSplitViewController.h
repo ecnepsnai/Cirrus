@@ -1,7 +1,5 @@
 #import <UIKit/UIKit.h>
 
-@interface OCSplitViewController : UISplitViewController
-
-- (BOOL) detailViewControllerIsPlaceholder;
+@interface OCSplitViewController : UISplitViewController <UISplitViewControllerDelegate>
 
 @end

@@ -1,4 +1,5 @@
 #import "CFAnalyticBandwidthView.h"
+@import Charts;
 
 @implementation CFAnalyticBandwidthView
 
@@ -39,56 +40,44 @@
     }
 }
 
-- (NSUInteger) numberOfPlotsForGraph {
-    return 2;
-}
-
-- (NSString *) plotTitleForIndex:(NSUInteger)index {
-    switch (index) {
-        case 0:
-            return @"Cached";
-        case 1:
-            return @"Uncached";
-        default:
-            return nil;
-    }
-}
-
-- (UIColor *) colorForPlotIndex:(NSUInteger)index {
-    switch (index) {
-        case 0:
-            return [UIColor materialOrange];
-        case 1:
-            return [UIColor materialBlue];
-        default:
-            return nil;
-    }
-}
-
 - (CFAnalyticObject *) getObject {
     return self.total;
 }
 
-- (NSNumber *) getMaxValue {
-    unsigned long long (^selectLargest)(NSNumber *, NSNumber *) = ^(NSNumber * p1, NSNumber * p2) {
-        unsigned long long ul1 = [p1 unsignedLongLongValue];
-        unsigned long long ul2 = [p2 unsignedLongLongValue];
-        return ul1 > ul2 ? ul1 : ul2;
-    };
+- (void) buildGraphInView:(UIView *)view {
+    LineChartView * chart = [[LineChartView alloc] initWithFrame:CGRectMake(0, 0, view.frame.size.width, view.frame.size.height)];
     
-    unsigned long long max = 0;
+    NSMutableArray<ChartDataEntry *> * cachedEntries = [NSMutableArray new];
+    NSMutableArray<ChartDataEntry *> * uncachedEntries = [NSMutableArray new];
+    double x = 0;
     for (CFAnalyticTimeseries * object in self.timeseries) {
-        unsigned long long tsMax = selectLargest(object.bandwidth.cached, object.bandwidth.uncached);
-        if (tsMax > max) {
-            max = tsMax;
-        }
+        [cachedEntries addObject:[[ChartDataEntry alloc] initWithX:x y:[object.bandwidth.cached doubleValue]]];
+        [uncachedEntries addObject:[[ChartDataEntry alloc] initWithX:x y:[object.bandwidth.uncached doubleValue]]];
+        x++;
     }
     
-    return [NSNumber numberWithUnsignedLongLong:max];
-}
-
-- (NSNumber *) getMinValue {
-    return self.total.min;
+    LineChartDataSet * cachedLine = [[LineChartDataSet alloc] initWithEntries:cachedEntries label:l(@"Cached")];
+    cachedLine.colors = @[UIColor.materialBlue];
+    cachedLine.mode = LineChartModeCubicBezier;
+    cachedLine.drawCirclesEnabled = NO;
+    cachedLine.drawValuesEnabled = NO;
+    cachedLine.drawFilledEnabled = YES;
+    cachedLine.fillColor = UIColor.materialBlue;
+    LineChartDataSet * uncachedLine = [[LineChartDataSet alloc] initWithEntries:uncachedEntries label:l(@"Unached")];
+    uncachedLine.colors = @[UIColor.materialRed];
+    uncachedLine.mode = LineChartModeCubicBezier;
+    uncachedLine.drawCirclesEnabled = NO;
+    uncachedLine.drawValuesEnabled = NO;
+    uncachedLine.drawFilledEnabled = YES;
+    uncachedLine.fillColor = UIColor.materialRed;
+    
+    LineChartData * chartData = [LineChartData new];
+    [chartData addDataSet:cachedLine];
+    [chartData addDataSet:uncachedLine];
+    
+    chart.data = chartData;
+    
+    [view addSubview:chart];
 }
 
 @end

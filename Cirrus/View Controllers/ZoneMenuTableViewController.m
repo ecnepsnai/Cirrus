@@ -41,12 +41,13 @@
         self.settings = objects;
 
         dispatch_async(dispatch_get_main_queue(), ^{
-            self.devModeSwitch.on = [((NSNumber *)objects[@"development_mode"].value) boolValue];
+            self.devModeSwitch.on = self.zone.development_mode > 0;
             self.pauseWebsiteSwitch.on = self.zone.paused;
             NSString * securityLevel = objects[@"security_level"].value;
             self.attackSwitch.on = [securityLevel isEqualToString:@"under_attack"];
-            self.readOnlySwitch.on = self.zone.readOnly;
+            self.readOnlySwitch.on = isZoneReadonly(self.zone);
             self.hiddenSwitch.on = self.zone.hidden;
+            [self enableDisableSwitches];
         });
     }];
 }
@@ -110,7 +111,7 @@
 - (void) changeSettingValue:(CFZoneSettings *)setting {
     [self showProgressControl];
     self.view.userInteractionEnabled = NO;
-    [api applyZoneOptions:currentZone setting:setting finished:^(CFZoneSettings * setting, NSError *error) {
+    [api applyZoneOptions:self.zone setting:setting finished:^(CFZoneSettings * setting, NSError *error) {
         dispatch_async(dispatch_get_main_queue(), ^{
             [self hideProgressControl];
             self.view.userInteractionEnabled = YES;
@@ -123,9 +124,9 @@
         } else {
             if ([setting.name isEqualToString:@"development_mode"]) {
                 if ([setting.value isEqualToString:@"on"]) {
-                    currentZone.development_mode = 1;
+                    self.zone.development_mode = 1;
                 } else {
-                    currentZone.development_mode = 0;
+                    self.zone.development_mode = 0;
                 }
             }
         }
@@ -136,7 +137,7 @@
     [authManager authenticateUserForChange:NO success:^{
         [self showProgressControl];
         self.view.userInteractionEnabled = NO;
-        [api setPauseForZone:currentZone paused:sender.on finished:^(BOOL success, NSError *error) {
+        [api setPauseForZone:self.zone paused:sender.on finished:^(BOOL success, NSError *error) {
             dispatch_async(dispatch_get_main_queue(), ^{
                 [self hideProgressControl];
                 self.view.userInteractionEnabled = YES;
@@ -172,13 +173,23 @@
 }
 
 - (IBAction) readOnly:(UISwitch *)sender {
-    if (!sender.isOn) {
-        [authManager authenticateUserForChange:YES success:^{
-            self.zone.readOnly = sender.on;
-        } cancelled:^{
-            sender.on = YES;
-        }];
-    }
+    [authManager authenticateUserForChange:YES success:^{
+        if (sender.isOn) {
+            [[OCReadOnlyZoneManager sharedInstance] markZoneAsReadOnly:self.zone];
+        } else {
+            [[OCReadOnlyZoneManager sharedInstance] markZoneAdReadWrite:self.zone];
+        }
+        [self enableDisableSwitches];
+    } cancelled:^{
+        sender.on = YES;
+    }];
+}
+
+- (void) enableDisableSwitches {
+    BOOL enabled = !isZoneReadonly(self.zone);
+    self.pauseWebsiteSwitch.enabled = enabled;
+    self.devModeSwitch.enabled = enabled;
+    self.attackSwitch.enabled = enabled;
 }
 
 - (IBAction) hidden:(UISwitch *)sender {

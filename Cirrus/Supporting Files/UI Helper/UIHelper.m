@@ -30,7 +30,7 @@ static id _instance;
 }
 
 - (UIColor *) cirrusColor {
-    return [UIColor colorWithRed:0.24 green:0.49 blue:0.89 alpha:1.0];
+    return [UIColor colorNamed:@"CirrusBlue"];
 }
 
 - (void) setAppearance {
@@ -38,6 +38,8 @@ static id _instance;
     [[UINavigationBar appearance] setTintColor:self.cirrusColor];
     [[UISegmentedControl appearance] setTintColor:self.cirrusColor];
     [[UIButton appearance] setTintColor:self.cirrusColor];
+    [[UISwitch appearance] setOnTintColor:self.cirrusColor];
+    [[UIBarButtonItem appearance] setTintColor:self.cirrusColor];
 }
 
 - (void) presentAlertController:(UIAlertController *)alertController

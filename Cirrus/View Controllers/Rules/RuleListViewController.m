@@ -25,7 +25,7 @@
 - (void) viewDidLoad {
     [super viewDidLoad];
     self.delegate = self;
-    [self addZoneMenuButtonWithTitle:l(@"Rules")];
+    self.title = l(@"Rules");
     
     self.navigationItem.rightBarButtonItems = @[
                                                 self.editButtonItem,
@@ -33,8 +33,6 @@
                                                  initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
                                                  target:self
                                                  action:@selector(createNew)]];
-    
-    subscribe(@selector(zoneChanged:), NOTIF_ZONE_CHANGED);
     [self loadView:viewType];
 }
 
@@ -50,10 +48,6 @@
 - (void) updateSearchResultsForSearchController:(UISearchController *)searchController {
     NSString * search = [searchController.searchBar.text lowercaseString];
     [self userDidSearch:search];
-}
-
-- (void) zoneChanged:(NSNotification *)n {
-    [self performSelectorOnRuleList:@selector(zoneChanged:) withValue:n];
 }
 
 - (void) loadData {

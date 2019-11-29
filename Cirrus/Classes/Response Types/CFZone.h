@@ -27,9 +27,9 @@ typedef NS_ENUM(NSUInteger, CFZoneStatus) {
 @property (strong, nonatomic) NSArray * permissions;
 @property (strong, nonatomic) NSDictionary * plan;
 @property (strong, nonatomic) CFCredentials * credentials;
+@property (strong, nonatomic) NSString * account_id;
 
 @property (nonatomic) BOOL hidden;
-@property (nonatomic) BOOL readOnly;
 
 + (CFZone *) fromDictionary:(NSDictionary<NSString *, id> *)dictionary;
 - (NSDictionary<NSString *, id> *) dictionaryValue;

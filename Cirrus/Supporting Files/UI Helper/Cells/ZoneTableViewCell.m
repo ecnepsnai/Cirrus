@@ -61,7 +61,7 @@
     }
 
     [[OCIcon iconForCode:iconCode] configureLabel:self.zoneStatus];
-    if (zone.readOnly) {
+    if (isZoneReadonly(zone)) {
         self.readOnly.hidden = NO;
         [[OCIcon iconForCode:OCIconCodeReadOnly] configureLabel:self.readOnly];
     } else {

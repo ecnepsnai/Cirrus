@@ -117,8 +117,6 @@ static id _instance;
         return;
     }
     NSData * data = [NSJSONSerialization dataWithJSONObject:dictionary options:0 error:nil];
-    NSString * ds = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-    NSLog(@"%@", ds);
     [self requestURL:url
               method:method
             httpBody:[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]
@@ -209,7 +207,7 @@ static id _instance;
         [requestString appendString:@"\n"];
         [requestString appendString:[[NSString alloc] initWithData:request.HTTPBody encoding:NSUTF8StringEncoding]];
     }
-    NSLog(@"%@", requestString);
+    d(@"%@", requestString);
 #endif
 
     self.session = [NSURLSession sharedSession];
@@ -218,16 +216,22 @@ static id _instance;
                                                                           NSURLResponse * _Nullable response,
                                                                           NSError * _Nullable error) {
         id jsonData;
+        if (error != nil) {
+            d(@"Network Error: %@", error.description);
+        }
         NSError * returnError = error;
         if (data) {
             NSError * jsonError;
             jsonData = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions
                                                             error:&jsonError];
             if (!jsonData && jsonError) {
+                d(@"JSON Error: %@", jsonError.description);
+                d(@"JSON Response: %@", [NSString stringWithUTF8String:data.bytes]);
                 returnError = jsonError;
             } else {
                 NSError * APIError = [self checkForAPIError:jsonData];
                 if (APIError) {
+                    d(@"API Error: %@", APIError.description);
                     returnError = APIError;
                     if (APIError.code == 9103) {
                         notify(NOTIF_DISMISS_ZONE);
@@ -327,6 +331,11 @@ static id _instance;
 }
 
 - (void) setDevelopmentModeForZone:(CFZone *)zone developmentMode:(BOOL)developmentMode finished:(void (^)(BOOL success, NSError * error))finished {
+    if (isZoneReadonly(zone)) {
+        finished(NO, NSMakeError(1001, @"Zone is read only"));
+        return;
+    }
+
     [self requestURL:url(format(@"%@/zones/%@/settings/development_mode", CFAPI_URL, zone.identifier)) method:HTTP_PATCH
     httpBody:format(@"{\"value\":\"%@\"}", developmentMode ? @"on" : @"off") credentials:zone.credentials
     callback:^(NSURLResponse *response, id data, NSError *error) {
@@ -339,6 +348,11 @@ static id _instance;
 }
 
 - (void) setPauseForZone:(CFZone *)zone paused:(BOOL)paused finished:(void (^)(BOOL success, NSError * error))finished {
+    if (isZoneReadonly(zone)) {
+        finished(NO, NSMakeError(1001, @"Zone is read only"));
+        return;
+    }
+
     [self requestURL:url(format(@"%@/zones/%@", CFAPI_URL, zone.identifier))
     method:HTTP_PATCH
     jsonDictionary:@{
@@ -355,6 +369,11 @@ static id _instance;
 }
 
 - (void) deleteZone:(CFZone *)zone finished:(void (^)(BOOL success, NSError * error))finished {
+    if (isZoneReadonly(zone)) {
+        finished(NO, NSMakeError(1001, @"Zone is read only"));
+        return;
+    }
+
     [self requestURL:url(format(@"%@/zones/%@", CFAPI_URL, zone.identifier)) method:HTTP_DELETE httpBody:nil credentials:zone.credentials
             callback:^(NSURLResponse *response, id data, NSError *error) {
                 if (!error) {
@@ -480,6 +499,24 @@ static id _instance;
     }];
 }
 
+# pragma mark - Domain Registration Methods
+
+- (void) getDomainRegistraionPropertiesForZone:(CFZone *)zone finished:(void (^)(CFDomainRegistrationProperties * properties, NSError *))finished {
+    [self requestURL:url(format(@"%@/accounts/%@/registrar/domains/%@", CFAPI_URL, zone.account_id, zone.name)) credentials:zone.credentials callback:^(NSURLResponse *response, id results, NSError *error) {
+        if (error != nil) {
+            finished(nil, error);
+            return;
+        }
+        
+        CFDomainRegistrationProperties * properties = [CFDomainRegistrationProperties fromDictionary:[results dictionaryForKey:@"result"]];
+        finished(properties, nil);
+    }];
+}
+
+- (void) updateDomainRegistrationProperties:(CFDomainRegistrationProperties *)properties forZone:(CFZone *)zone finished:(void (^)(BOOL, NSError *))finished {
+    
+}
+
 # pragma mark - Zone Option Methods
 
 - (void) getZoneOptions:(CFZone *)zone
@@ -576,6 +613,12 @@ static id _instance;
 - (void) analyticsForZone:(CFZone *)zone timeframe:(CFAnalyticsTimeframe)timeframe finished:(void (^)(CFAnalyticsResults * results, NSError * error))finished {
     NSString * since;
     switch (timeframe) {
+        case CFAnalyticsTimeframe6Hours:
+            since = @"-360";
+            break;
+        case CFAnalyticsTimeframe12Hours:
+            since = @"-720";
+            break;
         case CFAnalyticsTimeframe24Hours:
             since = @"-1440";
             break;
@@ -600,6 +643,12 @@ static id _instance;
     NSDate * now = [NSDate date];
     NSDate * since;
     switch (timeframe) {
+        case CFDNSAnalyticsTimeframe24Hours:
+            since = [[NSCalendar currentCalendar] dateByAddingUnit:NSCalendarUnitHour value:-24 toDate:now options:0];
+            break;
+        case CFDNSAnalyticsTimeframe12Hours:
+            since = [[NSCalendar currentCalendar] dateByAddingUnit:NSCalendarUnitHour value:-12 toDate:now options:0];
+            break;
         case CFDNSAnalyticsTimeframe6Hours:
             since = [[NSCalendar currentCalendar] dateByAddingUnit:NSCalendarUnitHour value:-6 toDate:now options:0];
             break;

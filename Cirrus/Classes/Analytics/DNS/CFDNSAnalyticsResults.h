@@ -5,7 +5,9 @@
 
 typedef NS_ENUM(NSUInteger, CFDNSAnalyticsTimeframe) {
     CFDNSAnalyticsTimeframe30Minutes = 0,
-    CFDNSAnalyticsTimeframe6Hours
+    CFDNSAnalyticsTimeframe6Hours,
+    CFDNSAnalyticsTimeframe12Hours,
+    CFDNSAnalyticsTimeframe24Hours,
 };
 
 @property (strong, nonatomic) NSArray<CFDNSAnalyticsTimeseries *> * timeseries;

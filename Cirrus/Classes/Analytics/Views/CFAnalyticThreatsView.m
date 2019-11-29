@@ -1,4 +1,5 @@
 #import "CFAnalyticThreatsView.h"
+@import Charts;
 
 @implementation CFAnalyticThreatsView
 
@@ -47,41 +48,31 @@
     }
 }
 
-- (NSUInteger) numberOfPlotsForGraph {
-    return 1;
-}
-
-- (NSString *) plotTitleForIndex:(NSUInteger)index {
-    switch (index) {
-        case 0:
-            return @"Threats";
-        default:
-            return nil;
-    }
-}
-
-- (UIColor *) colorForPlotIndex:(NSUInteger)index {
-    return [UIColor materialBlue];
-}
-
 - (CFAnalyticObject *) getObject {
     return self.total;
 }
 
-- (NSNumber *) getMaxValue {
-    unsigned long long max = 0;
+- (void) buildGraphInView:(UIView *)view {
+    LineChartView * chart = [[LineChartView alloc] initWithFrame:CGRectMake(0, 0, view.frame.size.width, view.frame.size.height)];
+    
+    NSMutableArray<ChartDataEntry *> * threatEntries = [NSMutableArray new];
+    double x = 0;
     for (CFAnalyticTimeseries * object in self.timeseries) {
-        unsigned long long tsMax = [object.threats.all unsignedLongLongValue];
-        if (tsMax > max) {
-            max = tsMax;
-        }
+        [threatEntries addObject:[[ChartDataEntry alloc] initWithX:x y:[object.threats.all doubleValue]]];
+        x++;
     }
     
-    return [NSNumber numberWithUnsignedLongLong:max];
-}
-
-- (NSNumber *) getMinValue {
-    return self.total.min;
+    LineChartDataSet * threatLine = [[LineChartDataSet alloc] initWithEntries:threatEntries label:l(@"Threats")];
+    threatLine.colors = @[UIColor.materialRed];
+    threatLine.drawCirclesEnabled = NO;
+    threatLine.drawValuesEnabled = NO;
+    
+    LineChartData * chartData = [LineChartData new];
+    [chartData addDataSet:threatLine];
+    
+    chart.data = chartData;
+    
+    [view addSubview:chart];
 }
 
 @end

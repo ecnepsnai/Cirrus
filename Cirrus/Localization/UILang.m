@@ -39,6 +39,10 @@
 - (void) setTitleKey:(NSString *)titleKey {
     self.title = [lang key:titleKey];
 }
+- (NSString *) promptKey { return @""; }
+- (void) setPromptKey:(NSString *)promptKey {
+    self.prompt = [lang key:promptKey];
+}
 @end
 
 @implementation UISearchBar (langSearchBar)

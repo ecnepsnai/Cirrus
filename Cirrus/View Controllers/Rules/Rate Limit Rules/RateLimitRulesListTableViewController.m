@@ -94,9 +94,17 @@
     cell.textLabel.text = rule.comment ?: rule.match.request.url;
     cell.detailTextLabel.text = rule.ruleDescription;
     if (rule.enabled) {
-        cell.textLabel.textColor = cell.detailTextLabel.textColor = [UIColor blackColor];
+        if (@available(iOS 13, *)) {
+            cell.textLabel.textColor = [UIColor labelColor];
+        } else {
+            cell.textLabel.textColor = [UIColor blackColor];
+        }
     } else {
-        cell.textLabel.textColor = cell.detailTextLabel.textColor = [UIColor lightGrayColor];
+        if (@available(iOS 13, *)) {
+            cell.textLabel.textColor = [UIColor secondaryLabelColor];
+        } else {
+            cell.textLabel.textColor = [UIColor lightGrayColor];
+        }
     }
     return cell;
 }

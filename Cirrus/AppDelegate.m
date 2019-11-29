@@ -12,6 +12,7 @@
 - (BOOL) application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     if ([[OCAuthenticationManager sharedInstance] authenticationEnabled]) {
         UnlockViewController * unlockController = viewControllerFromStoryboard(@"Main", @"Unlock");
+        unlockController.modalPresentationStyle = UIModalPresentationFullScreen;
         self.window.rootViewController = unlockController;
         [self.window makeKeyAndVisible];
         [unlockController authenticateWithReason:l(@"Authenticate to access Cirrus") finished:^{

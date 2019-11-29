@@ -67,4 +67,9 @@
  */
 @property (nonatomic) NSInteger lastUsedAccountIndex;
 
+/**
+ Should the app supress the WHOIS nag message
+ */
+@property (nonatomic) BOOL whoisNagSuppressed;
+
 @end
