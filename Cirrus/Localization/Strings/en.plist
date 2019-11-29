@@ -1,0 +1,1568 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>1 day</key>
+	<string>1 day</string>
+	<key>1 hour</key>
+	<string>1 hour</string>
+	<key>1 hours</key>
+	<string>1 hours</string>
+	<key>1 minute</key>
+	<string>1 minute</string>
+	<key>1 month</key>
+	<string>1 month</string>
+	<key>1 second</key>
+	<string>1 second</string>
+	<key>1 week</key>
+	<string>1 week</string>
+	<key>1 year</key>
+	<string>1 year</string>
+	<key>10 minutes</key>
+	<string>10 minutes</string>
+	<key>12 hours</key>
+	<string>12 hours</string>
+	<key>12 months</key>
+	<string>12 months</string>
+	<key>15 minutes</key>
+	<string>15 minutes</string>
+	<key>16 days</key>
+	<string>16 days</string>
+	<key>16 hours</key>
+	<string>16 hours</string>
+	<key>1hr</key>
+	<string>1hr</string>
+	<key>2 days</key>
+	<string>2 days</string>
+	<key>2 hours</key>
+	<string>2 hours</string>
+	<key>2 minutes</key>
+	<string>2 minutes</string>
+	<key>2 months</key>
+	<string>2 months</string>
+	<key>20 hours</key>
+	<string>20 hours</string>
+	<key>24 days</key>
+	<string>24 days</string>
+	<key>24 hours</key>
+	<string>24 hours</string>
+	<key>3 days</key>
+	<string>3 days</string>
+	<key>3 hours</key>
+	<string>3 hours</string>
+	<key>3 months</key>
+	<string>3 months</string>
+	<key>30 Minutes</key>
+	<string>30 Minutes</string>
+	<key>30 minutes</key>
+	<string>30 minutes</string>
+	<key>301 Permanent</key>
+	<string>301 Permanent</string>
+	<key>302 Temporary</key>
+	<string>302 Temporary</string>
+	<key>4 days</key>
+	<string>4 days</string>
+	<key>4 hours</key>
+	<string>4 hours</string>
+	<key>4 months</key>
+	<string>4 months</string>
+	<key>45 minutes</key>
+	<string>45 minutes</string>
+	<key>5 days</key>
+	<string>5 days</string>
+	<key>5 hours</key>
+	<string>5 hours</string>
+	<key>5 minutes</key>
+	<string>5 minutes</string>
+	<key>5 months</key>
+	<string>5 months</string>
+	<key>6 hours</key>
+	<string>6 hours</string>
+	<key>6 months</key>
+	<string>6 months</string>
+	<key>8 days</key>
+	<string>8 days</string>
+	<key>8 hours</key>
+	<string>8 hours</string>
+	<key>API Key</key>
+	<string>API Key</string>
+	<key>API Key Changed</key>
+	<string>API Key Changed</string>
+	<key>API Key:</key>
+	<string>API Key:</string>
+	<key>ASN</key>
+	<string>ASN</string>
+	<key>About</key>
+	<string>About</string>
+	<key>About Cirrus</key>
+	<string>About Cirrus</string>
+	<key>Account</key>
+	<string>Account</string>
+	<key>Accounts</key>
+	<string>Accounts</string>
+	<key>Acknowledgments</key>
+	<string>Acknowledgments</string>
+	<key>Action</key>
+	<string>Action</string>
+	<key>Active</key>
+	<string>Active</string>
+	<key>Add Account</key>
+	<string>Add Account</string>
+	<key>Add Action</key>
+	<string>Add Action</string>
+	<key>Add New Rule</key>
+	<string>Add New Rule</string>
+	<key>Add an IPv4 header to requests when a client is using IPv6, but the server only supports IPv4.</key>
+	<string>Add an IPv4 header to requests when a client is using IPv6, but the server only supports IPv4.</string>
+	<key>Additional Data Protection</key>
+	<string>Additional Data Protection</string>
+	<key>Address</key>
+	<string>Address</string>
+	<key>Algorithm</key>
+	<string>Algorithm</string>
+	<key>All</key>
+	<string>All</string>
+	<key>All Sites</key>
+	<string>All Sites</string>
+	<key>Allow websocket connections for this zone.</key>
+	<string>Allow websocket connections for this zone.</string>
+	<key>Always Online</key>
+	<string>Always Online</string>
+	<key>Always use HTTPS</key>
+	<string>Always use HTTPS</string>
+	<key>An Error Occurred</key>
+	<string>An Error Occurred</string>
+	<key>An unexpected error occurred</key>
+	<string>An unexpected error occurred</string>
+	<key>Analytics</key>
+	<string>Analytics</string>
+	<key>Analytics View</key>
+	<string>Analytics View</string>
+	<key>App Lock</key>
+	<string>App Lock</string>
+	<key>App Security</key>
+	<string>App Security</string>
+	<key>Are you sure you want to delete this record?</key>
+	<string>Are you sure you want to delete this record?</string>
+	<key>Are you sure you want to delete this rule?</key>
+	<string>Are you sure you want to delete this rule?</string>
+	<key>Are you sure you want to sign out from this account?</key>
+	<string>Are you sure you want to sign out from this account?</string>
+	<key>Are you sure you wish to discard your unsaved changes?</key>
+	<string>Are you sure you wish to discard your unsaved changes?</string>
+	<key>Are you sure?</key>
+	<string>Are you sure?</string>
+	<key>At beginning</key>
+	<string>At beginning</string>
+	<key>At end</key>
+	<string>At end</string>
+	<key>Authenticate to access Cirrus</key>
+	<string>Authenticate to access Cirrus</string>
+	<key>Authenticate to access settings</key>
+	<string>Authenticate to access settings</string>
+	<key>Authenticate to make change</key>
+	<string>Authenticate to make change</string>
+	<key>Authenticated Origin Pulls</key>
+	<string>Authenticated Origin Pulls</string>
+	<key>Automatic</key>
+	<string>Automatic</string>
+	<key>Automatic HTTPS Rewrites</key>
+	<string>Automatic HTTPS Rewrites</string>
+	<key>Automatically rewrite HTTP requests to use HTTPS when the original page is served over HTTPS.</key>
+	<string>Automatically rewrite HTTP requests to use HTTPS when the original page is served over HTTPS.</string>
+	<key>Bandwidth</key>
+	<string>Bandwidth</string>
+	<key>Bandwidth Saved</key>
+	<string>Bandwidth Saved</string>
+	<key>Block</key>
+	<string>Block</string>
+	<key>Block For</key>
+	<string>Block For</string>
+	<key>Both</key>
+	<string>Both</string>
+	<key>Browser Cache Expiration</key>
+	<string>Browser Cache Expiration</string>
+	<key>Build</key>
+	<string>Build</string>
+	<key>CAPTCHA</key>
+	<string>CAPTCHA</string>
+	<key>CFAPI::DNSError::1000</key>
+	<string>Invalid user</string>
+	<key>CFAPI::DNSError::1002</key>
+	<string>Invalid or missing zone_id</string>
+	<key>CFAPI::DNSError::1003</key>
+	<string>per_page must be a positive integer</string>
+	<key>CFAPI::DNSError::1004</key>
+	<string>Invalid or missing zone</string>
+	<key>CFAPI::DNSError::1005</key>
+	<string>Invalid or missing record</string>
+	<key>CFAPI::DNSError::1007</key>
+	<string>name required</string>
+	<key>CFAPI::DNSError::1008</key>
+	<string>content required</string>
+	<key>CFAPI::DNSError::1009</key>
+	<string>Invalid or missing record id</string>
+	<key>CFAPI::DNSError::1010</key>
+	<string>Invalid or missing record</string>
+	<key>CFAPI::DNSError::1011</key>
+	<string>Zone file could not be found</string>
+	<key>CFAPI::DNSError::1012</key>
+	<string>Zone file is not modifiable</string>
+	<key>CFAPI::DNSError::1013</key>
+	<string>The record could not be found</string>
+	<key>CFAPI::DNSError::1014</key>
+	<string>You do not have permission to modify this zone</string>
+	<key>CFAPI::DNSError::1015</key>
+	<string>Unknown error</string>
+	<key>CFAPI::DNSError::1017</key>
+	<string>Content for A record is invalid. Must be a valid IPv4 address</string>
+	<key>CFAPI::DNSError::1018</key>
+	<string>Content for AAAA record is invalid. Must be a valid IPv6 address</string>
+	<key>CFAPI::DNSError::1019</key>
+	<string>Content for CNAME record is invalid</string>
+	<key>CFAPI::DNSError::1024</key>
+	<string>Invalid priority, priority must be set and be between 0 and 65535</string>
+	<key>CFAPI::DNSError::1025</key>
+	<string>Invalid content for an MX record</string>
+	<key>CFAPI::DNSError::1026</key>
+	<string>Invalid format for a SPF record. A valid example is &apos;v=spf1 a mx -all&apos;. You should not include either the word TXT or the domain name here in the content</string>
+	<key>CFAPI::DNSError::1027</key>
+	<string>Invalid service value</string>
+	<key>CFAPI::DNSError::1028</key>
+	<string>Invalid service value. Must be less than 100 characters</string>
+	<key>CFAPI::DNSError::1029</key>
+	<string>Invalid protocol value</string>
+	<key>CFAPI::DNSError::1030</key>
+	<string>Invalid protocol value. Must be less than 12 characters</string>
+	<key>CFAPI::DNSError::1031</key>
+	<string>Invalid SRV name</string>
+	<key>CFAPI::DNSError::1032</key>
+	<string>Invalid SRV name. Must be less than 90 characters</string>
+	<key>CFAPI::DNSError::1033</key>
+	<string>Invalid weight value. Must be between 0 and 65,535</string>
+	<key>CFAPI::DNSError::1034</key>
+	<string>Invalid port value. Must be between 0 and 65,535</string>
+	<key>CFAPI::DNSError::1037</key>
+	<string>Invalid domain name for a SRV target host</string>
+	<key>CFAPI::DNSError::1038</key>
+	<string>Invalid DNS record type</string>
+	<key>CFAPI::DNSError::1039</key>
+	<string>Invalid TTL. Must be between 120 and 4,294,967,295 seconds, or 1 for automatic</string>
+	<key>CFAPI::DNSError::1041</key>
+	<string>Priority must be set for SRV record</string>
+	<key>CFAPI::DNSError::1042</key>
+	<string>Zone file for could not be found</string>
+	<key>CFAPI::DNSError::1043</key>
+	<string>Zone file for is not editable</string>
+	<key>CFAPI::DNSError::1044</key>
+	<string>A record with these exact values already exists. Please modify or remove this record</string>
+	<key>CFAPI::DNSError::1045</key>
+	<string>The record could not be found</string>
+	<key>CFAPI::DNSError::1046</key>
+	<string>A record with these exact values already exists. Please modify or cancel this edit</string>
+	<key>CFAPI::DNSError::1047</key>
+	<string>You do not have permission to modify this zone</string>
+	<key>CFAPI::DNSError::1048</key>
+	<string>You have reached the record limit for this zone</string>
+	<key>CFAPI::DNSError::1049</key>
+	<string>The record content is missing</string>
+	<key>CFAPI::DNSError::1050</key>
+	<string>Could not find record</string>
+	<key>CFAPI::DNSError::1052</key>
+	<string>You can not point a CNAME to itself</string>
+	<key>CFAPI::DNSError::1053</key>
+	<string>Invalid lat_degrees, must be an integer between 0 and 90 inclusive</string>
+	<key>CFAPI::DNSError::1054</key>
+	<string>Invalid lat_minutes, must be an integer between 0 and 59 inclusive</string>
+	<key>CFAPI::DNSError::1055</key>
+	<string>Invalid lat_seconds, must be a floating point number between 0 and 60, including 0 but not including 60</string>
+	<key>CFAPI::DNSError::1056</key>
+	<string>Invalid or missing lat_direction. Values must be N or S</string>
+	<key>CFAPI::DNSError::1057</key>
+	<string>Invalid long_degrees, must be an integer between 0 and 180</string>
+	<key>CFAPI::DNSError::1058</key>
+	<string>Invalid long_minutes, must be an integer between 0 and 59</string>
+	<key>CFAPI::DNSError::1059</key>
+	<string>Invalid long_seconds, must be a floating point number between 0 and 60, including 0 but not including 60</string>
+	<key>CFAPI::DNSError::1060</key>
+	<string>Invalid or missing long_direction. Values must be E or S</string>
+	<key>CFAPI::DNSError::1061</key>
+	<string>Invalid altitude, must be a floating point number between -100000.00 and 42849672.95</string>
+	<key>CFAPI::DNSError::1062</key>
+	<string>Invalid size, must be a floating point number between 0 and 90000000.00</string>
+	<key>CFAPI::DNSError::1063</key>
+	<string>Invalid precision_horz, must be a floating point number between 0 and 90000000.00</string>
+	<key>CFAPI::DNSError::1064</key>
+	<string>Invalid precision_vert, must be a floating point number between 0 and 90000000.00</string>
+	<key>CFAPI::DNSError::1065</key>
+	<string>Invalid or missing data for record</string>
+	<key>CFAPI::DNSError::1067</key>
+	<string>Invalid content for a NS record</string>
+	<key>CFAPI::DNSError::1068</key>
+	<string>Target cannot be an IP address</string>
+	<key>CFAPI::DNSError::1069</key>
+	<string>CNAME content cannot reference itself</string>
+	<key>CFAPI::DNSError::1070</key>
+	<string>CNAME content cannot be an IP</string>
+	<key>CFAPI::DNSError::1071</key>
+	<string>Invalid proxied mode. Record cannot be proxied</string>
+	<key>CFAPI::DNSError::1072</key>
+	<string>Invalid record identifier</string>
+	<key>CFAPI::DNSError::1073</key>
+	<string>Invalid TXT record. Must be less than 255 characters</string>
+	<key>CFAPI::DNSError::1074</key>
+	<string>Invalid TXT record. Record may only contain printable ASCII!</string>
+	<key>CFAPI::threats::all</key>
+	<string>All</string>
+	<key>CFAPI::threats::bic.ban.unknown</key>
+	<string>Bad browser</string>
+	<key>CFAPI::threats::hot.ban.unknown</key>
+	<string>Blocked hotlink</string>
+	<key>CFAPI::threats::macro.ban.unknown</key>
+	<string>Bad IP</string>
+	<key>CFAPI::threats::macro.chl.captchaErr</key>
+	<string>Captcha Error</string>
+	<key>CFAPI::threats::macro.chl.captchaFail</key>
+	<string>Human Challenged</string>
+	<key>CFAPI::threats::macro.chl.captchaNew</key>
+	<string>New CAPTCHA (CF)</string>
+	<key>CFAPI::threats::macro.chl.jschlErr</key>
+	<string>Bot Request</string>
+	<key>CFAPI::threats::macro.chl.jschlFail</key>
+	<string>Browser Challenged</string>
+	<key>CFAPI::threats::macro.chl.jschlNew</key>
+	<string>Challenged threat</string>
+	<key>CFAPI::threats::user.ban.ctry</key>
+	<string>Country block</string>
+	<key>CFAPI::threats::user.ban.ip</key>
+	<string>IP block (user)</string>
+	<key>CFAPI::threats::user.ban.ipr16</key>
+	<string>IP range block (/16)</string>
+	<key>CFAPI::threats::user.ban.ipr24</key>
+	<string>IP range block (/24)</string>
+	<key>CFAPI::threats::user.chl.captchaNew</key>
+	<string>New CAPTCHA (user)</string>
+	<key>Cached</key>
+	<string>Cached</string>
+	<key>Caching</key>
+	<string>Caching</string>
+	<key>Caching_segment_description</key>
+	<string>No Query: Only delivers files from cache when there is no query string.
+Ignore Query: Delivers the same resource to everyone independent of the query string.
+Standard:Delivers a different resource each time the query string changes.</string>
+	<key>Cancel</key>
+	<string>Cancel</string>
+	<key>Certficiate</key>
+	<string>Certficiate</string>
+	<key>Certificate</key>
+	<string>Certificate</string>
+	<key>Certificate Inspector is a free &amp; open source iOS app to inspect a websites X.509 HTTPS certificate</key>
+	<string>Certificate Inspector is a free &amp; open source iOS app to inspect a websites X.509 HTTPS certificate</string>
+	<key>Challenge</key>
+	<string>Challenge</string>
+	<key>Challenge Passage</key>
+	<string>Challenge Passage</string>
+	<key>Challenge Password</key>
+	<string>Challenge Password</string>
+	<key>Changes may impact users ability to connect to your site.</key>
+	<string>Changes may impact users ability to connect to your site.</string>
+	<key>Cirrus</key>
+	<string>Cirrus</string>
+	<key>Cirrus Support</key>
+	<string>Cirrus Support</string>
+	<key>Cirrus was created by Ian Spence. Copyright © Ian Spence 2016. All rights reserved. Cirrus is in no way affiliated or endorsed by Cloudflare.</key>
+	<string>Cirrus was created by Ian Spence. Copyright © Ian Spence 2016. All rights reserved. Cirrus is in no way affiliated or endorsed by Cloudflare.</string>
+	<key>Cirrus {version} ({build})</key>
+	<string>Cirrus {0} ({1})</string>
+	<key>Cloudflare</key>
+	<string>Cloudflare</string>
+	<key>Cloudflare Login Information</key>
+	<string>Cloudflare Login Information</string>
+	<key>Cloudflare Support</key>
+	<string>Cloudflare Support</string>
+	<key>Config</key>
+	<string>Config</string>
+	<key>Configuration</key>
+	<string>Configuration</string>
+	<key>Confirm Changes</key>
+	<string>Confirm Changes</string>
+	<key>Content</key>
+	<string>Content</string>
+	<key>Continue</key>
+	<string>Continue</string>
+	<key>Country</key>
+	<string>Country</string>
+	<key>Country::AD</key>
+	<string>Andorra, Principality of</string>
+	<key>Country::AE</key>
+	<string>United Arab Emirates</string>
+	<key>Country::AF</key>
+	<string>Afghanistan</string>
+	<key>Country::AG</key>
+	<string>Antigua and Barbuda</string>
+	<key>Country::AI</key>
+	<string>Anguilla</string>
+	<key>Country::AL</key>
+	<string>Albania, People&apos;s Socialist Republic of</string>
+	<key>Country::AM</key>
+	<string>Armenia</string>
+	<key>Country::AN</key>
+	<string>Netherlands Antilles</string>
+	<key>Country::AO</key>
+	<string>Angola, Republic of</string>
+	<key>Country::AQ</key>
+	<string>Antarctica (the territory South of 60 deg S)</string>
+	<key>Country::AR</key>
+	<string>Argentina, Argentine Republic</string>
+	<key>Country::AS</key>
+	<string>American Samoa</string>
+	<key>Country::AT</key>
+	<string>Austria, Republic of</string>
+	<key>Country::AU</key>
+	<string>Australia, Commonwealth of</string>
+	<key>Country::AW</key>
+	<string>Aruba</string>
+	<key>Country::AZ</key>
+	<string>Azerbaijan, Republic of</string>
+	<key>Country::BA</key>
+	<string>Bosnia and Herzegovina</string>
+	<key>Country::BB</key>
+	<string>Barbados</string>
+	<key>Country::BD</key>
+	<string>Bangladesh, People&apos;s Republic of</string>
+	<key>Country::BE</key>
+	<string>Belgium, Kingdom of</string>
+	<key>Country::BF</key>
+	<string>Burkina Faso</string>
+	<key>Country::BG</key>
+	<string>Bulgaria, People&apos;s Republic of</string>
+	<key>Country::BH</key>
+	<string>Bahrain, Kingdom of</string>
+	<key>Country::BI</key>
+	<string>Burundi, Republic of</string>
+	<key>Country::BJ</key>
+	<string>Benin, People&apos;s Republic of</string>
+	<key>Country::BM</key>
+	<string>Bermuda</string>
+	<key>Country::BN</key>
+	<string>Brunei Darussalam</string>
+	<key>Country::BO</key>
+	<string>Bolivia, Republic of</string>
+	<key>Country::BR</key>
+	<string>Brazil, Federative Republic of</string>
+	<key>Country::BS</key>
+	<string>Bahamas, Commonwealth of the</string>
+	<key>Country::BT</key>
+	<string>Bhutan, Kingdom of</string>
+	<key>Country::BV</key>
+	<string>Bouvet Island (Bouvetoya)</string>
+	<key>Country::BW</key>
+	<string>Botswana, Republic of</string>
+	<key>Country::BY</key>
+	<string>Belarus</string>
+	<key>Country::BZ</key>
+	<string>Belize</string>
+	<key>Country::CA</key>
+	<string>Canada</string>
+	<key>Country::CC</key>
+	<string>Cocos (Keeling) Islands</string>
+	<key>Country::CD</key>
+	<string>Congo, Democratic Republic of</string>
+	<key>Country::CF</key>
+	<string>Central African Republic</string>
+	<key>Country::CG</key>
+	<string>Congo, People&apos;s Republic of</string>
+	<key>Country::CH</key>
+	<string>Switzerland, Swiss Confederation</string>
+	<key>Country::CI</key>
+	<string>Cote D&apos;Ivoire, Ivory Coast, Republic of the</string>
+	<key>Country::CK</key>
+	<string>Cook Islands</string>
+	<key>Country::CL</key>
+	<string>Chile, Republic of</string>
+	<key>Country::CM</key>
+	<string>Cameroon, United Republic of</string>
+	<key>Country::CN</key>
+	<string>China, People&apos;s Republic of</string>
+	<key>Country::CO</key>
+	<string>Colombia, Republic of</string>
+	<key>Country::CR</key>
+	<string>Costa Rica, Republic of</string>
+	<key>Country::CS</key>
+	<string>Serbia and Montenegro</string>
+	<key>Country::CU</key>
+	<string>Cuba, Republic of</string>
+	<key>Country::CV</key>
+	<string>Cape Verde, Republic of</string>
+	<key>Country::CX</key>
+	<string>Christmas Island</string>
+	<key>Country::CY</key>
+	<string>Cyprus, Republic of</string>
+	<key>Country::CZ</key>
+	<string>Czech Republic</string>
+	<key>Country::DE</key>
+	<string>Germany</string>
+	<key>Country::DJ</key>
+	<string>Djibouti, Republic of</string>
+	<key>Country::DK</key>
+	<string>Denmark, Kingdom of</string>
+	<key>Country::DM</key>
+	<string>Dominica, Commonwealth of</string>
+	<key>Country::DO</key>
+	<string>Dominican Republic</string>
+	<key>Country::DZ</key>
+	<string>Algeria, People&apos;s Democratic Republic of</string>
+	<key>Country::EC</key>
+	<string>Ecuador, Republic of</string>
+	<key>Country::EE</key>
+	<string>Estonia</string>
+	<key>Country::EG</key>
+	<string>Egypt, Arab Republic of</string>
+	<key>Country::EH</key>
+	<string>Western Sahara</string>
+	<key>Country::ER</key>
+	<string>Eritrea</string>
+	<key>Country::ES</key>
+	<string>Spain, Spanish State</string>
+	<key>Country::ET</key>
+	<string>Ethiopia</string>
+	<key>Country::FI</key>
+	<string>Finland, Republic of</string>
+	<key>Country::FJ</key>
+	<string>Fiji, Republic of the Fiji Islands</string>
+	<key>Country::FK</key>
+	<string>Falkland Islands (Malvinas)</string>
+	<key>Country::FM</key>
+	<string>Micronesia, Federated States of</string>
+	<key>Country::FO</key>
+	<string>Faeroe Islands</string>
+	<key>Country::FR</key>
+	<string>France, French Republic</string>
+	<key>Country::GA</key>
+	<string>Gabon, Gabonese Republic</string>
+	<key>Country::GB</key>
+	<string>United Kingdom of Great Britain &amp; N. Ireland</string>
+	<key>Country::GD</key>
+	<string>Grenada</string>
+	<key>Country::GE</key>
+	<string>Georgia</string>
+	<key>Country::GF</key>
+	<string>French Guiana</string>
+	<key>Country::GH</key>
+	<string>Ghana, Republic of</string>
+	<key>Country::GI</key>
+	<string>Gibraltar</string>
+	<key>Country::GL</key>
+	<string>Greenland</string>
+	<key>Country::GM</key>
+	<string>Gambia, Republic of the</string>
+	<key>Country::GN</key>
+	<string>Guinea, Revolutionary People&apos;s Rep&apos;c of</string>
+	<key>Country::GP</key>
+	<string>Guadaloupe</string>
+	<key>Country::GQ</key>
+	<string>Equatorial Guinea, Republic of</string>
+	<key>Country::GR</key>
+	<string>Greece, Hellenic Republic</string>
+	<key>Country::GS</key>
+	<string>South Georgia and the South Sandwich Islands</string>
+	<key>Country::GT</key>
+	<string>Guatemala, Republic of</string>
+	<key>Country::GU</key>
+	<string>Guam</string>
+	<key>Country::GW</key>
+	<string>Guinea-Bissau, Republic of</string>
+	<key>Country::GY</key>
+	<string>Guyana, Republic of</string>
+	<key>Country::HK</key>
+	<string>Hong Kong, Special Administrative Region of China</string>
+	<key>Country::HM</key>
+	<string>Heard and McDonald Islands</string>
+	<key>Country::HN</key>
+	<string>Honduras, Republic of</string>
+	<key>Country::HR</key>
+	<string>Hrvatska (Croatia)</string>
+	<key>Country::HT</key>
+	<string>Haiti, Republic of</string>
+	<key>Country::HU</key>
+	<string>Hungary, Hungarian People&apos;s Republic</string>
+	<key>Country::ID</key>
+	<string>Indonesia, Republic of</string>
+	<key>Country::IE</key>
+	<string>Ireland</string>
+	<key>Country::IL</key>
+	<string>Israel, State of</string>
+	<key>Country::IN</key>
+	<string>India, Republic of</string>
+	<key>Country::IO</key>
+	<string>British Indian Ocean Territory (Chagos Archipelago)</string>
+	<key>Country::IQ</key>
+	<string>Iraq, Republic of</string>
+	<key>Country::IR</key>
+	<string>Iran, Islamic Republic of</string>
+	<key>Country::IS</key>
+	<string>Iceland, Republic of</string>
+	<key>Country::IT</key>
+	<string>Italy, Italian Republic</string>
+	<key>Country::JM</key>
+	<string>Jamaica</string>
+	<key>Country::JO</key>
+	<string>Jordan, Hashemite Kingdom of</string>
+	<key>Country::JP</key>
+	<string>Japan</string>
+	<key>Country::KE</key>
+	<string>Kenya, Republic of</string>
+	<key>Country::KG</key>
+	<string>Kyrgyz Republic</string>
+	<key>Country::KH</key>
+	<string>Cambodia, Kingdom of</string>
+	<key>Country::KI</key>
+	<string>Kiribati, Republic of</string>
+	<key>Country::KM</key>
+	<string>Comoros, Union of the</string>
+	<key>Country::KN</key>
+	<string>St. Kitts and Nevis</string>
+	<key>Country::KP</key>
+	<string>Korea, Democratic People&apos;s Republic of</string>
+	<key>Country::KR</key>
+	<string>Korea, Republic of</string>
+	<key>Country::KW</key>
+	<string>Kuwait, State of</string>
+	<key>Country::KY</key>
+	<string>Cayman Islands</string>
+	<key>Country::KZ</key>
+	<string>Kazakhstan, Republic of</string>
+	<key>Country::LA</key>
+	<string>Lao People&apos;s Democratic Republic</string>
+	<key>Country::LB</key>
+	<string>Lebanon, Lebanese Republic</string>
+	<key>Country::LC</key>
+	<string>St. Lucia</string>
+	<key>Country::LI</key>
+	<string>Liechtenstein, Principality of</string>
+	<key>Country::LK</key>
+	<string>Sri Lanka, Democratic Socialist Republic of</string>
+	<key>Country::LR</key>
+	<string>Liberia, Republic of</string>
+	<key>Country::LS</key>
+	<string>Lesotho, Kingdom of</string>
+	<key>Country::LT</key>
+	<string>Lithuania</string>
+	<key>Country::LU</key>
+	<string>Luxembourg, Grand Duchy of</string>
+	<key>Country::LV</key>
+	<string>Latvia</string>
+	<key>Country::LY</key>
+	<string>Libyan Arab Jamahiriya</string>
+	<key>Country::MA</key>
+	<string>Morocco, Kingdom of</string>
+	<key>Country::MC</key>
+	<string>Monaco, Principality of</string>
+	<key>Country::MD</key>
+	<string>Moldova, Republic of</string>
+	<key>Country::MG</key>
+	<string>Madagascar, Republic of</string>
+	<key>Country::MH</key>
+	<string>Marshall Islands</string>
+	<key>Country::MK</key>
+	<string>Macedonia, the former Yugoslav Republic of</string>
+	<key>Country::ML</key>
+	<string>Mali, Republic of</string>
+	<key>Country::MM</key>
+	<string>Myanmar</string>
+	<key>Country::MN</key>
+	<string>Mongolia, Mongolian People&apos;s Republic</string>
+	<key>Country::MO</key>
+	<string>Macao, Special Administrative Region of China</string>
+	<key>Country::MP</key>
+	<string>Northern Mariana Islands</string>
+	<key>Country::MQ</key>
+	<string>Martinique</string>
+	<key>Country::MR</key>
+	<string>Mauritania, Islamic Republic of</string>
+	<key>Country::MS</key>
+	<string>Montserrat</string>
+	<key>Country::MT</key>
+	<string>Malta, Republic of</string>
+	<key>Country::MU</key>
+	<string>Mauritius</string>
+	<key>Country::MV</key>
+	<string>Maldives, Republic of</string>
+	<key>Country::MW</key>
+	<string>Malawi, Republic of</string>
+	<key>Country::MX</key>
+	<string>Mexico, United Mexican States</string>
+	<key>Country::MY</key>
+	<string>Malaysia</string>
+	<key>Country::MZ</key>
+	<string>Mozambique, People&apos;s Republic of</string>
+	<key>Country::NA</key>
+	<string>Namibia</string>
+	<key>Country::NC</key>
+	<string>New Caledonia</string>
+	<key>Country::NE</key>
+	<string>Niger, Republic of the</string>
+	<key>Country::NF</key>
+	<string>Norfolk Island</string>
+	<key>Country::NG</key>
+	<string>Nigeria, Federal Republic of</string>
+	<key>Country::NI</key>
+	<string>Nicaragua, Republic of</string>
+	<key>Country::NL</key>
+	<string>Netherlands, Kingdom of the</string>
+	<key>Country::NO</key>
+	<string>Norway, Kingdom of</string>
+	<key>Country::NP</key>
+	<string>Nepal, Kingdom of</string>
+	<key>Country::NR</key>
+	<string>Nauru, Republic of</string>
+	<key>Country::NU</key>
+	<string>Niue, Republic of</string>
+	<key>Country::NZ</key>
+	<string>New Zealand</string>
+	<key>Country::OM</key>
+	<string>Oman, Sultanate of</string>
+	<key>Country::PA</key>
+	<string>Panama, Republic of</string>
+	<key>Country::PE</key>
+	<string>Peru, Republic of</string>
+	<key>Country::PF</key>
+	<string>French Polynesia</string>
+	<key>Country::PG</key>
+	<string>Papua New Guinea</string>
+	<key>Country::PH</key>
+	<string>Philippines, Republic of the</string>
+	<key>Country::PK</key>
+	<string>Pakistan, Islamic Republic of</string>
+	<key>Country::PL</key>
+	<string>Poland, Polish People&apos;s Republic</string>
+	<key>Country::PM</key>
+	<string>St. Pierre and Miquelon</string>
+	<key>Country::PN</key>
+	<string>Pitcairn Island</string>
+	<key>Country::PR</key>
+	<string>Puerto Rico</string>
+	<key>Country::PS</key>
+	<string>Palestinian Territory, Occupied</string>
+	<key>Country::PT</key>
+	<string>Portugal, Portuguese Republic</string>
+	<key>Country::PW</key>
+	<string>Palau</string>
+	<key>Country::PY</key>
+	<string>Paraguay, Republic of</string>
+	<key>Country::QA</key>
+	<string>Qatar, State of</string>
+	<key>Country::RE</key>
+	<string>Reunion</string>
+	<key>Country::RO</key>
+	<string>Romania, Socialist Republic of</string>
+	<key>Country::RU</key>
+	<string>Russian Federation</string>
+	<key>Country::RW</key>
+	<string>Rwanda, Rwandese Republic</string>
+	<key>Country::SA</key>
+	<string>Saudi Arabia, Kingdom of</string>
+	<key>Country::SB</key>
+	<string>Solomon Islands</string>
+	<key>Country::SC</key>
+	<string>Seychelles, Republic of</string>
+	<key>Country::SD</key>
+	<string>Sudan, Democratic Republic of the</string>
+	<key>Country::SE</key>
+	<string>Sweden, Kingdom of</string>
+	<key>Country::SG</key>
+	<string>Singapore, Republic of</string>
+	<key>Country::SH</key>
+	<string>St. Helena</string>
+	<key>Country::SI</key>
+	<string>Slovenia</string>
+	<key>Country::SJ</key>
+	<string>Svalbard &amp; Jan Mayen Islands</string>
+	<key>Country::SK</key>
+	<string>Slovakia (Slovak Republic)</string>
+	<key>Country::SL</key>
+	<string>Sierra Leone, Republic of</string>
+	<key>Country::SM</key>
+	<string>San Marino, Republic of</string>
+	<key>Country::SN</key>
+	<string>Senegal, Republic of</string>
+	<key>Country::SO</key>
+	<string>Somalia, Somali Republic</string>
+	<key>Country::SR</key>
+	<string>Suriname, Republic of</string>
+	<key>Country::ST</key>
+	<string>Sao Tome and Principe, Democratic Republic of</string>
+	<key>Country::SV</key>
+	<string>El Salvador, Republic of</string>
+	<key>Country::SY</key>
+	<string>Syrian Arab Republic</string>
+	<key>Country::SZ</key>
+	<string>Swaziland, Kingdom of</string>
+	<key>Country::TC</key>
+	<string>Turks and Caicos Islands</string>
+	<key>Country::TD</key>
+	<string>Chad, Republic of</string>
+	<key>Country::TF</key>
+	<string>French Southern Territories</string>
+	<key>Country::TG</key>
+	<string>Togo, Togolese Republic</string>
+	<key>Country::TH</key>
+	<string>Thailand, Kingdom of</string>
+	<key>Country::TJ</key>
+	<string>Tajikistan</string>
+	<key>Country::TK</key>
+	<string>Tokelau (Tokelau Islands)</string>
+	<key>Country::TL</key>
+	<string>Timor-Leste, Democratic Republic of</string>
+	<key>Country::TM</key>
+	<string>Turkmenistan</string>
+	<key>Country::TN</key>
+	<string>Tunisia, Republic of</string>
+	<key>Country::TO</key>
+	<string>Tonga, Kingdom of</string>
+	<key>Country::TR</key>
+	<string>Turkey, Republic of</string>
+	<key>Country::TT</key>
+	<string>Trinidad and Tobago, Republic of</string>
+	<key>Country::TV</key>
+	<string>Tuvalu</string>
+	<key>Country::TW</key>
+	<string>Taiwan</string>
+	<key>Country::TZ</key>
+	<string>Tanzania, United Republic of</string>
+	<key>Country::UA</key>
+	<string>Ukraine</string>
+	<key>Country::UG</key>
+	<string>Uganda, Republic of</string>
+	<key>Country::UM</key>
+	<string>United States Minor Outlying Islands</string>
+	<key>Country::US</key>
+	<string>United States of America</string>
+	<key>Country::UY</key>
+	<string>Uruguay, Eastern Republic of</string>
+	<key>Country::UZ</key>
+	<string>Uzbekistan</string>
+	<key>Country::VA</key>
+	<string>Holy See (Vatican City State)</string>
+	<key>Country::VC</key>
+	<string>St. Vincent and the Grenadines</string>
+	<key>Country::VE</key>
+	<string>Venezuela, Bolivarian Republic of</string>
+	<key>Country::VG</key>
+	<string>British Virgin Islands</string>
+	<key>Country::VI</key>
+	<string>US Virgin Islands</string>
+	<key>Country::VN</key>
+	<string>Viet Nam, Socialist Republic of</string>
+	<key>Country::VU</key>
+	<string>Vanuatu</string>
+	<key>Country::WF</key>
+	<string>Wallis and Futuna Islands</string>
+	<key>Country::WS</key>
+	<string>Samoa, Independent State of</string>
+	<key>Country::XX</key>
+	<string>Unknown</string>
+	<key>Country::YE</key>
+	<string>Yemen</string>
+	<key>Country::YT</key>
+	<string>Mayotte</string>
+	<key>Country::ZA</key>
+	<string>South Africa, Republic of</string>
+	<key>Country::ZM</key>
+	<string>Zambia, Republic of</string>
+	<key>Country::ZW</key>
+	<string>Zimbabwe</string>
+	<key>Create New Rule</key>
+	<string>Create New Rule</string>
+	<key>Create Rule</key>
+	<string>Create Rule</string>
+	<key>Current Password</key>
+	<string>Current Password</string>
+	<key>DNS</key>
+	<string>DNS</string>
+	<key>DNS Errors</key>
+	<string>DNS Errors</string>
+	<key>DNS Queries</key>
+	<string>DNS Queries</string>
+	<key>DNS Records</key>
+	<string>DNS Records</string>
+	<key>DNS Validation Error</key>
+	<string>DNS Validation Error</string>
+	<key>Dangerous</key>
+	<string>Dangerous</string>
+	<key>Delete</key>
+	<string>Delete</string>
+	<key>Delete Zone</key>
+	<string>Delete Zone</string>
+	<key>Delete {zone_name}?</key>
+	<string>Delete {0}?</string>
+	<key>Describe the rule</key>
+	<string>Describe the rule</string>
+	<key>Destination URL</key>
+	<string>Destination URL</string>
+	<key>Dev Mode</key>
+	<string>Dev Mode</string>
+	<key>Development Mode</key>
+	<string>Development Mode</string>
+	<key>Digest</key>
+	<string>Digest</string>
+	<key>Digest Type</key>
+	<string>Digest Type</string>
+	<key>Disable HTTPS</key>
+	<string>Disable HTTPS</string>
+	<key>Disable IPv6</key>
+	<string>Disable IPv6</string>
+	<key>Disabled</key>
+	<string>Disabled</string>
+	<key>Disallow the use of older, less secure TLS versions. Only allow TLS 1.2 and 1.3 (if enabled).</key>
+	<string>Disallow the use of older, less secure TLS versions. Only allow TLS 1.2 and 1.3 (if enabled).</string>
+	<key>Dismiss</key>
+	<string>Dismiss</string>
+	<key>Do Nothing</key>
+	<string>Do Nothing</string>
+	<key>Don&apos;t show again</key>
+	<string>Don&apos;t show again</string>
+	<key>Done</key>
+	<string>Done</string>
+	<key>Edit Record</key>
+	<string>Edit Record</string>
+	<key>Edit Rule</key>
+	<string>Edit Rule</string>
+	<key>Edit {type} Record</key>
+	<string>Edit {0} Record</string>
+	<key>Email</key>
+	<string>Email</string>
+	<key>Email Address</key>
+	<string>Email Address</string>
+	<key>Email Address:</key>
+	<string>Email Address:</string>
+	<key>Enable HSTS</key>
+	<string>Enable HSTS</string>
+	<key>Enable IPv6 support for this zone.</key>
+	<string>Enable IPv6 support for this zone.</string>
+	<key>Enable Rule</key>
+	<string>Enable Rule</string>
+	<key>Enable the latest version of the TLS protocol for improved security and performance.</key>
+	<string>Enable the latest version of the TLS protocol for improved security and performance.</string>
+	<key>Enabled</key>
+	<string>Enabled</string>
+	<key>Error saving DNS record</key>
+	<string>Error saving DNS record</string>
+	<key>Errors</key>
+	<string>Errors</string>
+	<key>FQDN</key>
+	<string>FQDN</string>
+	<key>Fair API Usage</key>
+	<string>Fair API Usage</string>
+	<key>Features</key>
+	<string>Features</string>
+	<key>Fingerprint</key>
+	<string>Fingerprint</string>
+	<key>Firewall</key>
+	<string>Firewall</string>
+	<key>FirewallAccessRuleMode::block</key>
+	<string>Block</string>
+	<key>FirewallAccessRuleMode::challenge</key>
+	<string>CAPTCHA</string>
+	<key>FirewallAccessRuleMode::js_challenge</key>
+	<string>JS Challenge</string>
+	<key>FirewallAccessRuleMode::whitelist</key>
+	<string>Whitelist</string>
+	<key>Firewall_segment_description</key>
+	<string>Essentially off: Challenges only serious offenders.
+Low: Challenges dangerous visitors.
+Medium: Challenges both moderate threat visitors and the most threatening visitors.
+High: Challenges all visitors that have exhibited threatening behavior within the last 14 days.</string>
+	<key>Flags</key>
+	<string>Flags</string>
+	<key>Flexible</key>
+	<string>Flexible</string>
+	<key>Full</key>
+	<string>Full</string>
+	<key>General Settings</key>
+	<string>General Settings</string>
+	<key>Get Support</key>
+	<string>Get Support</string>
+	<key>HSTS</key>
+	<string>HSTS</string>
+	<key>HSTS Settings</key>
+	<string>HSTS Settings</string>
+	<key>HTTP</key>
+	<string>HTTP</string>
+	<key>HTTPS</key>
+	<string>HTTPS</string>
+	<key>Hello</key>
+	<string>Hello</string>
+	<key>Hidden Zones</key>
+	<string>Hidden Zones</string>
+	<key>Hide Zone</key>
+	<string>Hide Zone</string>
+	<key>High</key>
+	<string>High</string>
+	<key>How long browser should cache the HSTS setting.</key>
+	<string>How long browser should cache the HSTS setting.</string>
+	<key>I&apos;m under attack!</key>
+	<string>I&apos;m under attack!</string>
+	<key>IP</key>
+	<string>IP</string>
+	<key>IP Geolocation</key>
+	<string>IP Geolocation</string>
+	<key>IPv4 or IPv6 Address APRA FQDN</key>
+	<string>IPv4 or IPv6 Address APRA FQDN</string>
+	<key>IPv6 Support</key>
+	<string>IPv6 Support</string>
+	<key>If the URL matches:</key>
+	<string>If the URL matches:</string>
+	<key>Ignore Query</key>
+	<string>Ignore Query</string>
+	<key>Include Subdomains</key>
+	<string>Include Subdomains</string>
+	<key>Include all subdomains in the HSTS policy.</key>
+	<string>Include all subdomains in the HSTS policy.</string>
+	<key>Individual Files</key>
+	<string>Individual Files</string>
+	<key>Inspect Domain</key>
+	<string>Inspect Domain</string>
+	<key>Inspect TLS Certificates</key>
+	<string>Inspect TLS Certificates</string>
+	<key>Instruct browsers to only use HTTPS for this domain.</key>
+	<string>Instruct browsers to only use HTTPS for this domain.</string>
+	<key>Invalid ASN.</key>
+	<string>Invalid ASN.</string>
+	<key>Invalid Rule</key>
+	<string>Invalid Rule</string>
+	<key>Invalid email address.</key>
+	<string>Invalid email address.</string>
+	<key>It&apos;s not 1996 anymore. HTTPS is free &amp; faster than HTTP. You&apos;re doing your users a massive disservice by disabling HTTPS.</key>
+	<string>It&apos;s not 1996 anymore. HTTPS is free &amp; faster than HTTP. You&apos;re doing your users a massive disservice by disabling HTTPS.</string>
+	<key>Keep</key>
+	<string>Keep</string>
+	<key>Key Algorithm</key>
+	<string>Key Algorithm</string>
+	<key>Key Flags</key>
+	<string>Key Flags</string>
+	<key>Key Protocol</key>
+	<string>Key Protocol</string>
+	<key>Key Tag</key>
+	<string>Key Tag</string>
+	<key>Key Type</key>
+	<string>Key Type</string>
+	<key>Last 24 Hours</key>
+	<string>Last 24 Hours</string>
+	<key>Last 30 Minutes</key>
+	<string>Last 30 Minutes</string>
+	<key>Last 6 Hours</key>
+	<string>Last 6 Hours</string>
+	<key>Last Month</key>
+	<string>Last Month</string>
+	<key>Last Week</key>
+	<string>Last Week</string>
+	<key>Learn More</key>
+	<string>Learn More</string>
+	<key>Leave Enabled</key>
+	<string>Leave Enabled</string>
+	<key>Legal</key>
+	<string>Legal</string>
+	<key>Location</key>
+	<string>Location</string>
+	<key>Log In</key>
+	<string>Log In</string>
+	<key>Log Out of All Accounts</key>
+	<string>Log Out of All Accounts</string>
+	<key>Login</key>
+	<string>Login</string>
+	<key>Login Options</key>
+	<string>Login Options</string>
+	<key>Login to Cloudflare</key>
+	<string>Login to Cloudflare</string>
+	<key>Login using Email &amp; API Key</key>
+	<string>Login using Email &amp; API Key</string>
+	<key>Login using Email &amp; Password</key>
+	<string>Login using Email &amp; Password</string>
+	<key>Low</key>
+	<string>Low</string>
+	<key>Making Changes</key>
+	<string>Making Changes</string>
+	<key>Manage Accounts</key>
+	<string>Manage Accounts</string>
+	<key>Manual Login</key>
+	<string>Manual Login</string>
+	<key>Match</key>
+	<string>Match</string>
+	<key>Matching Type</key>
+	<string>Matching Type</string>
+	<key>Matching URL</key>
+	<string>Matching URL</string>
+	<key>Maximum</key>
+	<string>Maximum</string>
+	<key>Maximum Age</key>
+	<string>Maximum Age</string>
+	<key>Medium</key>
+	<string>Medium</string>
+	<key>Minimum</key>
+	<string>Minimum</string>
+	<key>Minimum TLS Version</key>
+	<string>Minimum TLS Version</string>
+	<key>More</key>
+	<string>More</string>
+	<key>Moved</key>
+	<string>Moved</string>
+	<key>Name</key>
+	<string>Name</string>
+	<key>Network</key>
+	<string>Network</string>
+	<key>New Rule</key>
+	<string>New Rule</string>
+	<key>New {type} Record</key>
+	<string>New {0} Record</string>
+	<key>No</key>
+	<string>No</string>
+	<key>No DNS records. Tap here to create new record.</key>
+	<string>No DNS records. Tap here to create new record.</string>
+	<key>No Query</key>
+	<string>No Query</string>
+	<key>No firewall access rules. Tap here to create new rule.</key>
+	<string>No firewall access rules. Tap here to create new rule.</string>
+	<key>No more actions can be added to this page rule.</key>
+	<string>No more actions can be added to this page rule.</string>
+	<key>No more actions can be added to this rule.</key>
+	<string>No more actions can be added to this rule.</string>
+	<key>No prage rules. Tap here to create new rule.</key>
+	<string>No prage rules. Tap here to create new rule.</string>
+	<key>No rate limit rules. Tap here to create a new rule.</key>
+	<string>No rate limit rules. Tap here to create a new rule.</string>
+	<key>No-Sniff</key>
+	<string>No-Sniff</string>
+	<key>Note</key>
+	<string>Note</string>
+	<key>Now</key>
+	<string>Now</string>
+	<key>Off</key>
+	<string>Off</string>
+	<key>Only allow connections to this zone that use at least this version of TLS.</key>
+	<string>Only allow connections to this zone that use at least this version of TLS.</string>
+	<key>Opportunistic Encryption</key>
+	<string>Opportunistic Encryption</string>
+	<key>Options</key>
+	<string>Options</string>
+	<key>Order</key>
+	<string>Order</string>
+	<key>Page</key>
+	<string>Page</string>
+	<key>Page Rules</key>
+	<string>Page Rules</string>
+	<key>Password Manager</key>
+	<string>Password Manager</string>
+	<key>Password Required</key>
+	<string>Password Required</string>
+	<key>Pause Site</key>
+	<string>Pause Site</string>
+	<key>Pause Website</key>
+	<string>Pause Website</string>
+	<key>Paused</key>
+	<string>Paused</string>
+	<key>Per</key>
+	<string>Per</string>
+	<key>Permit</key>
+	<string>Permit</string>
+	<key>Permit browsers to preload HSTS settings.</key>
+	<string>Permit browsers to preload HSTS settings.</string>
+	<key>Please authenticate to access Cirrus</key>
+	<string>Please authenticate to access Cirrus</string>
+	<key>Please authenticate to perform this destructive action</key>
+	<string>Please authenticate to perform this destructive action</string>
+	<key>Port</key>
+	<string>Port</string>
+	<key>Preference</key>
+	<string>Preference</string>
+	<key>Preload HSTS</key>
+	<string>Preload HSTS</string>
+	<key>Press &amp; Hold on a zone for more options</key>
+	<string>Press &amp; Hold on a zone for more options</string>
+	<key>Prevent browsers from MIME-sniffing away from the declared Content-Type.</key>
+	<string>Prevent browsers from MIME-sniffing away from the declared Content-Type.</string>
+	<key>Priority</key>
+	<string>Priority</string>
+	<key>Protocol</key>
+	<string>Protocol</string>
+	<key>Proxy</key>
+	<string>Proxy</string>
+	<key>Public Key</key>
+	<string>Public Key</string>
+	<key>Purge</key>
+	<string>Purge</string>
+	<key>Purge Cache</key>
+	<string>Purge Cache</string>
+	<key>Purge Entire Website</key>
+	<string>Purge Entire Website</string>
+	<key>Purge Individual Files</key>
+	<string>Purge Individual Files</string>
+	<key>Rate Cirrus</key>
+	<string>Rate Cirrus</string>
+	<key>Rate Limits</key>
+	<string>Rate Limits</string>
+	<key>Record Properties</key>
+	<string>Record Properties</string>
+	<key>Record Type</key>
+	<string>Record Type</string>
+	<key>Records</key>
+	<string>Records</string>
+	<key>Redirect Status</key>
+	<string>Redirect Status</string>
+	<key>Redirect all HTTP requests to HTTPS.</key>
+	<string>Redirect all HTTP requests to HTTPS.</string>
+	<key>Regex</key>
+	<string>Regex</string>
+	<key>Replacement</key>
+	<string>Replacement</string>
+	<key>Requests</key>
+	<string>Requests</string>
+	<key>Require TouchID or Passcode when</key>
+	<string>Require TouchID or Passcode when</string>
+	<key>Require {authMode} when</key>
+	<string>Require {0} when</string>
+	<key>Require {authentication_type}</key>
+	<string>Require {0}</string>
+	<key>Respect Existing Headers</key>
+	<string>Respect Existing Headers</string>
+	<key>Rule Name</key>
+	<string>Rule Name</string>
+	<key>Rules</key>
+	<string>Rules</string>
+	<key>SSL/TLS</key>
+	<string>SSL/TLS</string>
+	<key>SSL_segment_description</key>
+	<string>Off: HTTPS disabled.
+Flexible: HTTPS between users and Cloudflare only.
+Full: HTTPS round trip without certificate verification.
+Strict: Full, but with certificate verification.</string>
+	<key>Save</key>
+	<string>Save</string>
+	<key>Seconds</key>
+	<string>Seconds</string>
+	<key>Security Level</key>
+	<string>Security Level</string>
+	<key>Select Maximum Age</key>
+	<string>Select Maximum Age</string>
+	<key>Select Timeframe</key>
+	<string>Select Timeframe</string>
+	<key>Select new value</key>
+	<string>Select new value</string>
+	<key>Selector</key>
+	<string>Selector</string>
+	<key>Service</key>
+	<string>Service</string>
+	<key>Service Name</key>
+	<string>Service Name</string>
+	<key>Set Password</key>
+	<string>Set Password</string>
+	<key>Settings Locked</key>
+	<string>Settings Locked</string>
+	<key>Show Zone</key>
+	<string>Show Zone</string>
+	<key>Show site favicons</key>
+	<string>Show site favicons</string>
+	<key>Sign Out</key>
+	<string>Sign Out</string>
+	<key>Site</key>
+	<string>Site</string>
+	<key>Site Settings &amp; Features</key>
+	<string>Site Settings &amp; Features</string>
+	<key>Specify how long a visitor is allowed access to your website after completing a challenge.</key>
+	<string>Specify how long a visitor is allowed access to your website after completing a challenge.</string>
+	<key>Specify how long your visitors web browser should keep and serve a local copy of resources.</key>
+	<string>Specify how long your visitors web browser should keep and serve a local copy of resources.</string>
+	<key>Standard</key>
+	<string>Standard</string>
+	<key>Status</key>
+	<string>Status</string>
+	<key>Strict</key>
+	<string>Strict</string>
+	<key>Subnet</key>
+	<string>Subnet</string>
+	<key>TCP</key>
+	<string>TCP</string>
+	<key>TLS</key>
+	<string>TLS</string>
+	<key>TLS client certificate presented for authentication on origin pull.</key>
+	<string>TLS client certificate presented for authentication on origin pull.</string>
+	<key>TTL</key>
+	<string>TTL</string>
+	<key>Tag</key>
+	<string>Tag</string>
+	<key>Tap &quot;View&quot; beside &quot;Global API Key&quot;</key>
+	<string>Tap &quot;View&quot; beside &quot;Global API Key&quot;</string>
+	<key>Tap here to return to the zone list</key>
+	<string>Tap here to return to the zone list</string>
+	<key>Tap to set</key>
+	<string>Tap to set</string>
+	<key>Target</key>
+	<string>Target</string>
+	<key>Tell browsers to use performance enhancing features like HTTP/2 and SPDY.</key>
+	<string>Tell browsers to use performance enhancing features like HTTP/2 and SPDY.</string>
+	<key>Test New Features</key>
+	<string>Test New Features</string>
+	<key>Text</key>
+	<string>Text</string>
+	<key>The API key of your account has changed and you must login again to continue using Cirrus.</key>
+	<string>The API key of your account has changed and you must login again to continue using Cirrus.</string>
+	<key>Then set these settings:</key>
+	<string>Then set these settings:</string>
+	<key>This Site</key>
+	<string>This Site</string>
+	<key>This action can not be undone.</key>
+	<string>This action can not be undone.</string>
+	<key>This action cannot be undone and may result in connectivity issues for your clients.</key>
+	<string>This action cannot be undone and may result in connectivity issues for your clients.</string>
+	<key>This action cannot be undone without creating another rule.</key>
+	<string>This action cannot be undone without creating another rule.</string>
+	<key>This action is permanent and your settings will not be saved.</key>
+	<string>This action is permanent and your settings will not be saved.</string>
+	<key>This will completely remove your credentials from the device.</key>
+	<string>This will completely remove your credentials from the device.</string>
+	<key>Threat Origins</key>
+	<string>Threat Origins</string>
+	<key>Threats</key>
+	<string>Threats</string>
+	<key>Top Country</key>
+	<string>Top Country</string>
+	<key>Top Type</key>
+	<string>Top Type</string>
+	<key>Total</key>
+	<string>Total</string>
+	<key>Traffic Origins</key>
+	<string>Traffic Origins</string>
+	<key>Traffic Using SSL</key>
+	<string>Traffic Using SSL</string>
+	<key>Type</key>
+	<string>Type</string>
+	<key>UDP</key>
+	<string>UDP</string>
+	<key>URL</key>
+	<string>URL</string>
+	<key>Uh why?</key>
+	<string>Uh why?</string>
+	<key>Unable to delete zone</key>
+	<string>Unable to delete zone</string>
+	<key>Uncached</key>
+	<string>Uncached</string>
+	<key>Unpause Website</key>
+	<string>Unpause Website</string>
+	<key>Unsaved Changes</key>
+	<string>Unsaved Changes</string>
+	<key>Usage</key>
+	<string>Usage</string>
+	<key>Usage &amp; Analytics</key>
+	<string>Usage &amp; Analytics</string>
+	<key>Use contents of clipboard?</key>
+	<string>Use contents of clipboard?</string>
+	<key>Use the wildcard (*) to match multiple requests.</key>
+	<string>Use the wildcard (*) to match multiple requests.</string>
+	<key>Use {authMode}</key>
+	<string>Use {0}</string>
+	<key>Using Certificate Inspector</key>
+	<string>Using Certificate Inspector</string>
+	<key>Using Cirrus</key>
+	<string>Using Cirrus</string>
+	<key>Value</key>
+	<string>Value</string>
+	<key>Version</key>
+	<string>Version</string>
+	<key>Visitors</key>
+	<string>Visitors</string>
+	<key>Websockets</key>
+	<string>Websockets</string>
+	<key>Weight</key>
+	<string>Weight</string>
+	<key>Welcome to Cirrus</key>
+	<string>Welcome to Cirrus</string>
+	<key>Which Changes</key>
+	<string>Which Changes</string>
+	<key>Yes</key>
+	<string>Yes</string>
+	<key>You cannot alter firewall settings while you have &apos;I&apos;m under attack&apos; enabled.</key>
+	<string>You cannot alter firewall settings while you have &apos;I&apos;m under attack&apos; enabled.</string>
+	<key>You seem to have an API key copied to your clipboard, would you like to use it?</key>
+	<string>You seem to have an API key copied to your clipboard, would you like to use it?</string>
+	<key>You seem to have an email address copied to your clipboard, would you like to use it?</key>
+	<string>You seem to have an email address copied to your clipboard, would you like to use it?</string>
+	<key>You will no longer have access to the zones on this account.</key>
+	<string>You will no longer have access to the zones on this account.</string>
+	<key>Your Zones</key>
+	<string>Your Zones</string>
+	<key>Zone Actions</key>
+	<string>Zone Actions</string>
+	<key>Zones</key>
+	<string>Zones</string>
+	<key>analytics_footer</key>
+	<string>We collect very little information about how you use the app. None of this information can be used to personally identify you or your websites.</string>
+	<key>close_app_description</key>
+	<string>You need to completely close Cirrus by double-pressing the home buttong and swiping up.</string>
+	<key>login_keychain_description</key>
+	<string>All information is stored safely in your devices keychain which is protected by your devices passcode.</string>
+	<key>pagerule::always_online</key>
+	<string>Always Online</string>
+	<key>pagerule::always_use_https</key>
+	<string>Always Use HTTPS</string>
+	<key>pagerule::automatic_https_rewrites</key>
+	<string>Automatic HTTPS Rewrites</string>
+	<key>pagerule::browser_cache_ttl</key>
+	<string>Browser Cache TTL</string>
+	<key>pagerule::browser_check</key>
+	<string>Browser Integrity Check</string>
+	<key>pagerule::cache_level</key>
+	<string>Cache Level</string>
+	<key>pagerule::disable_apps</key>
+	<string>Disable Apps</string>
+	<key>pagerule::disable_performance</key>
+	<string>Disable Performance</string>
+	<key>pagerule::disable_security</key>
+	<string>Disable Security</string>
+	<key>pagerule::edge_cache_ttl</key>
+	<string>Edge Cache TTL</string>
+	<key>pagerule::email_obfuscation</key>
+	<string>Email Obfuscation</string>
+	<key>pagerule::forwarding_url</key>
+	<string>Forwarding URL</string>
+	<key>pagerule::ip_geolocation</key>
+	<string>IP Geolocation Header</string>
+	<key>pagerule::opportunistic_encryption</key>
+	<string>Opportunistic Encryption</string>
+	<key>pagerule::rocket_loader</key>
+	<string>Rocket Loader</string>
+	<key>pagerule::security_level</key>
+	<string>Security Level</string>
+	<key>pagerule::server_side_exclude</key>
+	<string>Server Side Excludes</string>
+	<key>pagerule::smart_errors</key>
+	<string>Smart Errors</string>
+	<key>pagerule::ssl</key>
+	<string>SSL</string>
+	<key>pagerulesetting::browser_cache_ttl::10800</key>
+	<string>3 hours</string>
+	<key>pagerulesetting::browser_cache_ttl::1382400</key>
+	<string>16 days</string>
+	<key>pagerulesetting::browser_cache_ttl::14400</key>
+	<string>4 hours</string>
+	<key>pagerulesetting::browser_cache_ttl::14515200</key>
+	<string>6 months</string>
+	<key>pagerulesetting::browser_cache_ttl::172800</key>
+	<string>2 days</string>
+	<key>pagerulesetting::browser_cache_ttl::1800</key>
+	<string>30 minutes</string>
+	<key>pagerulesetting::browser_cache_ttl::18000</key>
+	<string>5 hours</string>
+	<key>pagerulesetting::browser_cache_ttl::2073600</key>
+	<string>24 days</string>
+	<key>pagerulesetting::browser_cache_ttl::2419200</key>
+	<string>a month</string>
+	<key>pagerulesetting::browser_cache_ttl::259200</key>
+	<string>3 days</string>
+	<key>pagerulesetting::browser_cache_ttl::28800</key>
+	<string>8 hours</string>
+	<key>pagerulesetting::browser_cache_ttl::29030400</key>
+	<string>a year</string>
+	<key>pagerulesetting::browser_cache_ttl::345600</key>
+	<string>4 days</string>
+	<key>pagerulesetting::browser_cache_ttl::3600</key>
+	<string>an hour</string>
+	<key>pagerulesetting::browser_cache_ttl::43200</key>
+	<string>12 hours</string>
+	<key>pagerulesetting::browser_cache_ttl::432000</key>
+	<string>5 days</string>
+	<key>pagerulesetting::browser_cache_ttl::4838400</key>
+	<string>2 months</string>
+	<key>pagerulesetting::browser_cache_ttl::518400</key>
+	<string>8 days</string>
+	<key>pagerulesetting::browser_cache_ttl::57600</key>
+	<string>16 hours</string>
+	<key>pagerulesetting::browser_cache_ttl::7200</key>
+	<string>2 hours</string>
+	<key>pagerulesetting::browser_cache_ttl::72000</key>
+	<string>20 hours</string>
+	<key>pagerulesetting::browser_cache_ttl::86400</key>
+	<string>a day</string>
+	<key>pagerulesetting::cache_level::aggressive</key>
+	<string>Aggressive</string>
+	<key>pagerulesetting::cache_level::basic</key>
+	<string>Basic</string>
+	<key>pagerulesetting::cache_level::bypass</key>
+	<string>Bypass</string>
+	<key>pagerulesetting::cache_level::cache_everything</key>
+	<string>Cache everything</string>
+	<key>pagerulesetting::cache_level::simplified</key>
+	<string>Simplified</string>
+	<key>pagerulesetting::edge_cache_ttl::10800</key>
+	<string>3 hours</string>
+	<key>pagerulesetting::edge_cache_ttl::1209600</key>
+	<string>14 days</string>
+	<key>pagerulesetting::edge_cache_ttl::14400</key>
+	<string>4 hours</string>
+	<key>pagerulesetting::edge_cache_ttl::172800</key>
+	<string>2 days</string>
+	<key>pagerulesetting::edge_cache_ttl::18000</key>
+	<string>5 hours</string>
+	<key>pagerulesetting::edge_cache_ttl::2419200</key>
+	<string>a month</string>
+	<key>pagerulesetting::edge_cache_ttl::259200</key>
+	<string>3 days</string>
+	<key>pagerulesetting::edge_cache_ttl::28800</key>
+	<string>8 hours</string>
+	<key>pagerulesetting::edge_cache_ttl::345600</key>
+	<string>4 days</string>
+	<key>pagerulesetting::edge_cache_ttl::43200</key>
+	<string>12 hours</string>
+	<key>pagerulesetting::edge_cache_ttl::432000</key>
+	<string>5 days</string>
+	<key>pagerulesetting::edge_cache_ttl::518400</key>
+	<string>6 days</string>
+	<key>pagerulesetting::edge_cache_ttl::57600</key>
+	<string>16 hours</string>
+	<key>pagerulesetting::edge_cache_ttl::604800</key>
+	<string>7 days</string>
+	<key>pagerulesetting::edge_cache_ttl::7200</key>
+	<string>2 hours</string>
+	<key>pagerulesetting::edge_cache_ttl::72000</key>
+	<string>20 hours</string>
+	<key>pagerulesetting::edge_cache_ttl::86400</key>
+	<string>a day</string>
+	<key>pagerulesetting::rocket_loader::automatic</key>
+	<string>Automatic</string>
+	<key>pagerulesetting::rocket_loader::manual</key>
+	<string>Manual</string>
+	<key>pagerulesetting::security_level::essentially_off</key>
+	<string>Essentially Off</string>
+	<key>pagerulesetting::security_level::high</key>
+	<string>High</string>
+	<key>pagerulesetting::security_level::low</key>
+	<string>Low</string>
+	<key>pagerulesetting::security_level::medium</key>
+	<string>Medium</string>
+	<key>pagerulesetting::security_level::under_attack</key>
+	<string>I&apos;m Under Attack</string>
+	<key>pagerulesetting::ssl::flexible</key>
+	<string>Flexible</string>
+	<key>pagerulesetting::ssl::full</key>
+	<string>Full</string>
+	<key>pagerulesetting::ssl::off</key>
+	<string>Off</string>
+	<key>pagerulesetting::ssl::strict</key>
+	<string>Strict</string>
+	<key>why_u_do_dis</key>
+	<string>Disabling IPv6 can cause future compatibility issues. Perhaps fix the issue thats preventing you from using IPv6, rather than disabling it?</string>
+	<key>{count} action</key>
+	<string>{0} action</string>
+	<key>{count} actions</key>
+	<string>{0} actions</string>
+	<key>{num}hrs</key>
+	<string>{0}hrs</string>
+	<key>{num}min</key>
+	<string>{0}min</string>
+	<key>{num}mins</key>
+	<string>{0}mins</string>
+	<key>{num}sec</key>
+	<string>{0}sec</string>
+	<key>{requestCount} requests per {threshold}, block for {time}</key>
+	<string>{0} requests per {1}, block for {2}</string>
+</dict>
+</plist>

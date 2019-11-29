@@ -1,0 +1,138 @@
+#ifndef OrangeCloud_Prefix_Header_pch
+#define OrangeCloud_Prefix_Header_pch
+
+// Global
+#import "lang.h"
+#import "OCUserOptions.h"
+#import "AppState.h"
+#import "UIHelper.h"
+#import "OCStringFormatter.h"
+#import "OCNumberFormatter.h"
+#import "OCTipManager.h"
+#import "OCSearch.h"
+
+// Authentication
+#import "OCAuthenticationManager.h"
+
+// Connectivity
+#import "OCAPI.h"
+#import "CFCredentials.h"
+#import "CFCredentialManager.h"
+
+// Object Types
+#import "CFZone.h"
+#import "CFZoneSettings.h"
+#import "CFPageRuleAction.h"
+#import "CFPageRule.h"
+#import "CFHSTSSettings.h"
+#import "CFFirewallAccessRule.h"
+
+// DNS Records
+#import "CFDNSRecord.h"
+#import "CFDNSARecord.h"
+#import "CFDNSAAAARecord.h"
+#import "CFDNSCNAMERecord.h"
+#import "CFDNSNSRecord.h"
+#import "CFDNSCAARecord.h"
+#import "CFDNSTXTRecord.h"
+#import "CFDNSMXRecord.h"
+#import "CFDNSSPFRecord.h"
+#import "CFDNSLOCRecord.h"
+#import "CFDNSSRVRecord.h"
+#import "CFDNSPTRRecord.h"
+#import "CFDNSCERTRecord.h"
+#import "CFDNSDNSKEYRecord.h"
+#import "CFDNSDSRecord.h"
+#import "CFDNSNAPTRRecord.h"
+#import "CFDNSSMIMEARecord.h"
+#import "CFDNSSSHFPRecord.h"
+#import "CFDNSTLSARecord.h"
+#import "CFDNSURIRecord.h"
+
+// Extensions
+#import "UIViewController+ZoneButton.h"
+#import "UIViewController+ProgressControl.h"
+#import "UITableViewController+RefreshControl.h"
+#import "NSDictionary+ObjectForKey.h"
+#import "NSArray+ObjectAtIndex.h"
+#import "UIControl+OCSelector.h"
+#import "UIViewController+ObjectSave.h"
+#import "NSDateFormatter+Locale.h"
+#import "NSArray+SafeIndex.h"
+
+// UI Stuff
+#import "ToggleTableViewCell.h"
+#import "SegmentTableViewCell.h"
+#import "ZoneTableViewCell.h"
+#import "OCIcon.h"
+#import "RefreshSearchTableViewController.h"
+
+#import <MBProgressHUD/MBProgressHUD.h>
+#import <MaterialDesignColors/MaterialDesignColors.h>
+#import <CMPopTipView/CMPopTipView.h>
+#import <GTAppLinks/GTAppLinks.h>
+
+#import "Constant-Keys.h"
+
+// Debug Levels
+#define API_DEBUG     0
+#define STORAGE_DEBUG 0
+#define LANG_DEBUG    0
+#define LOGIN_DEBUG   0
+
+#if DEBUG
+    #define d(s, ...) NSLog(@"%@", [NSString stringWithFormat:s, ##__VA_ARGS__ ?:@""])
+    #define cd(c, s, ...) if (c) { NSLog(@"%@", [NSString stringWithFormat:(s), ##__VA_ARGS__ ?:@""]); }
+#else
+    #define d(s, ...)
+    #define cd(c, s, ...)
+#endif
+
+// Singletons
+#define api [OCAPI sharedInstance]
+#define uihelper [UIHelper sharedInstance]
+#define keyManager [CFCredentialManager sharedInstance]
+#define stringFormatter [OCStringFormatter sharedInstance]
+#define authManager [OCAuthenticationManager sharedInstance]
+#define UserOptions [OCUserOptions currentOptions]
+
+// Shortcuts
+#define appState [AppState currentState]
+#define currentZone appState.currentZone
+#define zoneIsReadonly currentZone.readOnly
+#define zoneReadWrite !zoneIsReadonly
+#define idfv [[[UIDevice currentDevice] identifierForVendor] UUIDString]
+#define l(k) [lang key:k]
+#define documents_path(filename) [NSString stringWithFormat:@"%@/%@", [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0], filename]
+#define documents_path_with_subdir(subdir, filename) [NSString stringWithFormat:@"%@/%@/%@", [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0], subdir, filename]
+#define viewControllerFromStoryboard(STORYBOARD_NAME, VIEWCONTROLLER_STORYBOARD_ID) [[UIStoryboard storyboardWithName:STORYBOARD_NAME bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:VIEWCONTROLLER_STORYBOARD_ID]
+#define url(s) [NSURL URLWithString:s]
+#define nTimes(n) for (int i = 0; i < n; i++)
+
+// String Mutations
+#define format(s, ...) [NSString stringWithFormat:s, ##__VA_ARGS__]
+#define nstrcat(s1, s2) [NSString stringWithFormat:@"%@%@", s1, s2]
+#define nstrcmp(s1, s2) [s1 isEqualToString:s2]
+
+// Notifications
+#define notify(nname) [[NSNotificationCenter defaultCenter] postNotificationName:nname object:nil]
+#define subscribe(sel, nname) [[NSNotificationCenter defaultCenter] addObserver:self selector:sel name:nname object:nil]
+
+// Device Related
+#define isCompact appState.splitViewController.traitCollection.horizontalSizeClass == UIUserInterfaceSizeClassCompact
+#define isRegular appState.splitViewController.traitCollection.horizontalSizeClass == UIUserInterfaceSizeClassRegular
+
+#define NSMakeError(_code, _description) [NSError errorWithDomain:@"io.ecn.Orange-Cloud" code:_code userInfo:@{NSLocalizedDescriptionKey: _description}]
+
+// Avoid using isIphone and isIpad macros for screen width calculation. Use isCompact and isRegular instead.
+#define isIphone UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone
+#define isIpad UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad
+#define isNotIphone isIpad
+#define isNotIpad isIphone
+#define dDeviceOrientation [[UIApplication sharedApplication] statusBarOrientation]
+#define isPortrait  dDeviceOrientation == UIInterfaceOrientationPortrait || dDeviceOrientation == UIInterfaceOrientationPortraitUpsideDown
+#define isLandscape dDeviceOrientation == UIInterfaceOrientationLandscapeLeft || dDeviceOrientation == UIInterfaceOrientationLandscapeRight
+
+#define TESTFLIGHT_BUILD 0
+
+#endif
